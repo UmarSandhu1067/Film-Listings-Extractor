@@ -7,18 +7,6 @@ from collections.abc import Sequence
 from typing import Any
 
 Word = dict[str, Any]
-PROJECT_FIELDS = (
-    "project_title",
-    "project_type",
-    "studio",
-    "genre",
-    "location",
-    "start_date",
-    "status",
-    "synopsis",
-    "network",
-    "shoot_location",
-)
 
 ROLE_MARKER_RE = re.compile(
     r"\[((?:LEAD|SUPPORTING(?:\s+LEAD)?|RECURRING|CO-STAR|SMALL|GUEST STAR|"
@@ -71,10 +59,7 @@ def text_slice(words: Sequence[Word], start: int, end: int) -> str | None:
 
 
 def new_project(title: str) -> dict[str, Any]:
-    project: dict[str, Any] = {field: None for field in PROJECT_FIELDS}
-    project["project_title"] = title
-    project["roles"] = []
-    return project
+    return {"project_title": title, "roles": []}
 
 
 def _role_attributes(details: str | None) -> tuple[str | None, str | None, str | None]:
@@ -98,13 +83,16 @@ def _role_attributes(details: str | None) -> tuple[str | None, str | None, str |
 
 def new_role(name: str, role_type: str | None = None, details: str | None = None) -> dict[str, Any]:
     gender, age, notes = _role_attributes(details)
-    return {
-        "role_name": name,
-        "role_type": role_type,
-        "gender": gender,
-        "age": age,
-        "notes": notes,
-    }
+    role: dict[str, Any] = {"role_name": name}
+    for field, value in (
+        ("role_type", role_type),
+        ("gender", gender),
+        ("age", age),
+        ("notes", notes),
+    ):
+        if value is not None:
+            role[field] = value
+    return role
 
 
 def role_from_line(words: Sequence[Word]) -> dict[str, Any] | None:
@@ -130,5 +118,5 @@ def role_from_line(words: Sequence[Word]) -> dict[str, Any] | None:
 def append_value(project: dict[str, Any], field: str, value: str | None) -> None:
     if value is None:
         return
-    existing = project[field]
+    existing = project.get(field)
     project[field] = f"{existing} {value}" if existing else value

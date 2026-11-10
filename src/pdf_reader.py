@@ -9,7 +9,7 @@ import pdfplumber
 
 
 def read_pdf(pdf_path: str | Path) -> list[dict[str, Any]]:
-    """Extract positioned words from every page of a PDF.
+    """Extract page text and positioned words.
 
     Coordinates are in PDF points, with ``x0``, ``x1``, ``top``, and
     ``bottom`` measured relative to the page's top-left corner.
@@ -33,6 +33,7 @@ def read_pdf(pdf_path: str | Path) -> list[dict[str, Any]]:
                     "page_number": page_number,
                     "width": float(page.width),
                     "height": float(page.height),
+                    "text": page.extract_text() or "",
                     "words": words,
                 }
             )

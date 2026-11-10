@@ -100,7 +100,8 @@ def parse_sheet_b(pages: list[dict[str, Any]]) -> list[dict[str, Any]]:
             if cells["project_title"]:
                 current = new_project(cells["project_title"])
                 for field in ("project_type", "genre", "location", "start_date"):
-                    current[field] = cells[field]
+                    if cells[field] is not None:
+                        current[field] = cells[field]
                 projects.append(current)
 
             if current and cells["role_name"]:

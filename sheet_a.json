@@ -3,8 +3,7 @@
     {
       "project_title": "THE LANTERN KEEPER",
       "project_title_cleaned": "THE LANTERN KEEPER",
-      "project_type": null,
-      "project_type_cleaned": null,
+      "title_alias": "(fka Lighthouse Song)",
       "studio": "Northlight Pictures",
       "studio_cleaned": "Northlight Pictures",
       "genre": "Drama/Thriller",
@@ -25,11 +24,6 @@
       "status_cleaned": "Actively Casting",
       "synopsis": "A retired lighthouse keeper discovers coded messages in the logbooks left by her late father and is pulled into a decades-old smuggling case.",
       "synopsis_cleaned": "A retired lighthouse keeper discovers coded messages in the logbooks left by her late father and is pulled into a decades-old smuggling case.",
-      "network": null,
-      "network_cleaned": null,
-      "shoot_location": null,
-      "shoot_locations": [],
-      "shoot_location_flag": null,
       "roles": [
         {
           "role_name": "MARGARET HALE",
@@ -72,8 +66,7 @@
     {
       "project_title": "Paper Crowns",
       "project_title_cleaned": "Paper Crowns",
-      "project_type": null,
-      "project_type_cleaned": null,
+      "title_alias": null,
       "studio": "Bluecastle Studios",
       "studio_cleaned": "Bluecastle Studios",
       "genre": "Dramedy",
@@ -94,11 +87,6 @@
       "status_cleaned": "In Development",
       "synopsis": "Three siblings inherit a failing costume shop and one summer to save it.",
       "synopsis_cleaned": "Three siblings inherit a failing costume shop and one summer to save it.",
-      "network": null,
-      "network_cleaned": null,
-      "shoot_location": null,
-      "shoot_locations": [],
-      "shoot_location_flag": null,
       "roles": [
         {
           "role_name": "JUNE OKAFOR",
@@ -129,8 +117,7 @@
     {
       "project_title": "SALT AND IRON",
       "project_title_cleaned": "SALT AND IRON",
-      "project_type": null,
-      "project_type_cleaned": null,
+      "title_alias": null,
       "studio": "Harbor Gate Media",
       "studio_cleaned": "Harbor Gate Media",
       "genre": "Action-Adventure",
@@ -151,11 +138,6 @@
       "status_cleaned": "Casting",
       "synopsis": "A salvage crew races a rival outfit to a sunken freighter in the North Pacific.",
       "synopsis_cleaned": "A salvage crew races a rival outfit to a sunken freighter in the North Pacific.",
-      "network": null,
-      "network_cleaned": null,
-      "shoot_location": null,
-      "shoot_locations": [],
-      "shoot_location_flag": null,
       "roles": [
         {
           "role_name": "CAPTAIN RUTH DANA",
@@ -186,10 +168,6 @@
           "role_name_cleaned": "TBD ROLE",
           "role_type": "TBD",
           "role_type_cleaned": "TBD",
-          "gender": null,
-          "gender_cleaned": null,
-          "age": null,
-          "age_cleaned": null,
           "notes": "Details to come.",
           "notes_cleaned": "Details to come."
         }
@@ -198,12 +176,7 @@
     {
       "project_title": "Quiet Hours",
       "project_title_cleaned": "Quiet Hours",
-      "project_type": null,
-      "project_type_cleaned": null,
-      "studio": null,
-      "studio_cleaned": null,
-      "genre": null,
-      "genres": [],
+      "title_alias": "(aka The Night Desk)",
       "location": "Likely NYC",
       "locations": [
         "New York City"
@@ -217,11 +190,6 @@
       "status_cleaned": "Development",
       "synopsis": "An overnight radio host takes a call from a listener who seems to know what will happen tomorrow.",
       "synopsis_cleaned": "An overnight radio host takes a call from a listener who seems to know what will happen tomorrow.",
-      "network": null,
-      "network_cleaned": null,
-      "shoot_location": null,
-      "shoot_locations": [],
-      "shoot_location_flag": null,
       "roles": [
         {
           "role_name": "SAM REYES",
@@ -234,6 +202,1774 @@
           "age_cleaned": "30s",
           "notes": "Warm voice, sleepless.",
           "notes_cleaned": "Warm voice, sleepless."
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "page_number": 1,
+      "width": 612.0,
+      "height": 792.0,
+      "text": "STUDIO SLATE - ACTIVE PROJECTS\nPage 1\nTHE LANTERN KEEPER\n(fka Lighthouse Song)\nStudio: Northlight Pictures\nGenre: Drama/Thriller\nLocation: Los Angeles, CA\nStart Date: Spring 2026\nStatus: Actively Casting\nSynopsis: A retired lighthouse keeper discovers coded messages in the logbooks left by her late father and is\npulled into a decades-old smuggling case.\nRoles:\n- MARGARET HALE [Lead]\nFemale, 60s, any ethnicity. Sharp, guarded, funny.\n- DETECTIVE OWEN PRICE [Supporting]\nMale, 40s. Patient, quietly ambitious.\n- YOUNG MARGARET [Small]\nFemale, 20s. Flashback scenes only.\nPaper Crowns\nStudio: Bluecastle Studios\nGenre: Dramedy\nLocation: LA\nStart Date: 2/1/2026\nStatus: In Development\nSynopsis: Three siblings inherit a failing costume shop and one summer to save it.\nRoles:\n- JUNE OKAFOR [Lead]\nFemale, 30s, open ethnicity. The responsible one.\n- THEO OKAFOR [Supporting Lead]\nMale, late 20s. Charming, unreliable.",
+      "words": [
+        {
+          "text": "STUDIO",
+          "x0": 40.0,
+          "x1": 92.892,
+          "top": 28.898000000000025,
+          "bottom": 42.898000000000025
+        },
+        {
+          "text": "SLATE",
+          "x0": 96.78400000000002,
+          "x1": 142.67600000000002,
+          "top": 28.898000000000025,
+          "bottom": 42.898000000000025
+        },
+        {
+          "text": "-",
+          "x0": 146.568,
+          "x1": 151.23000000000002,
+          "top": 28.898000000000025,
+          "bottom": 42.898000000000025
+        },
+        {
+          "text": "ACTIVE",
+          "x0": 155.122,
+          "x1": 206.46,
+          "top": 28.898000000000025,
+          "bottom": 42.898000000000025
+        },
+        {
+          "text": "PROJECTS",
+          "x0": 210.352,
+          "x1": 285.812,
+          "top": 28.898000000000025,
+          "bottom": 42.898000000000025
+        },
+        {
+          "text": "Page",
+          "x0": 470.0,
+          "x1": 491.01500000000004,
+          "top": 32.863000000000056,
+          "bottom": 41.863000000000056
+        },
+        {
+          "text": "1",
+          "x0": 493.517,
+          "x1": 498.521,
+          "top": 32.863000000000056,
+          "bottom": 41.863000000000056
+        },
+        {
+          "text": "THE",
+          "x0": 40.0,
+          "x1": 66.0,
+          "top": 69.69100000000003,
+          "bottom": 82.69100000000003
+        },
+        {
+          "text": "LANTERN",
+          "x0": 69.614,
+          "x1": 131.715,
+          "top": 69.69100000000003,
+          "bottom": 82.69100000000003
+        },
+        {
+          "text": "KEEPER",
+          "x0": 135.329,
+          "x1": 188.785,
+          "top": 69.69100000000003,
+          "bottom": 82.69100000000003
+        },
+        {
+          "text": "(fka",
+          "x0": 40.0,
+          "x1": 55.003,
+          "top": 86.86300000000006,
+          "bottom": 95.86300000000006
+        },
+        {
+          "text": "Lighthouse",
+          "x0": 57.504999999999995,
+          "x1": 101.533,
+          "top": 86.86300000000006,
+          "bottom": 95.86300000000006
+        },
+        {
+          "text": "Song)",
+          "x0": 104.035,
+          "x1": 128.04700000000003,
+          "top": 86.86300000000006,
+          "bottom": 95.86300000000006
+        },
+        {
+          "text": "Studio:",
+          "x0": 40.0,
+          "x1": 74.44,
+          "top": 106.07000000000005,
+          "bottom": 116.07000000000005
+        },
+        {
+          "text": "Northlight",
+          "x0": 120.0,
+          "x1": 162.79,
+          "top": 106.07000000000005,
+          "bottom": 116.07000000000005
+        },
+        {
+          "text": "Pictures",
+          "x0": 165.57,
+          "x1": 201.69,
+          "top": 106.07000000000005,
+          "bottom": 116.07000000000005
+        },
+        {
+          "text": "Genre:",
+          "x0": 40.0,
+          "x1": 72.23,
+          "top": 121.07000000000005,
+          "bottom": 131.07000000000005
+        },
+        {
+          "text": "Drama/Thriller",
+          "x0": 120.0,
+          "x1": 183.33,
+          "top": 121.07000000000005,
+          "bottom": 131.07000000000005
+        },
+        {
+          "text": "Location:",
+          "x0": 40.0,
+          "x1": 85.0,
+          "top": 136.07000000000005,
+          "bottom": 146.07000000000005
+        },
+        {
+          "text": "Los",
+          "x0": 120.0,
+          "x1": 136.12,
+          "top": 136.07000000000005,
+          "bottom": 146.07000000000005
+        },
+        {
+          "text": "Angeles,",
+          "x0": 138.9,
+          "x1": 177.81,
+          "top": 136.07000000000005,
+          "bottom": 146.07000000000005
+        },
+        {
+          "text": "CA",
+          "x0": 180.59,
+          "x1": 194.48,
+          "top": 136.07000000000005,
+          "bottom": 146.07000000000005
+        },
+        {
+          "text": "Start",
+          "x0": 40.0,
+          "x1": 62.78,
+          "top": 151.07000000000005,
+          "bottom": 161.07000000000005
+        },
+        {
+          "text": "Date:",
+          "x0": 65.56,
+          "x1": 90.56,
+          "top": 151.07000000000005,
+          "bottom": 161.07000000000005
+        },
+        {
+          "text": "Spring",
+          "x0": 120.0,
+          "x1": 148.9,
+          "top": 151.07000000000005,
+          "bottom": 161.07000000000005
+        },
+        {
+          "text": "2026",
+          "x0": 151.68,
+          "x1": 173.92000000000002,
+          "top": 151.07000000000005,
+          "bottom": 161.07000000000005
+        },
+        {
+          "text": "Status:",
+          "x0": 40.0,
+          "x1": 73.89,
+          "top": 166.07000000000005,
+          "bottom": 176.07000000000005
+        },
+        {
+          "text": "Actively",
+          "x0": 120.0,
+          "x1": 154.45,
+          "top": 166.07000000000005,
+          "bottom": 176.07000000000005
+        },
+        {
+          "text": "Casting",
+          "x0": 157.23,
+          "x1": 191.13,
+          "top": 166.07000000000005,
+          "bottom": 176.07000000000005
+        },
+        {
+          "text": "Synopsis:",
+          "x0": 40.0,
+          "x1": 87.79,
+          "top": 181.07000000000005,
+          "bottom": 191.07000000000005
+        },
+        {
+          "text": "A",
+          "x0": 120.0,
+          "x1": 126.67,
+          "top": 181.82000000000005,
+          "bottom": 191.82000000000005
+        },
+        {
+          "text": "retired",
+          "x0": 129.45,
+          "x1": 157.79000000000002,
+          "top": 181.82000000000005,
+          "bottom": 191.82000000000005
+        },
+        {
+          "text": "lighthouse",
+          "x0": 160.57,
+          "x1": 206.15000000000003,
+          "top": 181.82000000000005,
+          "bottom": 191.82000000000005
+        },
+        {
+          "text": "keeper",
+          "x0": 208.93,
+          "x1": 239.50000000000003,
+          "top": 181.82000000000005,
+          "bottom": 191.82000000000005
+        },
+        {
+          "text": "discovers",
+          "x0": 242.28000000000003,
+          "x1": 284.51000000000005,
+          "top": 181.82000000000005,
+          "bottom": 191.82000000000005
+        },
+        {
+          "text": "coded",
+          "x0": 287.2900000000001,
+          "x1": 314.53000000000003,
+          "top": 181.82000000000005,
+          "bottom": 191.82000000000005
+        },
+        {
+          "text": "messages",
+          "x0": 317.31000000000006,
+          "x1": 362.8800000000001,
+          "top": 181.82000000000005,
+          "bottom": 191.82000000000005
+        },
+        {
+          "text": "in",
+          "x0": 365.6600000000001,
+          "x1": 373.4400000000001,
+          "top": 181.82000000000005,
+          "bottom": 191.82000000000005
+        },
+        {
+          "text": "the",
+          "x0": 376.2200000000001,
+          "x1": 390.12000000000006,
+          "top": 181.82000000000005,
+          "bottom": 191.82000000000005
+        },
+        {
+          "text": "logbooks",
+          "x0": 392.90000000000003,
+          "x1": 432.9200000000001,
+          "top": 181.82000000000005,
+          "bottom": 191.82000000000005
+        },
+        {
+          "text": "left",
+          "x0": 435.70000000000005,
+          "x1": 449.04,
+          "top": 181.82000000000005,
+          "bottom": 191.82000000000005
+        },
+        {
+          "text": "by",
+          "x0": 451.82,
+          "x1": 462.38,
+          "top": 181.82000000000005,
+          "bottom": 191.82000000000005
+        },
+        {
+          "text": "her",
+          "x0": 465.15999999999997,
+          "x1": 479.60999999999996,
+          "top": 181.82000000000005,
+          "bottom": 191.82000000000005
+        },
+        {
+          "text": "late",
+          "x0": 482.38999999999993,
+          "x1": 498.50999999999993,
+          "top": 181.82000000000005,
+          "bottom": 191.82000000000005
+        },
+        {
+          "text": "father",
+          "x0": 501.2899999999999,
+          "x1": 526.8599999999999,
+          "top": 181.82000000000005,
+          "bottom": 191.82000000000005
+        },
+        {
+          "text": "and",
+          "x0": 529.6399999999999,
+          "x1": 546.3199999999997,
+          "top": 181.82000000000005,
+          "bottom": 191.82000000000005
+        },
+        {
+          "text": "is",
+          "x0": 549.0999999999998,
+          "x1": 556.3199999999998,
+          "top": 181.82000000000005,
+          "bottom": 191.82000000000005
+        },
+        {
+          "text": "pulled",
+          "x0": 120.0,
+          "x1": 146.68,
+          "top": 196.59050000000002,
+          "bottom": 206.59050000000002
+        },
+        {
+          "text": "into",
+          "x0": 149.46,
+          "x1": 165.58,
+          "top": 196.59050000000002,
+          "bottom": 206.59050000000002
+        },
+        {
+          "text": "a",
+          "x0": 168.36,
+          "x1": 173.92000000000002,
+          "top": 196.59050000000002,
+          "bottom": 206.59050000000002
+        },
+        {
+          "text": "decades-old",
+          "x0": 176.70000000000002,
+          "x1": 231.17000000000002,
+          "top": 196.59050000000002,
+          "bottom": 206.59050000000002
+        },
+        {
+          "text": "smuggling",
+          "x0": 233.95000000000005,
+          "x1": 279.52000000000004,
+          "top": 196.59050000000002,
+          "bottom": 206.59050000000002
+        },
+        {
+          "text": "case.",
+          "x0": 282.30000000000007,
+          "x1": 306.20000000000005,
+          "top": 196.59050000000002,
+          "bottom": 206.59050000000002
+        },
+        {
+          "text": "Roles:",
+          "x0": 40.0,
+          "x1": 70.56,
+          "top": 231.07000000000005,
+          "bottom": 241.07000000000005
+        },
+        {
+          "text": "-",
+          "x0": 55.0,
+          "x1": 58.33,
+          "top": 246.07000000000005,
+          "bottom": 256.07000000000005
+        },
+        {
+          "text": "MARGARET",
+          "x0": 61.11,
+          "x1": 118.88,
+          "top": 246.07000000000005,
+          "bottom": 256.07000000000005
+        },
+        {
+          "text": "HALE",
+          "x0": 121.66,
+          "x1": 148.87999999999997,
+          "top": 246.07000000000005,
+          "bottom": 256.07000000000005
+        },
+        {
+          "text": "[Lead]",
+          "x0": 151.66,
+          "x1": 181.66,
+          "top": 246.07000000000005,
+          "bottom": 256.07000000000005
+        },
+        {
+          "text": "Female,",
+          "x0": 70.0,
+          "x1": 102.508,
+          "top": 259.86300000000006,
+          "bottom": 268.86300000000006
+        },
+        {
+          "text": "60s,",
+          "x0": 105.01,
+          "x1": 122.02,
+          "top": 259.86300000000006,
+          "bottom": 268.86300000000006
+        },
+        {
+          "text": "any",
+          "x0": 124.522,
+          "x1": 139.03,
+          "top": 259.86300000000006,
+          "bottom": 268.86300000000006
+        },
+        {
+          "text": "ethnicity.",
+          "x0": 141.53199999999998,
+          "x1": 177.04600000000002,
+          "top": 259.86300000000006,
+          "bottom": 268.86300000000006
+        },
+        {
+          "text": "Sharp,",
+          "x0": 179.548,
+          "x1": 206.062,
+          "top": 259.86300000000006,
+          "bottom": 268.86300000000006
+        },
+        {
+          "text": "guarded,",
+          "x0": 208.56400000000002,
+          "x1": 244.087,
+          "top": 259.86300000000006,
+          "bottom": 268.86300000000006
+        },
+        {
+          "text": "funny.",
+          "x0": 246.589,
+          "x1": 271.10499999999996,
+          "top": 259.86300000000006,
+          "bottom": 268.86300000000006
+        },
+        {
+          "text": "-",
+          "x0": 55.0,
+          "x1": 58.33,
+          "top": 276.07000000000005,
+          "bottom": 286.07
+        },
+        {
+          "text": "DETECTIVE",
+          "x0": 61.11,
+          "x1": 117.23,
+          "top": 276.07000000000005,
+          "bottom": 286.07
+        },
+        {
+          "text": "OWEN",
+          "x0": 120.01,
+          "x1": 151.12,
+          "top": 276.07000000000005,
+          "bottom": 286.07
+        },
+        {
+          "text": "PRICE",
+          "x0": 153.9,
+          "x1": 184.46,
+          "top": 276.07000000000005,
+          "bottom": 286.07
+        },
+        {
+          "text": "[Supporting]",
+          "x0": 187.24,
+          "x1": 247.2300000000001,
+          "top": 276.07000000000005,
+          "bottom": 286.07
+        },
+        {
+          "text": "Male,",
+          "x0": 70.0,
+          "x1": 92.005,
+          "top": 289.863,
+          "bottom": 298.863
+        },
+        {
+          "text": "40s.",
+          "x0": 94.507,
+          "x1": 111.517,
+          "top": 289.863,
+          "bottom": 298.863
+        },
+        {
+          "text": "Patient,",
+          "x0": 114.019,
+          "x1": 144.538,
+          "top": 289.863,
+          "bottom": 298.863
+        },
+        {
+          "text": "quietly",
+          "x0": 147.04,
+          "x1": 173.05,
+          "top": 289.863,
+          "bottom": 298.863
+        },
+        {
+          "text": "ambitious.",
+          "x0": 175.55200000000002,
+          "x1": 216.565,
+          "top": 289.863,
+          "bottom": 298.863
+        },
+        {
+          "text": "-",
+          "x0": 55.0,
+          "x1": 58.33,
+          "top": 306.07,
+          "bottom": 316.07
+        },
+        {
+          "text": "YOUNG",
+          "x0": 61.11,
+          "x1": 97.78,
+          "top": 306.07,
+          "bottom": 316.07
+        },
+        {
+          "text": "MARGARET",
+          "x0": 100.56,
+          "x1": 158.32999999999998,
+          "top": 306.07,
+          "bottom": 316.07
+        },
+        {
+          "text": "[Small]",
+          "x0": 161.11,
+          "x1": 194.45000000000002,
+          "top": 306.07,
+          "bottom": 316.07
+        },
+        {
+          "text": "Female,",
+          "x0": 70.0,
+          "x1": 102.508,
+          "top": 319.863,
+          "bottom": 328.863
+        },
+        {
+          "text": "20s.",
+          "x0": 105.01,
+          "x1": 122.02,
+          "top": 319.863,
+          "bottom": 328.863
+        },
+        {
+          "text": "Flashback",
+          "x0": 124.522,
+          "x1": 165.53500000000003,
+          "top": 319.863,
+          "bottom": 328.863
+        },
+        {
+          "text": "scenes",
+          "x0": 168.03700000000003,
+          "x1": 196.54900000000004,
+          "top": 319.863,
+          "bottom": 328.863
+        },
+        {
+          "text": "only.",
+          "x0": 199.05100000000004,
+          "x1": 218.05900000000003,
+          "top": 319.863,
+          "bottom": 328.863
+        },
+        {
+          "text": "Paper",
+          "x0": 40.0,
+          "x1": 76.127,
+          "top": 363.691,
+          "bottom": 376.691
+        },
+        {
+          "text": "Crowns",
+          "x0": 79.741,
+          "x1": 127.41199999999999,
+          "top": 363.691,
+          "bottom": 376.691
+        },
+        {
+          "text": "Studio:",
+          "x0": 40.0,
+          "x1": 74.44,
+          "top": 400.07,
+          "bottom": 410.07
+        },
+        {
+          "text": "Bluecastle",
+          "x0": 120.0,
+          "x1": 166.13,
+          "top": 400.07,
+          "bottom": 410.07
+        },
+        {
+          "text": "Studios",
+          "x0": 168.91,
+          "x1": 202.26,
+          "top": 400.07,
+          "bottom": 410.07
+        },
+        {
+          "text": "Genre:",
+          "x0": 40.0,
+          "x1": 72.23,
+          "top": 415.07,
+          "bottom": 425.07
+        },
+        {
+          "text": "Dramedy",
+          "x0": 120.0,
+          "x1": 160.56,
+          "top": 415.07,
+          "bottom": 425.07
+        },
+        {
+          "text": "Location:",
+          "x0": 40.0,
+          "x1": 85.0,
+          "top": 430.07,
+          "bottom": 440.07
+        },
+        {
+          "text": "LA",
+          "x0": 120.0,
+          "x1": 132.23,
+          "top": 430.07,
+          "bottom": 440.07
+        },
+        {
+          "text": "Start",
+          "x0": 40.0,
+          "x1": 62.78,
+          "top": 445.07,
+          "bottom": 455.07
+        },
+        {
+          "text": "Date:",
+          "x0": 65.56,
+          "x1": 90.56,
+          "top": 445.07,
+          "bottom": 455.07
+        },
+        {
+          "text": "2/1/2026",
+          "x0": 120.0,
+          "x1": 158.92000000000002,
+          "top": 445.07,
+          "bottom": 455.07
+        },
+        {
+          "text": "Status:",
+          "x0": 40.0,
+          "x1": 73.89,
+          "top": 460.07,
+          "bottom": 470.07
+        },
+        {
+          "text": "In",
+          "x0": 120.0,
+          "x1": 128.34,
+          "top": 460.07,
+          "bottom": 470.07
+        },
+        {
+          "text": "Development",
+          "x0": 131.12,
+          "x1": 190.03,
+          "top": 460.07,
+          "bottom": 470.07
+        },
+        {
+          "text": "Synopsis:",
+          "x0": 40.0,
+          "x1": 87.79,
+          "top": 475.07,
+          "bottom": 485.07
+        },
+        {
+          "text": "Three",
+          "x0": 120.0,
+          "x1": 146.12,
+          "top": 475.82,
+          "bottom": 485.82
+        },
+        {
+          "text": "siblings",
+          "x0": 148.9,
+          "x1": 182.24,
+          "top": 475.82,
+          "bottom": 485.82
+        },
+        {
+          "text": "inherit",
+          "x0": 185.02,
+          "x1": 212.25000000000003,
+          "top": 475.82,
+          "bottom": 485.82
+        },
+        {
+          "text": "a",
+          "x0": 215.03000000000003,
+          "x1": 220.59000000000003,
+          "top": 475.82,
+          "bottom": 485.82
+        },
+        {
+          "text": "failing",
+          "x0": 223.37,
+          "x1": 249.49,
+          "top": 475.82,
+          "bottom": 485.82
+        },
+        {
+          "text": "costume",
+          "x0": 252.27,
+          "x1": 290.06,
+          "top": 475.82,
+          "bottom": 485.82
+        },
+        {
+          "text": "shop",
+          "x0": 292.84000000000003,
+          "x1": 314.52000000000004,
+          "top": 475.82,
+          "bottom": 485.82
+        },
+        {
+          "text": "and",
+          "x0": 317.30000000000007,
+          "x1": 333.9800000000001,
+          "top": 475.82,
+          "bottom": 485.82
+        },
+        {
+          "text": "one",
+          "x0": 336.76000000000005,
+          "x1": 353.44000000000005,
+          "top": 475.82,
+          "bottom": 485.82
+        },
+        {
+          "text": "summer",
+          "x0": 356.22,
+          "x1": 392.33000000000004,
+          "top": 475.82,
+          "bottom": 485.82
+        },
+        {
+          "text": "to",
+          "x0": 395.11,
+          "x1": 403.45,
+          "top": 475.82,
+          "bottom": 485.82
+        },
+        {
+          "text": "save",
+          "x0": 406.22999999999996,
+          "x1": 427.34999999999997,
+          "top": 475.82,
+          "bottom": 485.82
+        },
+        {
+          "text": "it.",
+          "x0": 430.12999999999994,
+          "x1": 437.9099999999999,
+          "top": 475.82,
+          "bottom": 485.82
+        },
+        {
+          "text": "Roles:",
+          "x0": 40.0,
+          "x1": 70.56,
+          "top": 525.0699999999999,
+          "bottom": 535.0699999999999
+        },
+        {
+          "text": "-",
+          "x0": 55.0,
+          "x1": 58.33,
+          "top": 540.0699999999999,
+          "bottom": 550.0699999999999
+        },
+        {
+          "text": "JUNE",
+          "x0": 61.11,
+          "x1": 87.78,
+          "top": 540.0699999999999,
+          "bottom": 550.0699999999999
+        },
+        {
+          "text": "OKAFOR",
+          "x0": 90.56,
+          "x1": 133.89000000000001,
+          "top": 540.0699999999999,
+          "bottom": 550.0699999999999
+        },
+        {
+          "text": "[Lead]",
+          "x0": 136.67000000000002,
+          "x1": 166.67000000000002,
+          "top": 540.0699999999999,
+          "bottom": 550.0699999999999
+        },
+        {
+          "text": "Female,",
+          "x0": 70.0,
+          "x1": 102.508,
+          "top": 553.863,
+          "bottom": 562.863
+        },
+        {
+          "text": "30s,",
+          "x0": 105.01,
+          "x1": 122.02,
+          "top": 553.863,
+          "bottom": 562.863
+        },
+        {
+          "text": "open",
+          "x0": 124.522,
+          "x1": 144.53799999999998,
+          "top": 553.863,
+          "bottom": 562.863
+        },
+        {
+          "text": "ethnicity.",
+          "x0": 147.04000000000002,
+          "x1": 182.55400000000003,
+          "top": 553.863,
+          "bottom": 562.863
+        },
+        {
+          "text": "The",
+          "x0": 185.056,
+          "x1": 200.56300000000002,
+          "top": 553.863,
+          "bottom": 562.863
+        },
+        {
+          "text": "responsible",
+          "x0": 203.06500000000003,
+          "x1": 249.08199999999997,
+          "top": 553.863,
+          "bottom": 562.863
+        },
+        {
+          "text": "one.",
+          "x0": 251.58399999999997,
+          "x1": 269.09799999999996,
+          "top": 553.863,
+          "bottom": 562.863
+        },
+        {
+          "text": "-",
+          "x0": 55.0,
+          "x1": 58.33,
+          "top": 570.0699999999999,
+          "bottom": 580.0699999999999
+        },
+        {
+          "text": "THEO",
+          "x0": 61.11,
+          "x1": 88.89,
+          "top": 570.0699999999999,
+          "bottom": 580.0699999999999
+        },
+        {
+          "text": "OKAFOR",
+          "x0": 91.67,
+          "x1": 135.0,
+          "top": 570.0699999999999,
+          "bottom": 580.0699999999999
+        },
+        {
+          "text": "[Supporting",
+          "x0": 137.78,
+          "x1": 194.44,
+          "top": 570.0699999999999,
+          "bottom": 580.0699999999999
+        },
+        {
+          "text": "Lead]",
+          "x0": 197.22,
+          "x1": 223.89000000000001,
+          "top": 570.0699999999999,
+          "bottom": 580.0699999999999
+        },
+        {
+          "text": "Male,",
+          "x0": 70.0,
+          "x1": 92.005,
+          "top": 583.863,
+          "bottom": 592.863
+        },
+        {
+          "text": "late",
+          "x0": 94.507,
+          "x1": 109.015,
+          "top": 583.863,
+          "bottom": 592.863
+        },
+        {
+          "text": "20s.",
+          "x0": 111.517,
+          "x1": 128.52700000000002,
+          "top": 583.863,
+          "bottom": 592.863
+        },
+        {
+          "text": "Charming,",
+          "x0": 131.029,
+          "x1": 172.53700000000003,
+          "top": 583.863,
+          "bottom": 592.863
+        },
+        {
+          "text": "unreliable.",
+          "x0": 175.03900000000002,
+          "x1": 216.556,
+          "top": 583.863,
+          "bottom": 592.863
+        }
+      ]
+    },
+    {
+      "page_number": 2,
+      "width": 612.0,
+      "height": 792.0,
+      "text": "STUDIO SLATE - ACTIVE PROJECTS\nPage 2\nSALT AND IRON\nStudio: Harbor Gate Media\nGenre: Action-Adventure\nLocation: Vancouver, Canada\nStart Date: Q1 2027\nStatus: Casting\nSynopsis: A salvage crew races a rival outfit to a sunken freighter in the North Pacific.\nRoles:\n- CAPTAIN RUTH DANA [Lead]\nFemale, 40s. Former navy diver.\n- MILO VOSS [Supporting]\nMale, 30s. The rival crew's fixer.\n- TBD ROLE [TBD]\nDetails to come.\nQuiet Hours\n(aka The Night Desk)\nStudio:\nGenre:\nLocation: Likely NYC\nStart Date: TBD\nStatus: Development\nSynopsis: An overnight radio host takes a call from a listener who seems to know what will happen tomorrow.\nRoles:\n- SAM REYES [Lead]\nAny gender, 30s. Warm voice, sleepless.",
+      "words": [
+        {
+          "text": "STUDIO",
+          "x0": 40.0,
+          "x1": 92.892,
+          "top": 28.898000000000025,
+          "bottom": 42.898000000000025
+        },
+        {
+          "text": "SLATE",
+          "x0": 96.78400000000002,
+          "x1": 142.67600000000002,
+          "top": 28.898000000000025,
+          "bottom": 42.898000000000025
+        },
+        {
+          "text": "-",
+          "x0": 146.568,
+          "x1": 151.23000000000002,
+          "top": 28.898000000000025,
+          "bottom": 42.898000000000025
+        },
+        {
+          "text": "ACTIVE",
+          "x0": 155.122,
+          "x1": 206.46,
+          "top": 28.898000000000025,
+          "bottom": 42.898000000000025
+        },
+        {
+          "text": "PROJECTS",
+          "x0": 210.352,
+          "x1": 285.812,
+          "top": 28.898000000000025,
+          "bottom": 42.898000000000025
+        },
+        {
+          "text": "Page",
+          "x0": 470.0,
+          "x1": 491.01500000000004,
+          "top": 32.863000000000056,
+          "bottom": 41.863000000000056
+        },
+        {
+          "text": "2",
+          "x0": 493.517,
+          "x1": 498.521,
+          "top": 32.863000000000056,
+          "bottom": 41.863000000000056
+        },
+        {
+          "text": "SALT",
+          "x0": 40.0,
+          "x1": 73.943,
+          "top": 69.69100000000003,
+          "bottom": 82.69100000000003
+        },
+        {
+          "text": "AND",
+          "x0": 77.55699999999999,
+          "x1": 105.71499999999999,
+          "top": 69.69100000000003,
+          "bottom": 82.69100000000003
+        },
+        {
+          "text": "IRON",
+          "x0": 109.329,
+          "x1": 141.82899999999998,
+          "top": 69.69100000000003,
+          "bottom": 82.69100000000003
+        },
+        {
+          "text": "Studio:",
+          "x0": 40.0,
+          "x1": 74.44,
+          "top": 106.07000000000005,
+          "bottom": 116.07000000000005
+        },
+        {
+          "text": "Harbor",
+          "x0": 120.0,
+          "x1": 150.56000000000003,
+          "top": 106.07000000000005,
+          "bottom": 116.07000000000005
+        },
+        {
+          "text": "Gate",
+          "x0": 153.34,
+          "x1": 175.02,
+          "top": 106.07000000000005,
+          "bottom": 116.07000000000005
+        },
+        {
+          "text": "Media",
+          "x0": 177.8,
+          "x1": 205.03000000000003,
+          "top": 106.07000000000005,
+          "bottom": 116.07000000000005
+        },
+        {
+          "text": "Genre:",
+          "x0": 40.0,
+          "x1": 72.23,
+          "top": 121.07000000000005,
+          "bottom": 131.07000000000005
+        },
+        {
+          "text": "Action-Adventure",
+          "x0": 120.0,
+          "x1": 196.7,
+          "top": 121.07000000000005,
+          "bottom": 131.07000000000005
+        },
+        {
+          "text": "Location:",
+          "x0": 40.0,
+          "x1": 85.0,
+          "top": 136.07000000000005,
+          "bottom": 146.07000000000005
+        },
+        {
+          "text": "Vancouver,",
+          "x0": 120.0,
+          "x1": 170.58,
+          "top": 136.07000000000005,
+          "bottom": 146.07000000000005
+        },
+        {
+          "text": "Canada",
+          "x0": 173.36,
+          "x1": 208.38,
+          "top": 136.07000000000005,
+          "bottom": 146.07000000000005
+        },
+        {
+          "text": "Start",
+          "x0": 40.0,
+          "x1": 62.78,
+          "top": 151.07000000000005,
+          "bottom": 161.07000000000005
+        },
+        {
+          "text": "Date:",
+          "x0": 65.56,
+          "x1": 90.56,
+          "top": 151.07000000000005,
+          "bottom": 161.07000000000005
+        },
+        {
+          "text": "Q1",
+          "x0": 120.0,
+          "x1": 133.34,
+          "top": 151.07000000000005,
+          "bottom": 161.07000000000005
+        },
+        {
+          "text": "2027",
+          "x0": 136.12,
+          "x1": 158.36,
+          "top": 151.07000000000005,
+          "bottom": 161.07000000000005
+        },
+        {
+          "text": "Status:",
+          "x0": 40.0,
+          "x1": 73.89,
+          "top": 166.07000000000005,
+          "bottom": 176.07000000000005
+        },
+        {
+          "text": "Casting",
+          "x0": 120.0,
+          "x1": 153.9,
+          "top": 166.07000000000005,
+          "bottom": 176.07000000000005
+        },
+        {
+          "text": "Synopsis:",
+          "x0": 40.0,
+          "x1": 87.79,
+          "top": 181.07000000000005,
+          "bottom": 191.07000000000005
+        },
+        {
+          "text": "A",
+          "x0": 120.0,
+          "x1": 126.67,
+          "top": 181.82000000000005,
+          "bottom": 191.82000000000005
+        },
+        {
+          "text": "salvage",
+          "x0": 129.45,
+          "x1": 163.91,
+          "top": 181.82000000000005,
+          "bottom": 191.82000000000005
+        },
+        {
+          "text": "crew",
+          "x0": 166.69,
+          "x1": 187.8,
+          "top": 181.82000000000005,
+          "bottom": 191.82000000000005
+        },
+        {
+          "text": "races",
+          "x0": 190.58,
+          "x1": 215.03000000000003,
+          "top": 181.82000000000005,
+          "bottom": 191.82000000000005
+        },
+        {
+          "text": "a",
+          "x0": 217.81,
+          "x1": 223.37,
+          "top": 181.82000000000005,
+          "bottom": 191.82000000000005
+        },
+        {
+          "text": "rival",
+          "x0": 226.15000000000003,
+          "x1": 244.48000000000002,
+          "top": 181.82000000000005,
+          "bottom": 191.82000000000005
+        },
+        {
+          "text": "outfit",
+          "x0": 247.26000000000002,
+          "x1": 268.94,
+          "top": 181.82000000000005,
+          "bottom": 191.82000000000005
+        },
+        {
+          "text": "to",
+          "x0": 271.72,
+          "x1": 280.06,
+          "top": 181.82000000000005,
+          "bottom": 191.82000000000005
+        },
+        {
+          "text": "a",
+          "x0": 282.84000000000003,
+          "x1": 288.40000000000003,
+          "top": 181.82000000000005,
+          "bottom": 191.82000000000005
+        },
+        {
+          "text": "sunken",
+          "x0": 291.18000000000006,
+          "x1": 323.42,
+          "top": 181.82000000000005,
+          "bottom": 191.82000000000005
+        },
+        {
+          "text": "freighter",
+          "x0": 326.20000000000005,
+          "x1": 362.88000000000005,
+          "top": 181.82000000000005,
+          "bottom": 191.82000000000005
+        },
+        {
+          "text": "in",
+          "x0": 365.6600000000001,
+          "x1": 373.4400000000001,
+          "top": 181.82000000000005,
+          "bottom": 191.82000000000005
+        },
+        {
+          "text": "the",
+          "x0": 376.2200000000001,
+          "x1": 390.12000000000006,
+          "top": 181.82000000000005,
+          "bottom": 191.82000000000005
+        },
+        {
+          "text": "North",
+          "x0": 392.90000000000003,
+          "x1": 417.35,
+          "top": 181.82000000000005,
+          "bottom": 191.82000000000005
+        },
+        {
+          "text": "Pacific.",
+          "x0": 420.13,
+          "x1": 452.36,
+          "top": 181.82000000000005,
+          "bottom": 191.82000000000005
+        },
+        {
+          "text": "Roles:",
+          "x0": 40.0,
+          "x1": 70.56,
+          "top": 231.07000000000005,
+          "bottom": 241.07000000000005
+        },
+        {
+          "text": "-",
+          "x0": 55.0,
+          "x1": 58.33,
+          "top": 246.07000000000005,
+          "bottom": 256.07000000000005
+        },
+        {
+          "text": "CAPTAIN",
+          "x0": 61.11,
+          "x1": 105.55,
+          "top": 246.07000000000005,
+          "bottom": 256.07000000000005
+        },
+        {
+          "text": "RUTH",
+          "x0": 108.33,
+          "x1": 136.1,
+          "top": 246.07000000000005,
+          "bottom": 256.07000000000005
+        },
+        {
+          "text": "DANA",
+          "x0": 138.88,
+          "x1": 167.76,
+          "top": 246.07000000000005,
+          "bottom": 256.07000000000005
+        },
+        {
+          "text": "[Lead]",
+          "x0": 170.54,
+          "x1": 200.54,
+          "top": 246.07000000000005,
+          "bottom": 256.07000000000005
+        },
+        {
+          "text": "Female,",
+          "x0": 70.0,
+          "x1": 102.508,
+          "top": 259.86300000000006,
+          "bottom": 268.86300000000006
+        },
+        {
+          "text": "40s.",
+          "x0": 105.01,
+          "x1": 122.02,
+          "top": 259.86300000000006,
+          "bottom": 268.86300000000006
+        },
+        {
+          "text": "Former",
+          "x0": 124.522,
+          "x1": 153.52000000000004,
+          "top": 259.86300000000006,
+          "bottom": 268.86300000000006
+        },
+        {
+          "text": "navy",
+          "x0": 156.022,
+          "x1": 175.03000000000003,
+          "top": 259.86300000000006,
+          "bottom": 268.86300000000006
+        },
+        {
+          "text": "diver.",
+          "x0": 177.532,
+          "x1": 199.53700000000003,
+          "top": 259.86300000000006,
+          "bottom": 268.86300000000006
+        },
+        {
+          "text": "-",
+          "x0": 55.0,
+          "x1": 58.33,
+          "top": 276.07000000000005,
+          "bottom": 286.07
+        },
+        {
+          "text": "MILO",
+          "x0": 61.11,
+          "x1": 86.11,
+          "top": 276.07000000000005,
+          "bottom": 286.07
+        },
+        {
+          "text": "VOSS",
+          "x0": 88.89,
+          "x1": 116.68,
+          "top": 276.07000000000005,
+          "bottom": 286.07
+        },
+        {
+          "text": "[Supporting]",
+          "x0": 119.46000000000001,
+          "x1": 179.45000000000002,
+          "top": 276.07000000000005,
+          "bottom": 286.07
+        },
+        {
+          "text": "Male,",
+          "x0": 70.0,
+          "x1": 92.005,
+          "top": 289.863,
+          "bottom": 298.863
+        },
+        {
+          "text": "30s.",
+          "x0": 94.507,
+          "x1": 111.517,
+          "top": 289.863,
+          "bottom": 298.863
+        },
+        {
+          "text": "The",
+          "x0": 114.019,
+          "x1": 129.526,
+          "top": 289.863,
+          "bottom": 298.863
+        },
+        {
+          "text": "rival",
+          "x0": 132.02800000000002,
+          "x1": 148.525,
+          "top": 289.863,
+          "bottom": 298.863
+        },
+        {
+          "text": "crew's",
+          "x0": 151.02700000000002,
+          "x1": 176.245,
+          "top": 289.863,
+          "bottom": 298.863
+        },
+        {
+          "text": "fixer.",
+          "x0": 178.747,
+          "x1": 198.25000000000003,
+          "top": 289.863,
+          "bottom": 298.863
+        },
+        {
+          "text": "-",
+          "x0": 55.0,
+          "x1": 58.33,
+          "top": 306.07,
+          "bottom": 316.07
+        },
+        {
+          "text": "TBD",
+          "x0": 61.11,
+          "x1": 81.66,
+          "top": 306.07,
+          "bottom": 316.07
+        },
+        {
+          "text": "ROLE",
+          "x0": 84.44,
+          "x1": 112.22,
+          "top": 306.07,
+          "bottom": 316.07
+        },
+        {
+          "text": "[TBD]",
+          "x0": 115.0,
+          "x1": 142.21,
+          "top": 306.07,
+          "bottom": 316.07
+        },
+        {
+          "text": "Details",
+          "x0": 70.0,
+          "x1": 97.504,
+          "top": 319.863,
+          "bottom": 328.863
+        },
+        {
+          "text": "to",
+          "x0": 100.006,
+          "x1": 107.51200000000001,
+          "top": 319.863,
+          "bottom": 328.863
+        },
+        {
+          "text": "come.",
+          "x0": 110.01400000000001,
+          "x1": 134.52100000000002,
+          "top": 319.863,
+          "bottom": 328.863
+        },
+        {
+          "text": "Quiet",
+          "x0": 40.0,
+          "x1": 73.22800000000001,
+          "top": 363.691,
+          "bottom": 376.691
+        },
+        {
+          "text": "Hours",
+          "x0": 76.84200000000001,
+          "x1": 114.399,
+          "top": 363.691,
+          "bottom": 376.691
+        },
+        {
+          "text": "(aka",
+          "x0": 40.0,
+          "x1": 57.505,
+          "top": 380.863,
+          "bottom": 389.863
+        },
+        {
+          "text": "The",
+          "x0": 60.007000000000005,
+          "x1": 75.51400000000001,
+          "top": 380.863,
+          "bottom": 389.863
+        },
+        {
+          "text": "Night",
+          "x0": 78.016,
+          "x1": 99.02199999999999,
+          "top": 380.863,
+          "bottom": 389.863
+        },
+        {
+          "text": "Desk)",
+          "x0": 101.524,
+          "x1": 125.02300000000001,
+          "top": 380.863,
+          "bottom": 389.863
+        },
+        {
+          "text": "Studio:",
+          "x0": 40.0,
+          "x1": 74.44,
+          "top": 400.07,
+          "bottom": 410.07
+        },
+        {
+          "text": "Genre:",
+          "x0": 40.0,
+          "x1": 72.23,
+          "top": 415.07,
+          "bottom": 425.07
+        },
+        {
+          "text": "Location:",
+          "x0": 40.0,
+          "x1": 85.0,
+          "top": 430.07,
+          "bottom": 440.07
+        },
+        {
+          "text": "Likely",
+          "x0": 120.0,
+          "x1": 145.56,
+          "top": 430.07,
+          "bottom": 440.07
+        },
+        {
+          "text": "NYC",
+          "x0": 148.34,
+          "x1": 169.45000000000002,
+          "top": 430.07,
+          "bottom": 440.07
+        },
+        {
+          "text": "Start",
+          "x0": 40.0,
+          "x1": 62.78,
+          "top": 445.07,
+          "bottom": 455.07
+        },
+        {
+          "text": "Date:",
+          "x0": 65.56,
+          "x1": 90.56,
+          "top": 445.07,
+          "bottom": 455.07
+        },
+        {
+          "text": "TBD",
+          "x0": 120.0,
+          "x1": 140.0,
+          "top": 445.07,
+          "bottom": 455.07
+        },
+        {
+          "text": "Status:",
+          "x0": 40.0,
+          "x1": 73.89,
+          "top": 460.07,
+          "bottom": 470.07
+        },
+        {
+          "text": "Development",
+          "x0": 120.0,
+          "x1": 178.91,
+          "top": 460.07,
+          "bottom": 470.07
+        },
+        {
+          "text": "Synopsis:",
+          "x0": 40.0,
+          "x1": 87.79,
+          "top": 475.07,
+          "bottom": 485.07
+        },
+        {
+          "text": "An",
+          "x0": 120.0,
+          "x1": 132.23,
+          "top": 475.82,
+          "bottom": 485.82
+        },
+        {
+          "text": "overnight",
+          "x0": 135.01,
+          "x1": 176.14000000000001,
+          "top": 475.82,
+          "bottom": 485.82
+        },
+        {
+          "text": "radio",
+          "x0": 178.92000000000002,
+          "x1": 201.15,
+          "top": 475.82,
+          "bottom": 485.82
+        },
+        {
+          "text": "host",
+          "x0": 203.93,
+          "x1": 222.83,
+          "top": 475.82,
+          "bottom": 485.82
+        },
+        {
+          "text": "takes",
+          "x0": 225.61,
+          "x1": 249.51000000000002,
+          "top": 475.82,
+          "bottom": 485.82
+        },
+        {
+          "text": "a",
+          "x0": 252.29000000000002,
+          "x1": 257.85,
+          "top": 475.82,
+          "bottom": 485.82
+        },
+        {
+          "text": "call",
+          "x0": 260.63,
+          "x1": 275.63000000000005,
+          "top": 475.82,
+          "bottom": 485.82
+        },
+        {
+          "text": "from",
+          "x0": 278.41,
+          "x1": 298.41,
+          "top": 475.82,
+          "bottom": 485.82
+        },
+        {
+          "text": "a",
+          "x0": 301.19000000000005,
+          "x1": 306.75000000000006,
+          "top": 475.82,
+          "bottom": 485.82
+        },
+        {
+          "text": "listener",
+          "x0": 309.5300000000001,
+          "x1": 341.76000000000005,
+          "top": 475.82,
+          "bottom": 485.82
+        },
+        {
+          "text": "who",
+          "x0": 344.5400000000001,
+          "x1": 362.88000000000005,
+          "top": 475.82,
+          "bottom": 485.82
+        },
+        {
+          "text": "seems",
+          "x0": 365.6600000000001,
+          "x1": 395.11000000000007,
+          "top": 475.82,
+          "bottom": 485.82
+        },
+        {
+          "text": "to",
+          "x0": 397.89000000000004,
+          "x1": 406.23,
+          "top": 475.82,
+          "bottom": 485.82
+        },
+        {
+          "text": "know",
+          "x0": 409.01,
+          "x1": 432.35,
+          "top": 475.82,
+          "bottom": 485.82
+        },
+        {
+          "text": "what",
+          "x0": 435.13,
+          "x1": 456.25,
+          "top": 475.82,
+          "bottom": 485.82
+        },
+        {
+          "text": "will",
+          "x0": 459.03,
+          "x1": 472.9100000000001,
+          "top": 475.82,
+          "bottom": 485.82
+        },
+        {
+          "text": "happen",
+          "x0": 475.69000000000005,
+          "x1": 509.05000000000007,
+          "top": 475.82,
+          "bottom": 485.82
+        },
+        {
+          "text": "tomorrow.",
+          "x0": 511.83000000000004,
+          "x1": 556.28,
+          "top": 475.82,
+          "bottom": 485.82
+        },
+        {
+          "text": "Roles:",
+          "x0": 40.0,
+          "x1": 70.56,
+          "top": 525.0699999999999,
+          "bottom": 535.0699999999999
+        },
+        {
+          "text": "-",
+          "x0": 55.0,
+          "x1": 58.33,
+          "top": 540.0699999999999,
+          "bottom": 550.0699999999999
+        },
+        {
+          "text": "SAM",
+          "x0": 61.11,
+          "x1": 83.33,
+          "top": 540.0699999999999,
+          "bottom": 550.0699999999999
+        },
+        {
+          "text": "REYES",
+          "x0": 86.11,
+          "x1": 120.01,
+          "top": 540.0699999999999,
+          "bottom": 550.0699999999999
+        },
+        {
+          "text": "[Lead]",
+          "x0": 122.79,
+          "x1": 152.79000000000002,
+          "top": 540.0699999999999,
+          "bottom": 550.0699999999999
+        },
+        {
+          "text": "Any",
+          "x0": 70.0,
+          "x1": 85.507,
+          "top": 553.863,
+          "bottom": 562.863
+        },
+        {
+          "text": "gender,",
+          "x0": 88.009,
+          "x1": 118.52799999999999,
+          "top": 553.863,
+          "bottom": 562.863
+        },
+        {
+          "text": "30s.",
+          "x0": 121.03,
+          "x1": 138.04000000000002,
+          "top": 553.863,
+          "bottom": 562.863
+        },
+        {
+          "text": "Warm",
+          "x0": 140.54199999999997,
+          "x1": 164.536,
+          "top": 553.863,
+          "bottom": 562.863
+        },
+        {
+          "text": "voice,",
+          "x0": 167.03799999999998,
+          "x1": 190.546,
+          "top": 553.863,
+          "bottom": 562.863
+        },
+        {
+          "text": "sleepless.",
+          "x0": 193.048,
+          "x1": 233.06199999999995,
+          "top": 553.863,
+          "bottom": 562.863
         }
       ]
     }

@@ -69,8 +69,6 @@ def parse_sheet_c(pages: list[dict[str, Any]]) -> list[dict[str, Any]]:
                     if value:
                         value = value.strip(" |")
                     append_value(current, field, value)
-                    if field == "shoot_location":
-                        append_value(current, "location", value)
                     previous_field = field
                 in_roles = False
                 previous_top = top
@@ -109,8 +107,6 @@ def parse_sheet_c(pages: list[dict[str, Any]]) -> list[dict[str, Any]]:
 
             if previous_field and gap <= 22:
                 append_value(current, previous_field, text.strip())
-                if previous_field == "shoot_location":
-                    append_value(current, "location", text.strip())
                 previous_top = top
                 continue
 

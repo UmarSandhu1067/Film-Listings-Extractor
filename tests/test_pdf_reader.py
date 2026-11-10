@@ -11,7 +11,11 @@ def test_reader_extracts_every_page_and_word_coordinates():
 
     assert len(pages) == 2
     assert pages[0]["page_number"] == 1
+    assert "STUDIO SLATE - ACTIVE PROJECTS" in pages[0]["text"]
+    assert "Page 1" in pages[0]["text"]
     assert pages[0]["words"]
+    assert all("characters" not in page for page in pages)
+    assert any("." in word["text"] for word in pages[0]["words"])
     first_word = pages[0]["words"][0]
     assert first_word["text"] == "STUDIO"
     assert set(first_word) == {"text", "x0", "x1", "top", "bottom"}

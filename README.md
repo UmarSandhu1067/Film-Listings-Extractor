@@ -38,12 +38,26 @@ The earlier print-only invocation remains available:
 python -m src.main input\sheet_a_labelled_fields.pdf
 ```
 
-JSON retains printed text in fields such as `genre`, `location`, and
+JSON includes a `pages` array with each PDF page's number, dimensions, complete
+extractable text, and positioned words. This preserves page headings, printed
+page labels, and punctuation without splitting words into individual
+characters, even when content is not mapped to a project field. The `projects`
+array retains printed text in fields such as `genre`, `location`, and
 `start_date`. Cleaned values are separate: `genres`, `locations`,
 `start_date_cleaned`, `start_date_precision`, and the corresponding
 `*_cleaned` text fields. Unknown genre/location terms are retained; tentative
 locations and dates are flagged, ambiguous dates are left without a normalized
 date, and `TBD` dates remain empty.
+
+Project and role records generally include only fields extracted from that
+PDF's layout; other fields are omitted rather than emitted as `null`. Cleaned
+and normalized values are included only for source fields that were extracted.
+Sheet A also includes `title_alias` to preserve parenthetical `fka`/`aka`
+title notes; it is `null` for Sheet A projects without such a note. Other
+layouts do not include this field.
+
+Page text is extracted from the PDF's text layer. Text embedded only in scanned
+images requires OCR and is not included by this reader.
 
 The fixed genre vocabulary includes Action, Adventure, Comedy, Crime, Drama,
 Horror, Romance, Science Fiction, Sports, Thriller, War, and Young Adult;

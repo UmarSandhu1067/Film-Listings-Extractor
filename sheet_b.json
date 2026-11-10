@@ -5,8 +5,6 @@
       "project_title_cleaned": "MIDNIGHT ORCHARD",
       "project_type": "Feature",
       "project_type_cleaned": "Feature",
-      "studio": null,
-      "studio_cleaned": null,
       "genre": "Horror-Comedy",
       "genres": [
         "Horror",
@@ -18,19 +16,6 @@
         "New Jersey"
       ],
       "location_flag": null,
-      "start_date": null,
-      "start_date_cleaned": null,
-      "start_date_precision": "unknown",
-      "start_date_flag": null,
-      "status": null,
-      "status_cleaned": null,
-      "synopsis": null,
-      "synopsis_cleaned": null,
-      "network": null,
-      "network_cleaned": null,
-      "shoot_location": null,
-      "shoot_locations": [],
-      "shoot_location_flag": null,
       "roles": [
         {
           "role_name": "ELSIE",
@@ -40,9 +25,7 @@
           "gender": "Female",
           "gender_cleaned": "Female",
           "age": "20s",
-          "age_cleaned": "20s",
-          "notes": null,
-          "notes_cleaned": null
+          "age_cleaned": "20s"
         },
         {
           "role_name": "GRANDPA WEBB",
@@ -52,9 +35,7 @@
           "gender": "Male",
           "gender_cleaned": "Male",
           "age": "70s",
-          "age_cleaned": "70s",
-          "notes": null,
-          "notes_cleaned": null
+          "age_cleaned": "70s"
         },
         {
           "role_name": "DEPUTY ROSS",
@@ -64,9 +45,7 @@
           "gender": "Any",
           "gender_cleaned": "Any",
           "age": "30s",
-          "age_cleaned": "30s",
-          "notes": null,
-          "notes_cleaned": null
+          "age_cleaned": "30s"
         }
       ]
     },
@@ -75,8 +54,6 @@
       "project_title_cleaned": "The Long Table",
       "project_type": "Series",
       "project_type_cleaned": "Series",
-      "studio": null,
-      "studio_cleaned": null,
       "genre": "Comedy/Period",
       "genres": [
         "Comedy",
@@ -92,15 +69,6 @@
       "start_date_cleaned": "2026-08-01",
       "start_date_precision": "month",
       "start_date_flag": null,
-      "status": null,
-      "status_cleaned": null,
-      "synopsis": null,
-      "synopsis_cleaned": null,
-      "network": null,
-      "network_cleaned": null,
-      "shoot_location": null,
-      "shoot_locations": [],
-      "shoot_location_flag": null,
       "roles": [
         {
           "role_name": "LADY ANNE CROFT",
@@ -110,9 +78,7 @@
           "gender": "Female",
           "gender_cleaned": "Female",
           "age": "50s",
-          "age_cleaned": "50s",
-          "notes": null,
-          "notes_cleaned": null
+          "age_cleaned": "50s"
         },
         {
           "role_name": "FOOTMAN #2",
@@ -122,9 +88,7 @@
           "gender": "Male",
           "gender_cleaned": "Male",
           "age": "20s",
-          "age_cleaned": "20s",
-          "notes": null,
-          "notes_cleaned": null
+          "age_cleaned": "20s"
         }
       ]
     },
@@ -133,8 +97,6 @@
       "project_title_cleaned": "Glass Harbor",
       "project_type": "Series",
       "project_type_cleaned": "Series",
-      "studio": null,
-      "studio_cleaned": null,
       "genre": "Crime Drama",
       "genres": [
         "Crime",
@@ -149,15 +111,6 @@
       "start_date_cleaned": "2025-10-01",
       "start_date_precision": "range",
       "start_date_flag": null,
-      "status": null,
-      "status_cleaned": null,
-      "synopsis": null,
-      "synopsis_cleaned": null,
-      "network": null,
-      "network_cleaned": null,
-      "shoot_location": null,
-      "shoot_locations": [],
-      "shoot_location_flag": null,
       "roles": [
         {
           "role_name": "DET. NORA KIM",
@@ -167,9 +120,7 @@
           "gender": "Female",
           "gender_cleaned": "Female",
           "age": "30s",
-          "age_cleaned": "30s",
-          "notes": null,
-          "notes_cleaned": null
+          "age_cleaned": "30s"
         },
         {
           "role_name": "JONAH BELL",
@@ -179,9 +130,7 @@
           "gender": "Male",
           "gender_cleaned": "Male",
           "age": "40s",
-          "age_cleaned": "40s",
-          "notes": null,
-          "notes_cleaned": null
+          "age_cleaned": "40s"
         },
         {
           "role_name": "RECEPTIONIST",
@@ -189,11 +138,7 @@
           "role_type": "Co-Star",
           "role_type_cleaned": "Co-Star",
           "gender": "Any",
-          "gender_cleaned": "Any",
-          "age": null,
-          "age_cleaned": null,
-          "notes": null,
-          "notes_cleaned": null
+          "gender_cleaned": "Any"
         }
       ]
     },
@@ -202,8 +147,6 @@
       "project_title_cleaned": "SUMMIT",
       "project_type": "Feature",
       "project_type_cleaned": "Feature",
-      "studio": null,
-      "studio_cleaned": null,
       "genre": "Sports",
       "genres": [
         "Sports"
@@ -217,15 +160,6 @@
       "start_date_cleaned": "2026-07-13",
       "start_date_precision": "day",
       "start_date_flag": null,
-      "status": null,
-      "status_cleaned": null,
-      "synopsis": null,
-      "synopsis_cleaned": null,
-      "network": null,
-      "network_cleaned": null,
-      "shoot_location": null,
-      "shoot_locations": [],
-      "shoot_location_flag": null,
       "roles": [
         {
           "role_name": "COACH DIANE MARSH",
@@ -235,9 +169,7 @@
           "gender": "Female",
           "gender_cleaned": "Female",
           "age": "40s",
-          "age_cleaned": "40s",
-          "notes": null,
-          "notes_cleaned": null
+          "age_cleaned": "40s"
         },
         {
           "role_name": "TYLER MARSH",
@@ -247,9 +179,7 @@
           "gender": "Male",
           "gender_cleaned": "Male",
           "age": "teens",
-          "age_cleaned": "teens",
-          "notes": null,
-          "notes_cleaned": null
+          "age_cleaned": "teens"
         }
       ]
     },
@@ -258,8 +188,6 @@
       "project_title_cleaned": "Static Bloom",
       "project_type": "Series",
       "project_type_cleaned": "Series",
-      "studio": null,
-      "studio_cleaned": null,
       "genre": "Sci-Fi / YA",
       "genres": [
         "Science Fiction",
@@ -276,15 +204,6 @@
       "start_date_cleaned": "2026-06-01",
       "start_date_precision": "season",
       "start_date_flag": "Date is tentative.",
-      "status": null,
-      "status_cleaned": null,
-      "synopsis": null,
-      "synopsis_cleaned": null,
-      "network": null,
-      "network_cleaned": null,
-      "shoot_location": null,
-      "shoot_locations": [],
-      "shoot_location_flag": null,
       "roles": [
         {
           "role_name": "IRIS",
@@ -294,9 +213,7 @@
           "gender": "Female",
           "gender_cleaned": "Female",
           "age": "16-18",
-          "age_cleaned": "16-18",
-          "notes": null,
-          "notes_cleaned": null
+          "age_cleaned": "16-18"
         },
         {
           "role_name": "THE VOICE",
@@ -305,10 +222,935 @@
           "role_type_cleaned": "Recurring",
           "gender": "Any",
           "gender_cleaned": "Any",
-          "age": null,
-          "age_cleaned": null,
           "notes": "voice only",
           "notes_cleaned": "voice only"
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "page_number": 1,
+      "width": 740.0,
+      "height": 792.0,
+      "text": "TV & FEATURE GRID | Week of 6/23/26\nTitle Type Genre Location Start Role Role Type Notes\nMIDNIGHT ORCHARD Feature Horror-Comedy NY/NJ ELSIE Lead Female 20s\nGRANDPA WEBB Supporting Male 70s\nDEPUTY ROSS Day Player Any 30s\nThe Long Table Series Comedy/Period London / Dublin Mid-August 2026 LADY ANNE CROFT Series Regular Female 50s\nFOOTMAN #2 Recurring Male 20s\nGlass Harbor Series Crime Drama Toronto, ON Q4 2025/Q1 2026 DET. NORA KIM Series Regular Female 30s\nJONAH BELL Guest Star Male 40s\nRECEPTIONIST Co-Star Any\nSUMMIT Feature Sports Calgary, Alberta, Canada July 13, 2026 COACH DIANE MARSH Lead Female 40s\nTYLER MARSH Supporting Lead Male teens\nStatic Bloom Series Sci-Fi / YA TBD (LA, NY or Vancouver) Tent. Summer 2026 IRIS Series Regular Female 16-18\nTHE VOICE Recurring Any, voice only",
+      "words": [
+        {
+          "text": "TV",
+          "x0": 40.0,
+          "x1": 56.614,
+          "top": 25.69100000000003,
+          "bottom": 38.69100000000003
+        },
+        {
+          "text": "&",
+          "x0": 60.228,
+          "x1": 69.614,
+          "top": 25.69100000000003,
+          "bottom": 38.69100000000003
+        },
+        {
+          "text": "FEATURE",
+          "x0": 73.22800000000001,
+          "x1": 134.61399999999998,
+          "top": 25.69100000000003,
+          "bottom": 38.69100000000003
+        },
+        {
+          "text": "GRID",
+          "x0": 138.228,
+          "x1": 170.72799999999998,
+          "top": 25.69100000000003,
+          "bottom": 38.69100000000003
+        },
+        {
+          "text": "|",
+          "x0": 177.95600000000002,
+          "x1": 181.596,
+          "top": 25.69100000000003,
+          "bottom": 38.69100000000003
+        },
+        {
+          "text": "Week",
+          "x0": 188.824,
+          "x1": 222.78000000000003,
+          "top": 25.69100000000003,
+          "bottom": 38.69100000000003
+        },
+        {
+          "text": "of",
+          "x0": 226.39400000000003,
+          "x1": 238.66600000000005,
+          "top": 25.69100000000003,
+          "bottom": 38.69100000000003
+        },
+        {
+          "text": "6/23/26",
+          "x0": 242.28000000000006,
+          "x1": 285.6480000000001,
+          "top": 25.69100000000003,
+          "bottom": 38.69100000000003
+        },
+        {
+          "text": "Title",
+          "x0": 40.0,
+          "x1": 56.448,
+          "top": 69.65599999999995,
+          "bottom": 77.65599999999995
+        },
+        {
+          "text": "Type",
+          "x0": 140.0,
+          "x1": 158.672,
+          "top": 69.65599999999995,
+          "bottom": 77.65599999999995
+        },
+        {
+          "text": "Genre",
+          "x0": 190.0,
+          "x1": 213.12,
+          "top": 69.65599999999995,
+          "bottom": 77.65599999999995
+        },
+        {
+          "text": "Location",
+          "x0": 270.0,
+          "x1": 303.33599999999996,
+          "top": 69.65599999999995,
+          "bottom": 77.65599999999995
+        },
+        {
+          "text": "Start",
+          "x0": 370.0,
+          "x1": 388.224,
+          "top": 69.65599999999995,
+          "bottom": 77.65599999999995
+        },
+        {
+          "text": "Role",
+          "x0": 455.0,
+          "x1": 472.33599999999996,
+          "top": 69.65599999999995,
+          "bottom": 77.65599999999995
+        },
+        {
+          "text": "Role",
+          "x0": 560.0,
+          "x1": 577.336,
+          "top": 69.65599999999995,
+          "bottom": 77.65599999999995
+        },
+        {
+          "text": "Type",
+          "x0": 579.56,
+          "x1": 598.232,
+          "top": 69.65599999999995,
+          "bottom": 77.65599999999995
+        },
+        {
+          "text": "Notes",
+          "x0": 640.0,
+          "x1": 662.2239999999999,
+          "top": 69.65599999999995,
+          "bottom": 77.65599999999995
+        },
+        {
+          "text": "MIDNIGHT",
+          "x0": 40.0,
+          "x1": 77.08,
+          "top": 92.11500000000001,
+          "bottom": 99.61500000000001
+        },
+        {
+          "text": "ORCHARD",
+          "x0": 79.16499999999999,
+          "x1": 117.07750000000001,
+          "top": 92.11500000000001,
+          "bottom": 99.61500000000001
+        },
+        {
+          "text": "Feature",
+          "x0": 140.0,
+          "x1": 165.845,
+          "top": 92.11500000000001,
+          "bottom": 99.61500000000001
+        },
+        {
+          "text": "Horror-Comedy",
+          "x0": 190.0,
+          "x1": 241.66750000000002,
+          "top": 92.11500000000001,
+          "bottom": 99.61500000000001
+        },
+        {
+          "text": "NY/NJ",
+          "x0": 270.0,
+          "x1": 291.6675,
+          "top": 92.11500000000001,
+          "bottom": 99.61500000000001
+        },
+        {
+          "text": "ELSIE",
+          "x0": 455.0,
+          "x1": 476.2625,
+          "top": 92.11500000000001,
+          "bottom": 99.61500000000001
+        },
+        {
+          "text": "Lead",
+          "x0": 560.0,
+          "x1": 576.68,
+          "top": 92.11500000000001,
+          "bottom": 99.61500000000001
+        },
+        {
+          "text": "Female",
+          "x0": 640.0,
+          "x1": 665.005,
+          "top": 92.11500000000001,
+          "bottom": 99.61500000000001
+        },
+        {
+          "text": "20s",
+          "x0": 667.09,
+          "x1": 679.1800000000001,
+          "top": 92.11500000000001,
+          "bottom": 99.61500000000001
+        },
+        {
+          "text": "GRANDPA",
+          "x0": 455.0,
+          "x1": 492.0875,
+          "top": 118.11500000000001,
+          "bottom": 125.61500000000001
+        },
+        {
+          "text": "WEBB",
+          "x0": 494.1725,
+          "x1": 516.26,
+          "top": 118.11500000000001,
+          "bottom": 125.61500000000001
+        },
+        {
+          "text": "Supporting",
+          "x0": 560.0,
+          "x1": 596.27,
+          "top": 118.11500000000001,
+          "bottom": 125.61500000000001
+        },
+        {
+          "text": "Male",
+          "x0": 640.0,
+          "x1": 656.2524999999999,
+          "top": 118.11500000000001,
+          "bottom": 125.61500000000001
+        },
+        {
+          "text": "70s",
+          "x0": 658.3375,
+          "x1": 670.4275,
+          "top": 118.11500000000001,
+          "bottom": 125.61500000000001
+        },
+        {
+          "text": "DEPUTY",
+          "x0": 455.0,
+          "x1": 485.42,
+          "top": 144.115,
+          "bottom": 151.615
+        },
+        {
+          "text": "ROSS",
+          "x0": 487.505,
+          "x1": 508.76,
+          "top": 144.115,
+          "bottom": 151.615
+        },
+        {
+          "text": "Day",
+          "x0": 560.0,
+          "x1": 573.335,
+          "top": 144.115,
+          "bottom": 151.615
+        },
+        {
+          "text": "Player",
+          "x0": 575.42,
+          "x1": 596.675,
+          "top": 144.115,
+          "bottom": 151.615
+        },
+        {
+          "text": "Any",
+          "x0": 640.0,
+          "x1": 652.9225,
+          "top": 144.115,
+          "bottom": 151.615
+        },
+        {
+          "text": "30s",
+          "x0": 655.0075,
+          "x1": 667.0975,
+          "top": 144.115,
+          "bottom": 151.615
+        },
+        {
+          "text": "The",
+          "x0": 40.0,
+          "x1": 52.9225,
+          "top": 170.115,
+          "bottom": 177.615
+        },
+        {
+          "text": "Long",
+          "x0": 55.0075,
+          "x1": 71.68750000000001,
+          "top": 170.115,
+          "bottom": 177.615
+        },
+        {
+          "text": "Table",
+          "x0": 73.77250000000001,
+          "x1": 92.53000000000002,
+          "top": 170.115,
+          "bottom": 177.615
+        },
+        {
+          "text": "Series",
+          "x0": 140.0,
+          "x1": 161.255,
+          "top": 170.115,
+          "bottom": 177.615
+        },
+        {
+          "text": "Comedy/Period",
+          "x0": 190.0,
+          "x1": 241.68249999999998,
+          "top": 170.115,
+          "bottom": 177.615
+        },
+        {
+          "text": "London",
+          "x0": 270.0,
+          "x1": 295.02000000000004,
+          "top": 170.115,
+          "bottom": 177.615
+        },
+        {
+          "text": "/",
+          "x0": 297.105,
+          "x1": 299.19,
+          "top": 170.115,
+          "bottom": 177.615
+        },
+        {
+          "text": "Dublin",
+          "x0": 301.275,
+          "x1": 322.53000000000003,
+          "top": 170.115,
+          "bottom": 177.615
+        },
+        {
+          "text": "Mid-August",
+          "x0": 370.0,
+          "x1": 407.92749999999995,
+          "top": 170.115,
+          "bottom": 177.615
+        },
+        {
+          "text": "2026",
+          "x0": 410.0125,
+          "x1": 426.69250000000005,
+          "top": 170.115,
+          "bottom": 177.615
+        },
+        {
+          "text": "LADY",
+          "x0": 455.0,
+          "x1": 474.59,
+          "top": 170.115,
+          "bottom": 177.615
+        },
+        {
+          "text": "ANNE",
+          "x0": 476.675,
+          "x1": 497.51,
+          "top": 170.115,
+          "bottom": 177.615
+        },
+        {
+          "text": "CROFT",
+          "x0": 499.595,
+          "x1": 525.425,
+          "top": 170.115,
+          "bottom": 177.615
+        },
+        {
+          "text": "Series",
+          "x0": 560.0,
+          "x1": 581.255,
+          "top": 170.115,
+          "bottom": 177.615
+        },
+        {
+          "text": "Regular",
+          "x0": 583.34,
+          "x1": 609.5975,
+          "top": 170.115,
+          "bottom": 177.615
+        },
+        {
+          "text": "Female",
+          "x0": 640.0,
+          "x1": 665.005,
+          "top": 170.115,
+          "bottom": 177.615
+        },
+        {
+          "text": "50s",
+          "x0": 667.09,
+          "x1": 679.1800000000001,
+          "top": 170.115,
+          "bottom": 177.615
+        },
+        {
+          "text": "FOOTMAN",
+          "x0": 455.0,
+          "x1": 492.5,
+          "top": 196.115,
+          "bottom": 203.615
+        },
+        {
+          "text": "#2",
+          "x0": 494.585,
+          "x1": 502.925,
+          "top": 196.115,
+          "bottom": 203.615
+        },
+        {
+          "text": "Recurring",
+          "x0": 560.0,
+          "x1": 592.505,
+          "top": 196.115,
+          "bottom": 203.615
+        },
+        {
+          "text": "Male",
+          "x0": 640.0,
+          "x1": 656.2524999999999,
+          "top": 196.115,
+          "bottom": 203.615
+        },
+        {
+          "text": "20s",
+          "x0": 658.3375,
+          "x1": 670.4275,
+          "top": 196.115,
+          "bottom": 203.615
+        },
+        {
+          "text": "Glass",
+          "x0": 40.0,
+          "x1": 59.17,
+          "top": 222.115,
+          "bottom": 229.615
+        },
+        {
+          "text": "Harbor",
+          "x0": 61.255,
+          "x1": 84.17500000000001,
+          "top": 222.115,
+          "bottom": 229.615
+        },
+        {
+          "text": "Series",
+          "x0": 140.0,
+          "x1": 161.255,
+          "top": 222.115,
+          "bottom": 229.615
+        },
+        {
+          "text": "Crime",
+          "x0": 190.0,
+          "x1": 209.99499999999998,
+          "top": 222.115,
+          "bottom": 229.615
+        },
+        {
+          "text": "Drama",
+          "x0": 212.07999999999998,
+          "x1": 234.57999999999998,
+          "top": 222.115,
+          "bottom": 229.615
+        },
+        {
+          "text": "Toronto,",
+          "x0": 270.0,
+          "x1": 297.93,
+          "top": 222.115,
+          "bottom": 229.615
+        },
+        {
+          "text": "ON",
+          "x0": 300.015,
+          "x1": 311.26500000000004,
+          "top": 222.115,
+          "bottom": 229.615
+        },
+        {
+          "text": "Q4",
+          "x0": 370.0,
+          "x1": 380.005,
+          "top": 222.115,
+          "bottom": 229.615
+        },
+        {
+          "text": "2025/Q1",
+          "x0": 382.09,
+          "x1": 410.86,
+          "top": 222.115,
+          "bottom": 229.615
+        },
+        {
+          "text": "2026",
+          "x0": 412.945,
+          "x1": 429.62500000000006,
+          "top": 222.115,
+          "bottom": 229.615
+        },
+        {
+          "text": "DET.",
+          "x0": 455.0,
+          "x1": 472.085,
+          "top": 222.115,
+          "bottom": 229.615
+        },
+        {
+          "text": "NORA",
+          "x0": 474.17,
+          "x1": 495.8375,
+          "top": 222.115,
+          "bottom": 229.615
+        },
+        {
+          "text": "KIM",
+          "x0": 497.9225,
+          "x1": 511.2575,
+          "top": 222.115,
+          "bottom": 229.615
+        },
+        {
+          "text": "Series",
+          "x0": 560.0,
+          "x1": 581.255,
+          "top": 222.115,
+          "bottom": 229.615
+        },
+        {
+          "text": "Regular",
+          "x0": 583.34,
+          "x1": 609.5975,
+          "top": 222.115,
+          "bottom": 229.615
+        },
+        {
+          "text": "Female",
+          "x0": 640.0,
+          "x1": 665.005,
+          "top": 222.115,
+          "bottom": 229.615
+        },
+        {
+          "text": "30s",
+          "x0": 667.09,
+          "x1": 679.1800000000001,
+          "top": 222.115,
+          "bottom": 229.615
+        },
+        {
+          "text": "JONAH",
+          "x0": 455.0,
+          "x1": 480.4175,
+          "top": 248.115,
+          "bottom": 255.615
+        },
+        {
+          "text": "BELL",
+          "x0": 482.5025,
+          "x1": 500.8475,
+          "top": 248.115,
+          "bottom": 255.615
+        },
+        {
+          "text": "Guest",
+          "x0": 560.0,
+          "x1": 580.01,
+          "top": 248.115,
+          "bottom": 255.615
+        },
+        {
+          "text": "Star",
+          "x0": 582.095,
+          "x1": 595.8499999999999,
+          "top": 248.115,
+          "bottom": 255.615
+        },
+        {
+          "text": "Male",
+          "x0": 640.0,
+          "x1": 656.2524999999999,
+          "top": 248.115,
+          "bottom": 255.615
+        },
+        {
+          "text": "40s",
+          "x0": 658.3375,
+          "x1": 670.4275,
+          "top": 248.115,
+          "bottom": 255.615
+        },
+        {
+          "text": "RECEPTIONIST",
+          "x0": 455.0,
+          "x1": 510.42499999999995,
+          "top": 274.115,
+          "bottom": 281.615
+        },
+        {
+          "text": "Co-Star",
+          "x0": 560.0,
+          "x1": 585.8375,
+          "top": 274.115,
+          "bottom": 281.615
+        },
+        {
+          "text": "Any",
+          "x0": 640.0,
+          "x1": 652.9225,
+          "top": 274.115,
+          "bottom": 281.615
+        },
+        {
+          "text": "SUMMIT",
+          "x0": 40.0,
+          "x1": 69.58,
+          "top": 300.115,
+          "bottom": 307.615
+        },
+        {
+          "text": "Feature",
+          "x0": 140.0,
+          "x1": 165.845,
+          "top": 300.115,
+          "bottom": 307.615
+        },
+        {
+          "text": "Sports",
+          "x0": 190.0,
+          "x1": 211.675,
+          "top": 300.115,
+          "bottom": 307.615
+        },
+        {
+          "text": "Calgary,",
+          "x0": 270.0,
+          "x1": 297.92249999999996,
+          "top": 300.115,
+          "bottom": 307.615
+        },
+        {
+          "text": "Alberta,",
+          "x0": 300.0075,
+          "x1": 325.85249999999996,
+          "top": 300.115,
+          "bottom": 307.615
+        },
+        {
+          "text": "Canada",
+          "x0": 327.9375,
+          "x1": 354.20250000000004,
+          "top": 300.115,
+          "bottom": 307.615
+        },
+        {
+          "text": "July",
+          "x0": 370.0,
+          "x1": 383.335,
+          "top": 300.115,
+          "bottom": 307.615
+        },
+        {
+          "text": "13,",
+          "x0": 385.42,
+          "x1": 395.84499999999997,
+          "top": 300.115,
+          "bottom": 307.615
+        },
+        {
+          "text": "2026",
+          "x0": 397.93,
+          "x1": 414.61,
+          "top": 300.115,
+          "bottom": 307.615
+        },
+        {
+          "text": "COACH",
+          "x0": 455.0,
+          "x1": 482.08250000000004,
+          "top": 300.115,
+          "bottom": 307.615
+        },
+        {
+          "text": "DIANE",
+          "x0": 484.1675,
+          "x1": 507.0875,
+          "top": 300.115,
+          "bottom": 307.615
+        },
+        {
+          "text": "MARSH",
+          "x0": 509.1725,
+          "x1": 536.255,
+          "top": 300.115,
+          "bottom": 307.615
+        },
+        {
+          "text": "Lead",
+          "x0": 560.0,
+          "x1": 576.68,
+          "top": 300.115,
+          "bottom": 307.615
+        },
+        {
+          "text": "Female",
+          "x0": 640.0,
+          "x1": 665.005,
+          "top": 300.115,
+          "bottom": 307.615
+        },
+        {
+          "text": "40s",
+          "x0": 667.09,
+          "x1": 679.1800000000001,
+          "top": 300.115,
+          "bottom": 307.615
+        },
+        {
+          "text": "TYLER",
+          "x0": 455.0,
+          "x1": 479.1725,
+          "top": 326.115,
+          "bottom": 333.615
+        },
+        {
+          "text": "MARSH",
+          "x0": 481.2575,
+          "x1": 508.34000000000003,
+          "top": 326.115,
+          "bottom": 333.615
+        },
+        {
+          "text": "Supporting",
+          "x0": 560.0,
+          "x1": 596.27,
+          "top": 326.115,
+          "bottom": 333.615
+        },
+        {
+          "text": "Lead",
+          "x0": 598.355,
+          "x1": 615.035,
+          "top": 326.115,
+          "bottom": 333.615
+        },
+        {
+          "text": "Male",
+          "x0": 640.0,
+          "x1": 656.2524999999999,
+          "top": 326.115,
+          "bottom": 333.615
+        },
+        {
+          "text": "teens",
+          "x0": 658.3375,
+          "x1": 676.6825,
+          "top": 326.115,
+          "bottom": 333.615
+        },
+        {
+          "text": "Static",
+          "x0": 40.0,
+          "x1": 58.7575,
+          "top": 352.115,
+          "bottom": 359.615
+        },
+        {
+          "text": "Bloom",
+          "x0": 60.8425,
+          "x1": 82.0975,
+          "top": 352.115,
+          "bottom": 359.615
+        },
+        {
+          "text": "Series",
+          "x0": 140.0,
+          "x1": 161.255,
+          "top": 352.115,
+          "bottom": 359.615
+        },
+        {
+          "text": "Sci-Fi",
+          "x0": 190.0,
+          "x1": 209.1625,
+          "top": 352.115,
+          "bottom": 359.615
+        },
+        {
+          "text": "/",
+          "x0": 211.2475,
+          "x1": 213.3325,
+          "top": 352.115,
+          "bottom": 359.615
+        },
+        {
+          "text": "YA",
+          "x0": 215.41750000000002,
+          "x1": 225.4225,
+          "top": 352.115,
+          "bottom": 359.615
+        },
+        {
+          "text": "TBD",
+          "x0": 270.0,
+          "x1": 285.0,
+          "top": 352.115,
+          "bottom": 359.615
+        },
+        {
+          "text": "(LA,",
+          "x0": 287.085,
+          "x1": 300.84,
+          "top": 352.115,
+          "bottom": 359.615
+        },
+        {
+          "text": "NY",
+          "x0": 302.925,
+          "x1": 313.3425,
+          "top": 352.115,
+          "bottom": 359.615
+        },
+        {
+          "text": "or",
+          "x0": 315.4275,
+          "x1": 322.09499999999997,
+          "top": 352.115,
+          "bottom": 359.615
+        },
+        {
+          "text": "Vancouver)",
+          "x0": 324.18,
+          "x1": 362.5275,
+          "top": 352.115,
+          "bottom": 359.615
+        },
+        {
+          "text": "Tent.",
+          "x0": 370.0,
+          "x1": 387.0925,
+          "top": 352.115,
+          "bottom": 359.615
+        },
+        {
+          "text": "Summer",
+          "x0": 389.1775,
+          "x1": 417.5125,
+          "top": 352.115,
+          "bottom": 359.615
+        },
+        {
+          "text": "2026",
+          "x0": 419.5975,
+          "x1": 436.27750000000003,
+          "top": 352.115,
+          "bottom": 359.615
+        },
+        {
+          "text": "IRIS",
+          "x0": 455.0,
+          "x1": 469.5875,
+          "top": 352.115,
+          "bottom": 359.615
+        },
+        {
+          "text": "Series",
+          "x0": 560.0,
+          "x1": 581.255,
+          "top": 352.115,
+          "bottom": 359.615
+        },
+        {
+          "text": "Regular",
+          "x0": 583.34,
+          "x1": 609.5975,
+          "top": 352.115,
+          "bottom": 359.615
+        },
+        {
+          "text": "Female",
+          "x0": 640.0,
+          "x1": 665.005,
+          "top": 352.115,
+          "bottom": 359.615
+        },
+        {
+          "text": "16-18",
+          "x0": 667.09,
+          "x1": 686.2674999999999,
+          "top": 352.115,
+          "bottom": 359.615
+        },
+        {
+          "text": "THE",
+          "x0": 455.0,
+          "x1": 470.0,
+          "top": 378.115,
+          "bottom": 385.615
+        },
+        {
+          "text": "VOICE",
+          "x0": 472.085,
+          "x1": 495.425,
+          "top": 378.115,
+          "bottom": 385.615
+        },
+        {
+          "text": "Recurring",
+          "x0": 560.0,
+          "x1": 592.505,
+          "top": 378.115,
+          "bottom": 385.615
+        },
+        {
+          "text": "Any,",
+          "x0": 640.0,
+          "x1": 655.0075,
+          "top": 378.115,
+          "bottom": 385.615
+        },
+        {
+          "text": "voice",
+          "x0": 657.0925,
+          "x1": 674.5975,
+          "top": 378.115,
+          "bottom": 385.615
+        },
+        {
+          "text": "only",
+          "x0": 676.6825,
+          "x1": 690.4375,
+          "top": 378.115,
+          "bottom": 385.615
         }
       ]
     }

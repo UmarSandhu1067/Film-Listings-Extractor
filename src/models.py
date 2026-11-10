@@ -40,11 +40,15 @@ class Role(BaseModel):
         if not isinstance(value, dict):
             return value
         data = dict(value)
-        data["role_name_cleaned"] = clean_text(data.get("role_name"))
-        data["role_type_cleaned"] = normalize_role_type(data.get("role_type"))
-        data["gender_cleaned"] = normalize_gender(data.get("gender"))
-        data["age_cleaned"] = clean_text(data.get("age"))
-        data["notes_cleaned"] = clean_text(data.get("notes"))
+        for field, normalize in (
+            ("role_name", clean_text),
+            ("role_type", normalize_role_type),
+            ("gender", normalize_gender),
+            ("age", clean_text),
+            ("notes", clean_text),
+        ):
+            if field in data:
+                data[f"{field}_cleaned"] = normalize(data[field])
         return data
 
 
@@ -55,6 +59,7 @@ class Project(BaseModel):
 
     project_title: str
     project_title_cleaned: str
+    title_alias: str | None = None
     project_type: str | None = None
     project_type_cleaned: str | None = None
     studio: str | None = None
@@ -86,21 +91,53 @@ class Project(BaseModel):
             return value
         data = dict(value)
         for field in ("project_title", "project_type", "studio", "status", "synopsis", "network"):
-            data[f"{field}_cleaned"] = clean_text(data.get(field))
-        data["genres"] = normalize_genres(data.get("genre"))
-        data["locations"], data["location_flag"] = normalize_locations(data.get("location"))
-        data["start_date_cleaned"], data["start_date_precision"], data["start_date_flag"] = (
-            normalize_start_date(data.get("start_date"))
-        )
-        data["shoot_locations"], data["shoot_location_flag"] = normalize_locations(
-            data.get("shoot_location")
-        )
+            if field in data:
+                data[f"{field}_cleaned"] = clean_text(data[field])
+        if "genre" in data:
+            data["genres"] = normalize_genres(data["genre"])
+        if "location" in data:
+            data["locations"], data["location_flag"] = normalize_locations(data["location"])
+        if "start_date" in data:
+            (
+                data["start_date_cleaned"],
+                data["start_date_precision"],
+                data["start_date_flag"],
+            ) = normalize_start_date(data["start_date"])
+        if "shoot_location" in data:
+            data["shoot_locations"], data["shoot_location_flag"] = normalize_locations(
+                data["shoot_location"]
+            )
         return data
 
 
+class PDFWord(BaseModel):
+    """A positioned word extracted from a PDF page."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    text: str
+    x0: float
+    x1: float
+    top: float
+    bottom: float
+
+
+class PDFPage(BaseModel):
+    """Full extracted text and positioned text elements for one PDF page."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    page_number: int
+    width: float
+    height: float
+    text: str
+    words: list[PDFWord]
+
+
 class ExtractionResult(BaseModel):
-    """JSON document containing extracted projects."""
+    """JSON document containing extracted pages and parsed projects."""
 
     model_config = ConfigDict(extra="forbid")
 
     projects: list[Project]
+    pages: list[PDFPage] = Field(default_factory=list)

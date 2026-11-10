@@ -3,26 +3,14 @@
     {
       "project_title": "HOLLOW CREEK (TV)",
       "project_title_cleaned": "HOLLOW CREEK (TV)",
-      "project_type": null,
-      "project_type_cleaned": null,
-      "studio": null,
-      "studio_cleaned": null,
       "genre": "Psychological Thriller",
       "genres": [
         "Psychological Thriller"
       ],
-      "location": "Atlanta, GA and Savannah, GA",
-      "locations": [
-        "Atlanta, GA",
-        "Savannah, GA"
-      ],
-      "location_flag": null,
       "start_date": "Prob. Nov 2025 to Feb 2026",
       "start_date_cleaned": "2025-11-01",
       "start_date_precision": "range",
       "start_date_flag": "Date is tentative.",
-      "status": null,
-      "status_cleaned": null,
       "synopsis": "A small-town pharmacist notices the same stranger in every family photo brought in for printing.",
       "synopsis_cleaned": "A small-town pharmacist notices the same stranger in every family photo brought in for printing.",
       "network": "Riverline / Streamwave",
@@ -54,9 +42,7 @@
           "gender": "male",
           "gender_cleaned": "Male",
           "age": "60s",
-          "age_cleaned": "60s",
-          "notes": null,
-          "notes_cleaned": null
+          "age_cleaned": "60s"
         },
         {
           "role_name": "KID AT COUNTER",
@@ -66,17 +52,13 @@
           "gender": "any",
           "gender_cleaned": "Any",
           "age": "10-12",
-          "age_cleaned": "10-12",
-          "notes": null,
-          "notes_cleaned": null
+          "age_cleaned": "10-12"
         }
       ]
     },
     {
       "project_title": "the brass whistle",
       "project_title_cleaned": "the brass whistle",
-      "project_type": null,
-      "project_type_cleaned": null,
       "studio": "OAKMERE FILMS / TANDEM HOUSE",
       "studio_cleaned": "OAKMERE FILMS / TANDEM HOUSE",
       "genre": "romantic comedy",
@@ -98,11 +80,6 @@
       "status_cleaned": "casting",
       "synopsis": "A train conductor and a stowaway composer trade secrets over one night.",
       "synopsis_cleaned": "A train conductor and a stowaway composer trade secrets over one night.",
-      "network": null,
-      "network_cleaned": null,
-      "shoot_location": null,
-      "shoot_locations": [],
-      "shoot_location_flag": null,
       "roles": [
         {
           "role_name": "NELL ASHWORTH",
@@ -112,9 +89,7 @@
           "gender": "female",
           "gender_cleaned": "Female",
           "age": "20s/30s",
-          "age_cleaned": "20s/30s",
-          "notes": null,
-          "notes_cleaned": null
+          "age_cleaned": "20s/30s"
         },
         {
           "role_name": "FELIX MORROW",
@@ -124,9 +99,7 @@
           "gender": "male",
           "gender_cleaned": "Male",
           "age": "30s",
-          "age_cleaned": "30s",
-          "notes": null,
-          "notes_cleaned": null
+          "age_cleaned": "30s"
         },
         {
           "role_name": "TICKET INSPECTOR",
@@ -136,17 +109,13 @@
           "gender": "any",
           "gender_cleaned": "Any",
           "age": "any age",
-          "age_cleaned": "any age",
-          "notes": null,
-          "notes_cleaned": null
+          "age_cleaned": "any age"
         }
       ]
     },
     {
       "project_title": "IRON VALLEY",
       "project_title_cleaned": "IRON VALLEY",
-      "project_type": null,
-      "project_type_cleaned": null,
       "studio": "Copperfield Entertainment",
       "studio_cleaned": "Copperfield Entertainment",
       "genre": "War / Drama (Character Oriented)",
@@ -163,15 +132,8 @@
       "start_date_cleaned": null,
       "start_date_precision": "unknown",
       "start_date_flag": "Two-digit year is ambiguous.",
-      "status": null,
-      "status_cleaned": null,
       "synopsis": "Two brothers on opposite sides of a border war are reunited by a field hospital.",
       "synopsis_cleaned": "Two brothers on opposite sides of a border war are reunited by a field hospital.",
-      "network": null,
-      "network_cleaned": null,
-      "shoot_location": null,
-      "shoot_locations": [],
-      "shoot_location_flag": null,
       "roles": [
         {
           "role_name": "ANDREI",
@@ -181,9 +143,7 @@
           "gender": "male",
           "gender_cleaned": "Male",
           "age": "30s",
-          "age_cleaned": "30s",
-          "notes": null,
-          "notes_cleaned": null
+          "age_cleaned": "30s"
         },
         {
           "role_name": "MIKHAIL",
@@ -193,9 +153,7 @@
           "gender": "male",
           "gender_cleaned": "Male",
           "age": "30s",
-          "age_cleaned": "30s",
-          "notes": null,
-          "notes_cleaned": null
+          "age_cleaned": "30s"
         },
         {
           "role_name": "NURSE VERA",
@@ -205,9 +163,1249 @@
           "gender": "female",
           "gender_cleaned": "Female",
           "age": "40s",
-          "age_cleaned": "40s",
-          "notes": null,
-          "notes_cleaned": null
+          "age_cleaned": "40s"
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "page_number": 1,
+      "width": 612.0,
+      "height": 792.0,
+      "text": "agency notes - updated weekly - CONFIDENTIAL (fictional)\nHOLLOW CREEK (TV)\nNetwork: Riverline / Streamwave Dates: Prob. Nov 2025 to Feb 2026\nShoot: Atlanta, GA and\nSavannah, GA\nGenre - Psychological Thriller\nStory: A small-town pharmacist notices the same stranger in every family photo\nbrought in for printing.\nROLES\nCLAIRE BOONE (Lead) 30s-40s, female - grounded, observant\nPASTOR LEVI GRANT (Recurring) 60s, male\nKID AT COUNTER (Co-Star) 10-12, any\nthe brass whistle\nSTATUS: casting | STUDIO: OAKMERE FILMS / TANDEM HOUSE\nlocation: London/Manchester start: Late August 2026\ngenre: romantic comedy\nLogline: A train conductor and a stowaway composer trade secrets over one night.\nroles -\nNELL ASHWORTH · LEAD · female, 20s/30s\nFELIX MORROW · SUPPORTING LEAD · male, 30s\nTICKET INSPECTOR · small · any age\nIRON VALLEY\nStudio: Copperfield Entertainment\nStart: 10/24/25 Location: Eastern Europe (Prague or Budapest)\nGenre: War / Drama (Character Oriented)\nSynopsis: Two brothers on opposite sides of a border war are reunited\nby a field hospital.\nRoles:\nANDREI (Lead) male 30s\nMIKHAIL (Lead) male 30s\nNURSE VERA (Supporting) female 40s",
+      "words": [
+        {
+          "text": "agency",
+          "x0": 40.0,
+          "x1": 69.016,
+          "top": 32.863000000000056,
+          "bottom": 41.863000000000056
+        },
+        {
+          "text": "notes",
+          "x0": 71.518,
+          "x1": 93.532,
+          "top": 32.863000000000056,
+          "bottom": 41.863000000000056
+        },
+        {
+          "text": "-",
+          "x0": 96.03399999999999,
+          "x1": 99.03099999999999,
+          "top": 32.863000000000056,
+          "bottom": 41.863000000000056
+        },
+        {
+          "text": "updated",
+          "x0": 101.533,
+          "x1": 134.059,
+          "top": 32.863000000000056,
+          "bottom": 41.863000000000056
+        },
+        {
+          "text": "weekly",
+          "x0": 136.56100000000004,
+          "x1": 164.06500000000005,
+          "top": 32.863000000000056,
+          "bottom": 41.863000000000056
+        },
+        {
+          "text": "-",
+          "x0": 166.56700000000004,
+          "x1": 169.56400000000005,
+          "top": 32.863000000000056,
+          "bottom": 41.863000000000056
+        },
+        {
+          "text": "CONFIDENTIAL",
+          "x0": 172.06600000000006,
+          "x1": 238.07200000000003,
+          "top": 32.863000000000056,
+          "bottom": 41.863000000000056
+        },
+        {
+          "text": "(fictional)",
+          "x0": 240.57400000000004,
+          "x1": 277.07800000000003,
+          "top": 32.863000000000056,
+          "bottom": 41.863000000000056
+        },
+        {
+          "text": "HOLLOW",
+          "x0": 40.0,
+          "x1": 88.884,
+          "top": 61.277000000000044,
+          "bottom": 72.27700000000004
+        },
+        {
+          "text": "CREEK",
+          "x0": 91.94200000000001,
+          "x1": 130.442,
+          "top": 61.277000000000044,
+          "bottom": 72.27700000000004
+        },
+        {
+          "text": "(TV)",
+          "x0": 136.55800000000002,
+          "x1": 157.94200000000004,
+          "top": 61.277000000000044,
+          "bottom": 72.27700000000004
+        },
+        {
+          "text": "Network:",
+          "x0": 40.0,
+          "x1": 77.4775,
+          "top": 76.4665,
+          "bottom": 85.9665
+        },
+        {
+          "text": "Riverline",
+          "x0": 80.1185,
+          "x1": 117.06399999999998,
+          "top": 76.4665,
+          "bottom": 85.9665
+        },
+        {
+          "text": "/",
+          "x0": 119.70499999999998,
+          "x1": 122.34599999999999,
+          "top": 76.4665,
+          "bottom": 85.9665
+        },
+        {
+          "text": "Streamwave",
+          "x0": 124.987,
+          "x1": 177.77849999999998,
+          "top": 76.4665,
+          "bottom": 85.9665
+        },
+        {
+          "text": "Dates:",
+          "x0": 190.98349999999994,
+          "x1": 218.43849999999995,
+          "top": 76.4665,
+          "bottom": 85.9665
+        },
+        {
+          "text": "Prob.",
+          "x0": 221.07949999999994,
+          "x1": 243.78449999999995,
+          "top": 76.4665,
+          "bottom": 85.9665
+        },
+        {
+          "text": "Nov",
+          "x0": 246.42549999999994,
+          "x1": 263.31649999999996,
+          "top": 76.4665,
+          "bottom": 85.9665
+        },
+        {
+          "text": "2025",
+          "x0": 265.9575,
+          "x1": 287.08549999999997,
+          "top": 76.4665,
+          "bottom": 85.9665
+        },
+        {
+          "text": "to",
+          "x0": 289.7265,
+          "x1": 297.64949999999993,
+          "top": 76.4665,
+          "bottom": 85.9665
+        },
+        {
+          "text": "Feb",
+          "x0": 300.2905,
+          "x1": 316.659,
+          "top": 76.4665,
+          "bottom": 85.9665
+        },
+        {
+          "text": "2026",
+          "x0": 319.3,
+          "x1": 340.42799999999994,
+          "top": 76.4665,
+          "bottom": 85.9665
+        },
+        {
+          "text": "Shoot:",
+          "x0": 40.0,
+          "x1": 67.4645,
+          "top": 90.4665,
+          "bottom": 99.9665
+        },
+        {
+          "text": "Atlanta,",
+          "x0": 70.1055,
+          "x1": 102.32000000000001,
+          "top": 90.4665,
+          "bottom": 99.9665
+        },
+        {
+          "text": "GA",
+          "x0": 104.961,
+          "x1": 118.6885,
+          "top": 90.4665,
+          "bottom": 99.9665
+        },
+        {
+          "text": "and",
+          "x0": 121.32950000000001,
+          "x1": 137.17550000000003,
+          "top": 90.4665,
+          "bottom": 99.9665
+        },
+        {
+          "text": "Savannah,",
+          "x0": 47.923,
+          "x1": 93.3425,
+          "top": 104.4665,
+          "bottom": 113.9665
+        },
+        {
+          "text": "GA",
+          "x0": 95.98349999999999,
+          "x1": 109.71099999999998,
+          "top": 104.4665,
+          "bottom": 113.9665
+        },
+        {
+          "text": "Genre",
+          "x0": 40.0,
+          "x1": 66.4005,
+          "top": 118.4665,
+          "bottom": 127.9665
+        },
+        {
+          "text": "-",
+          "x0": 69.0415,
+          "x1": 72.205,
+          "top": 118.4665,
+          "bottom": 127.9665
+        },
+        {
+          "text": "Psychological",
+          "x0": 74.846,
+          "x1": 132.9195,
+          "top": 118.4665,
+          "bottom": 127.9665
+        },
+        {
+          "text": "Thriller",
+          "x0": 135.5605,
+          "x1": 164.58299999999997,
+          "top": 118.4665,
+          "bottom": 127.9665
+        },
+        {
+          "text": "Story:",
+          "x0": 40.0,
+          "x1": 64.81400000000001,
+          "top": 132.4665,
+          "bottom": 141.9665
+        },
+        {
+          "text": "A",
+          "x0": 67.455,
+          "x1": 73.7915,
+          "top": 132.4665,
+          "bottom": 141.9665
+        },
+        {
+          "text": "small-town",
+          "x0": 76.4325,
+          "x1": 121.8235,
+          "top": 132.4665,
+          "bottom": 141.9665
+        },
+        {
+          "text": "pharmacist",
+          "x0": 124.4645,
+          "x1": 170.91949999999997,
+          "top": 132.4665,
+          "bottom": 141.9665
+        },
+        {
+          "text": "notices",
+          "x0": 173.56049999999996,
+          "x1": 203.6565,
+          "top": 132.4665,
+          "bottom": 141.9665
+        },
+        {
+          "text": "the",
+          "x0": 206.29749999999999,
+          "x1": 219.5025,
+          "top": 132.4665,
+          "bottom": 141.9665
+        },
+        {
+          "text": "same",
+          "x0": 222.1435,
+          "x1": 245.371,
+          "top": 132.4665,
+          "bottom": 141.9665
+        },
+        {
+          "text": "stranger",
+          "x0": 248.012,
+          "x1": 282.85800000000006,
+          "top": 132.4665,
+          "bottom": 141.9665
+        },
+        {
+          "text": "in",
+          "x0": 285.499,
+          "x1": 292.89000000000004,
+          "top": 132.4665,
+          "bottom": 141.9665
+        },
+        {
+          "text": "every",
+          "x0": 295.53100000000006,
+          "x1": 318.7585,
+          "top": 132.4665,
+          "bottom": 141.9665
+        },
+        {
+          "text": "family",
+          "x0": 321.39950000000005,
+          "x1": 346.204,
+          "top": 132.4665,
+          "bottom": 141.9665
+        },
+        {
+          "text": "photo",
+          "x0": 348.845,
+          "x1": 372.614,
+          "top": 132.4665,
+          "bottom": 141.9665
+        },
+        {
+          "text": "brought",
+          "x0": 40.0,
+          "x1": 72.2145,
+          "top": 146.4665,
+          "bottom": 155.9665
+        },
+        {
+          "text": "in",
+          "x0": 74.8555,
+          "x1": 82.2465,
+          "top": 146.4665,
+          "bottom": 155.9665
+        },
+        {
+          "text": "for",
+          "x0": 84.88749999999999,
+          "x1": 95.97399999999999,
+          "top": 146.4665,
+          "bottom": 155.9665
+        },
+        {
+          "text": "printing.",
+          "x0": 98.61499999999998,
+          "x1": 132.40649999999997,
+          "top": 146.4665,
+          "bottom": 155.9665
+        },
+        {
+          "text": "ROLES",
+          "x0": 40.0,
+          "x1": 72.205,
+          "top": 160.4665,
+          "bottom": 169.9665
+        },
+        {
+          "text": "CLAIRE",
+          "x0": 45.282,
+          "x1": 79.596,
+          "top": 174.4665,
+          "bottom": 183.9665
+        },
+        {
+          "text": "BOONE",
+          "x0": 82.237,
+          "x1": 116.551,
+          "top": 174.4665,
+          "bottom": 183.9665
+        },
+        {
+          "text": "(Lead)",
+          "x0": 119.19200000000001,
+          "x1": 146.647,
+          "top": 174.4665,
+          "bottom": 183.9665
+        },
+        {
+          "text": "30s-40s,",
+          "x0": 149.288,
+          "x1": 185.7205,
+          "top": 174.4665,
+          "bottom": 183.9665
+        },
+        {
+          "text": "female",
+          "x0": 188.36149999999998,
+          "x1": 216.871,
+          "top": 174.4665,
+          "bottom": 183.9665
+        },
+        {
+          "text": "-",
+          "x0": 219.512,
+          "x1": 222.6755,
+          "top": 174.4665,
+          "bottom": 183.9665
+        },
+        {
+          "text": "grounded,",
+          "x0": 225.3165,
+          "x1": 268.0950000000001,
+          "top": 174.4665,
+          "bottom": 183.9665
+        },
+        {
+          "text": "observant",
+          "x0": 270.73600000000005,
+          "x1": 312.4505000000001,
+          "top": 174.4665,
+          "bottom": 183.9665
+        },
+        {
+          "text": "PASTOR",
+          "x0": 45.282,
+          "x1": 84.34599999999999,
+          "top": 188.4665,
+          "bottom": 197.9665
+        },
+        {
+          "text": "LEVI",
+          "x0": 86.987,
+          "x1": 107.58300000000001,
+          "top": 188.4665,
+          "bottom": 197.9665
+        },
+        {
+          "text": "GRANT",
+          "x0": 110.22400000000002,
+          "x1": 143.47400000000002,
+          "top": 188.4665,
+          "bottom": 197.9665
+        },
+        {
+          "text": "(Recurring)",
+          "x0": 146.115,
+          "x1": 193.61500000000004,
+          "top": 188.4665,
+          "bottom": 197.9665
+        },
+        {
+          "text": "60s,",
+          "x0": 196.25600000000003,
+          "x1": 214.21100000000004,
+          "top": 188.4665,
+          "bottom": 197.9665
+        },
+        {
+          "text": "male",
+          "x0": 216.85200000000003,
+          "x1": 237.43850000000006,
+          "top": 188.4665,
+          "bottom": 197.9665
+        },
+        {
+          "text": "KID",
+          "x0": 45.282,
+          "x1": 61.118500000000004,
+          "top": 202.4665,
+          "bottom": 211.9665
+        },
+        {
+          "text": "AT",
+          "x0": 63.7595,
+          "x1": 75.90050000000001,
+          "top": 202.4665,
+          "bottom": 211.9665
+        },
+        {
+          "text": "COUNTER",
+          "x0": 78.5415,
+          "x1": 125.5095,
+          "top": 202.4665,
+          "bottom": 211.9665
+        },
+        {
+          "text": "(Co-Star)",
+          "x0": 128.15050000000002,
+          "x1": 167.20499999999998,
+          "top": 202.4665,
+          "bottom": 211.9665
+        },
+        {
+          "text": "10-12,",
+          "x0": 169.846,
+          "x1": 196.77850000000004,
+          "top": 202.4665,
+          "bottom": 211.9665
+        },
+        {
+          "text": "any",
+          "x0": 199.41950000000003,
+          "x1": 214.73350000000005,
+          "top": 202.4665,
+          "bottom": 211.9665
+        },
+        {
+          "text": "the",
+          "x0": 40.0,
+          "x1": 56.5,
+          "top": 239.27700000000004,
+          "bottom": 250.27700000000004
+        },
+        {
+          "text": "brass",
+          "x0": 59.558,
+          "x1": 88.90599999999999,
+          "top": 239.27700000000004,
+          "bottom": 250.27700000000004
+        },
+        {
+          "text": "whistle",
+          "x0": 91.964,
+          "x1": 129.25400000000002,
+          "top": 239.27700000000004,
+          "bottom": 250.27700000000004
+        },
+        {
+          "text": "STATUS:",
+          "x0": 40.0,
+          "x1": 80.1185,
+          "top": 254.4665,
+          "bottom": 263.9665
+        },
+        {
+          "text": "casting",
+          "x0": 82.7595,
+          "x1": 112.85549999999999,
+          "top": 254.4665,
+          "bottom": 263.9665
+        },
+        {
+          "text": "|",
+          "x0": 120.77850000000001,
+          "x1": 123.2485,
+          "top": 254.4665,
+          "bottom": 263.9665
+        },
+        {
+          "text": "STUDIO:",
+          "x0": 131.17150000000004,
+          "x1": 169.70350000000002,
+          "top": 254.4665,
+          "bottom": 263.9665
+        },
+        {
+          "text": "OAKMERE",
+          "x0": 172.3445,
+          "x1": 219.854,
+          "top": 254.4665,
+          "bottom": 263.9665
+        },
+        {
+          "text": "FILMS",
+          "x0": 222.495,
+          "x1": 250.4725,
+          "top": 254.4665,
+          "bottom": 263.9665
+        },
+        {
+          "text": "/",
+          "x0": 253.1135,
+          "x1": 255.75449999999998,
+          "top": 254.4665,
+          "bottom": 263.9665
+        },
+        {
+          "text": "TANDEM",
+          "x0": 258.39549999999997,
+          "x1": 298.5045,
+          "top": 254.4665,
+          "bottom": 263.9665
+        },
+        {
+          "text": "HOUSE",
+          "x0": 301.1455,
+          "x1": 334.9275,
+          "top": 254.4665,
+          "bottom": 263.9665
+        },
+        {
+          "text": "location:",
+          "x0": 40.0,
+          "x1": 75.378,
+          "top": 268.4665,
+          "bottom": 277.9665
+        },
+        {
+          "text": "London/Manchester",
+          "x0": 78.019,
+          "x1": 161.97999999999996,
+          "top": 268.4665,
+          "bottom": 277.9665
+        },
+        {
+          "text": "start:",
+          "x0": 183.10799999999995,
+          "x1": 204.22649999999993,
+          "top": 268.4665,
+          "bottom": 277.9665
+        },
+        {
+          "text": "Late",
+          "x0": 206.86749999999992,
+          "x1": 225.35449999999994,
+          "top": 268.4665,
+          "bottom": 277.9665
+        },
+        {
+          "text": "August",
+          "x0": 227.99549999999994,
+          "x1": 257.56899999999996,
+          "top": 268.4665,
+          "bottom": 277.9665
+        },
+        {
+          "text": "2026",
+          "x0": 260.2099999999999,
+          "x1": 281.33799999999997,
+          "top": 268.4665,
+          "bottom": 277.9665
+        },
+        {
+          "text": "genre:",
+          "x0": 40.0,
+          "x1": 66.9325,
+          "top": 282.4665,
+          "bottom": 291.9665
+        },
+        {
+          "text": "romantic",
+          "x0": 69.5735,
+          "x1": 105.99649999999998,
+          "top": 282.4665,
+          "bottom": 291.9665
+        },
+        {
+          "text": "comedy",
+          "x0": 108.63749999999999,
+          "x1": 141.897,
+          "top": 282.4665,
+          "bottom": 291.9665
+        },
+        {
+          "text": "Logline:",
+          "x0": 40.0,
+          "x1": 73.269,
+          "top": 296.4665,
+          "bottom": 305.9665
+        },
+        {
+          "text": "A",
+          "x0": 75.91,
+          "x1": 82.2465,
+          "top": 296.4665,
+          "bottom": 305.9665
+        },
+        {
+          "text": "train",
+          "x0": 84.88749999999999,
+          "x1": 103.365,
+          "top": 296.4665,
+          "bottom": 305.9665
+        },
+        {
+          "text": "conductor",
+          "x0": 106.006,
+          "x1": 147.7205,
+          "top": 296.4665,
+          "bottom": 305.9665
+        },
+        {
+          "text": "and",
+          "x0": 150.36149999999998,
+          "x1": 166.2075,
+          "top": 296.4665,
+          "bottom": 305.9665
+        },
+        {
+          "text": "a",
+          "x0": 168.84849999999997,
+          "x1": 174.13049999999998,
+          "top": 296.4665,
+          "bottom": 305.9665
+        },
+        {
+          "text": "stowaway",
+          "x0": 176.77149999999997,
+          "x1": 218.47650000000002,
+          "top": 296.4665,
+          "bottom": 305.9665
+        },
+        {
+          "text": "composer",
+          "x0": 221.1175,
+          "x1": 262.82250000000005,
+          "top": 296.4665,
+          "bottom": 305.9665
+        },
+        {
+          "text": "trade",
+          "x0": 265.46350000000007,
+          "x1": 287.11400000000003,
+          "top": 296.4665,
+          "bottom": 305.9665
+        },
+        {
+          "text": "secrets",
+          "x0": 289.75500000000005,
+          "x1": 320.37350000000004,
+          "top": 296.4665,
+          "bottom": 305.9665
+        },
+        {
+          "text": "over",
+          "x0": 323.01450000000006,
+          "x1": 341.492,
+          "top": 296.4665,
+          "bottom": 305.9665
+        },
+        {
+          "text": "one",
+          "x0": 344.13300000000004,
+          "x1": 359.979,
+          "top": 296.4665,
+          "bottom": 305.9665
+        },
+        {
+          "text": "night.",
+          "x0": 362.62,
+          "x1": 385.85699999999997,
+          "top": 296.4665,
+          "bottom": 305.9665
+        },
+        {
+          "text": "roles",
+          "x0": 40.0,
+          "x1": 60.5865,
+          "top": 310.4665,
+          "bottom": 319.9665
+        },
+        {
+          "text": "-",
+          "x0": 63.2275,
+          "x1": 66.391,
+          "top": 310.4665,
+          "bottom": 319.9665
+        },
+        {
+          "text": "NELL",
+          "x0": 45.282,
+          "x1": 69.0415,
+          "top": 324.4665,
+          "bottom": 333.9665
+        },
+        {
+          "text": "ASHWORTH",
+          "x0": 71.6825,
+          "x1": 127.096,
+          "top": 324.4665,
+          "bottom": 333.9665
+        },
+        {
+          "text": "·",
+          "x0": 129.73700000000002,
+          "x1": 132.37800000000001,
+          "top": 324.4665,
+          "bottom": 333.9665
+        },
+        {
+          "text": "LEAD",
+          "x0": 135.019,
+          "x1": 159.83300000000003,
+          "top": 324.4665,
+          "bottom": 333.9665
+        },
+        {
+          "text": "·",
+          "x0": 162.47400000000002,
+          "x1": 165.115,
+          "top": 324.4665,
+          "bottom": 333.9665
+        },
+        {
+          "text": "female,",
+          "x0": 167.75600000000003,
+          "x1": 198.90650000000005,
+          "top": 324.4665,
+          "bottom": 333.9665
+        },
+        {
+          "text": "20s/30s",
+          "x0": 201.54750000000004,
+          "x1": 234.81650000000008,
+          "top": 324.4665,
+          "bottom": 333.9665
+        },
+        {
+          "text": "FELIX",
+          "x0": 45.282,
+          "x1": 71.6825,
+          "top": 338.4665,
+          "bottom": 347.9665
+        },
+        {
+          "text": "MORROW",
+          "x0": 74.3235,
+          "x1": 119.70500000000001,
+          "top": 338.4665,
+          "bottom": 347.9665
+        },
+        {
+          "text": "·",
+          "x0": 122.34600000000002,
+          "x1": 124.98700000000002,
+          "top": 338.4665,
+          "bottom": 347.9665
+        },
+        {
+          "text": "SUPPORTING",
+          "x0": 127.62800000000003,
+          "x1": 190.442,
+          "top": 338.4665,
+          "bottom": 347.9665
+        },
+        {
+          "text": "LEAD",
+          "x0": 193.083,
+          "x1": 217.89700000000002,
+          "top": 338.4665,
+          "bottom": 347.9665
+        },
+        {
+          "text": "·",
+          "x0": 220.538,
+          "x1": 223.179,
+          "top": 338.4665,
+          "bottom": 347.9665
+        },
+        {
+          "text": "male,",
+          "x0": 225.82,
+          "x1": 249.0475,
+          "top": 338.4665,
+          "bottom": 347.9665
+        },
+        {
+          "text": "30s",
+          "x0": 251.6885,
+          "x1": 267.00250000000005,
+          "top": 338.4665,
+          "bottom": 347.9665
+        },
+        {
+          "text": "TICKET",
+          "x0": 45.282,
+          "x1": 79.06400000000001,
+          "top": 352.4665,
+          "bottom": 361.9665
+        },
+        {
+          "text": "INSPECTOR",
+          "x0": 81.705,
+          "x1": 137.12800000000001,
+          "top": 352.4665,
+          "bottom": 361.9665
+        },
+        {
+          "text": "·",
+          "x0": 139.769,
+          "x1": 142.41,
+          "top": 352.4665,
+          "bottom": 361.9665
+        },
+        {
+          "text": "small",
+          "x0": 145.05100000000002,
+          "x1": 167.21450000000002,
+          "top": 352.4665,
+          "bottom": 361.9665
+        },
+        {
+          "text": "·",
+          "x0": 169.8555,
+          "x1": 172.4965,
+          "top": 352.4665,
+          "bottom": 361.9665
+        },
+        {
+          "text": "any",
+          "x0": 175.1375,
+          "x1": 190.4515,
+          "top": 352.4665,
+          "bottom": 361.9665
+        },
+        {
+          "text": "age",
+          "x0": 193.0925,
+          "x1": 208.93850000000003,
+          "top": 352.4665,
+          "bottom": 361.9665
+        },
+        {
+          "text": "IRON",
+          "x0": 40.0,
+          "x1": 67.5,
+          "top": 389.277,
+          "bottom": 400.277
+        },
+        {
+          "text": "VALLEY",
+          "x0": 70.55799999999999,
+          "x1": 113.95300000000002,
+          "top": 389.277,
+          "bottom": 400.277
+        },
+        {
+          "text": "Studio:",
+          "x0": 40.0,
+          "x1": 69.57350000000001,
+          "top": 404.4665,
+          "bottom": 413.9665
+        },
+        {
+          "text": "Copperfield",
+          "x0": 72.2145,
+          "x1": 120.78799999999998,
+          "top": 404.4665,
+          "bottom": 413.9665
+        },
+        {
+          "text": "Entertainment",
+          "x0": 123.42899999999999,
+          "x1": 182.5665,
+          "top": 404.4665,
+          "bottom": 413.9665
+        },
+        {
+          "text": "Start:",
+          "x0": 40.0,
+          "x1": 62.705,
+          "top": 418.4665,
+          "bottom": 427.9665
+        },
+        {
+          "text": "10/24/25",
+          "x0": 65.346,
+          "x1": 102.32,
+          "top": 418.4665,
+          "bottom": 427.9665
+        },
+        {
+          "text": "Location:",
+          "x0": 128.73000000000005,
+          "x1": 167.28100000000003,
+          "top": 418.4665,
+          "bottom": 427.9665
+        },
+        {
+          "text": "Eastern",
+          "x0": 169.92200000000003,
+          "x1": 202.65900000000005,
+          "top": 418.4665,
+          "bottom": 427.9665
+        },
+        {
+          "text": "Europe",
+          "x0": 205.30000000000004,
+          "x1": 235.92800000000008,
+          "top": 418.4665,
+          "bottom": 427.9665
+        },
+        {
+          "text": "(Prague",
+          "x0": 238.56900000000007,
+          "x1": 272.36050000000006,
+          "top": 418.4665,
+          "bottom": 427.9665
+        },
+        {
+          "text": "or",
+          "x0": 275.0015000000001,
+          "x1": 283.4470000000001,
+          "top": 418.4665,
+          "bottom": 427.9665
+        },
+        {
+          "text": "Budapest)",
+          "x0": 286.0880000000001,
+          "x1": 329.38900000000007,
+          "top": 418.4665,
+          "bottom": 427.9665
+        },
+        {
+          "text": "Genre:",
+          "x0": 40.0,
+          "x1": 69.0415,
+          "top": 432.4665,
+          "bottom": 441.9665
+        },
+        {
+          "text": "War",
+          "x0": 71.6825,
+          "x1": 89.09599999999999,
+          "top": 432.4665,
+          "bottom": 441.9665
+        },
+        {
+          "text": "/",
+          "x0": 91.737,
+          "x1": 94.378,
+          "top": 432.4665,
+          "bottom": 441.9665
+        },
+        {
+          "text": "Drama",
+          "x0": 97.01899999999998,
+          "x1": 125.51899999999998,
+          "top": 432.4665,
+          "bottom": 441.9665
+        },
+        {
+          "text": "(Character",
+          "x0": 128.15999999999997,
+          "x1": 173.02849999999998,
+          "top": 432.4665,
+          "bottom": 441.9665
+        },
+        {
+          "text": "Oriented)",
+          "x0": 175.66949999999997,
+          "x1": 215.2655,
+          "top": 432.4665,
+          "bottom": 441.9665
+        },
+        {
+          "text": "Synopsis:",
+          "x0": 40.0,
+          "x1": 81.1825,
+          "top": 446.4665,
+          "bottom": 455.9665
+        },
+        {
+          "text": "Two",
+          "x0": 83.8235,
+          "x1": 101.76899999999999,
+          "top": 446.4665,
+          "bottom": 455.9665
+        },
+        {
+          "text": "brothers",
+          "x0": 104.41,
+          "x1": 139.25599999999997,
+          "top": 446.4665,
+          "bottom": 455.9665
+        },
+        {
+          "text": "on",
+          "x0": 141.897,
+          "x1": 152.46099999999998,
+          "top": 446.4665,
+          "bottom": 455.9665
+        },
+        {
+          "text": "opposite",
+          "x0": 155.10199999999998,
+          "x1": 191.012,
+          "top": 446.4665,
+          "bottom": 455.9665
+        },
+        {
+          "text": "sides",
+          "x0": 193.653,
+          "x1": 215.82600000000002,
+          "top": 446.4665,
+          "bottom": 455.9665
+        },
+        {
+          "text": "of",
+          "x0": 218.467,
+          "x1": 226.39000000000001,
+          "top": 446.4665,
+          "bottom": 455.9665
+        },
+        {
+          "text": "a",
+          "x0": 229.031,
+          "x1": 234.31300000000002,
+          "top": 446.4665,
+          "bottom": 455.9665
+        },
+        {
+          "text": "border",
+          "x0": 236.954,
+          "x1": 264.40900000000005,
+          "top": 446.4665,
+          "bottom": 455.9665
+        },
+        {
+          "text": "war",
+          "x0": 267.05000000000007,
+          "x1": 282.35450000000003,
+          "top": 446.4665,
+          "bottom": 455.9665
+        },
+        {
+          "text": "are",
+          "x0": 284.99550000000005,
+          "x1": 298.723,
+          "top": 446.4665,
+          "bottom": 455.9665
+        },
+        {
+          "text": "reunited",
+          "x0": 301.3640000000001,
+          "x1": 335.6875,
+          "top": 446.4665,
+          "bottom": 455.9665
+        },
+        {
+          "text": "by",
+          "x0": 40.0,
+          "x1": 50.032,
+          "top": 460.4665,
+          "bottom": 469.9665
+        },
+        {
+          "text": "a",
+          "x0": 52.673,
+          "x1": 57.955,
+          "top": 460.4665,
+          "bottom": 469.9665
+        },
+        {
+          "text": "field",
+          "x0": 60.596,
+          "x1": 78.01899999999999,
+          "top": 460.4665,
+          "bottom": 469.9665
+        },
+        {
+          "text": "hospital.",
+          "x0": 80.66,
+          "x1": 116.03799999999998,
+          "top": 460.4665,
+          "bottom": 469.9665
+        },
+        {
+          "text": "Roles:",
+          "x0": 40.0,
+          "x1": 66.923,
+          "top": 474.4665,
+          "bottom": 483.9665
+        },
+        {
+          "text": "ANDREI",
+          "x0": 45.282,
+          "x1": 81.17300000000002,
+          "top": 488.4665,
+          "bottom": 497.9665
+        },
+        {
+          "text": "(Lead)",
+          "x0": 83.814,
+          "x1": 111.26899999999999,
+          "top": 488.4665,
+          "bottom": 497.9665
+        },
+        {
+          "text": "male",
+          "x0": 113.91,
+          "x1": 134.4965,
+          "top": 488.4665,
+          "bottom": 497.9665
+        },
+        {
+          "text": "30s",
+          "x0": 137.1375,
+          "x1": 152.45149999999998,
+          "top": 488.4665,
+          "bottom": 497.9665
+        },
+        {
+          "text": "MIKHAIL",
+          "x0": 45.282,
+          "x1": 83.2915,
+          "top": 502.4665,
+          "bottom": 511.9665
+        },
+        {
+          "text": "(Lead)",
+          "x0": 85.9325,
+          "x1": 113.38749999999999,
+          "top": 502.4665,
+          "bottom": 511.9665
+        },
+        {
+          "text": "male",
+          "x0": 116.0285,
+          "x1": 136.61499999999998,
+          "top": 502.4665,
+          "bottom": 511.9665
+        },
+        {
+          "text": "30s",
+          "x0": 139.25599999999997,
+          "x1": 154.57,
+          "top": 502.4665,
+          "bottom": 511.9665
+        },
+        {
+          "text": "NURSE",
+          "x0": 45.282,
+          "x1": 78.53200000000001,
+          "top": 516.4665,
+          "bottom": 525.9665
+        },
+        {
+          "text": "VERA",
+          "x0": 81.173,
+          "x1": 107.04150000000001,
+          "top": 516.4665,
+          "bottom": 525.9665
+        },
+        {
+          "text": "(Supporting)",
+          "x0": 109.6825,
+          "x1": 161.95149999999998,
+          "top": 516.4665,
+          "bottom": 525.9665
+        },
+        {
+          "text": "female",
+          "x0": 164.59249999999997,
+          "x1": 193.10200000000003,
+          "top": 516.4665,
+          "bottom": 525.9665
+        },
+        {
+          "text": "40s",
+          "x0": 195.74300000000002,
+          "x1": 211.05700000000004,
+          "top": 516.4665,
+          "bottom": 525.9665
         }
       ]
     }

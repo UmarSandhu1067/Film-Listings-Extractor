@@ -10,7 +10,7 @@ from pprint import pprint
 from typing import Any
 
 from src.detector import detect_layout
-from src.models import ExtractionResult, Project
+from src.models import ExtractionResult, PDFPage, Project
 from src.parsers.sheet_a_parser import parse_sheet_a
 from src.parsers.sheet_b_parser import parse_sheet_b
 from src.parsers.sheet_c_parser import parse_sheet_c
@@ -24,11 +24,17 @@ _PARSERS = {
 
 
 def extract_projects(pdf_path: str | Path) -> dict[str, list[dict[str, Any]]]:
-    """Read, detect, and parse one PDF into the shared dictionary structure."""
+    """Read, detect, and parse a PDF using its layout-specific field set."""
+    _, projects = _read_and_parse(pdf_path)
+    return {"projects": projects}
+
+
+def _read_and_parse(pdf_path: str | Path) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    """Read each PDF page once and parse its project listings."""
     pages = read_pdf(pdf_path)
     layout = detect_layout(pages)
     projects = _PARSERS[layout](pages)
-    return {"projects": projects}
+    return pages, projects
 
 
 def main(pdf_path: str | Path) -> dict[str, list[dict[str, Any]]]:
@@ -40,18 +46,24 @@ def main(pdf_path: str | Path) -> dict[str, list[dict[str, Any]]]:
 
 
 def extract_document(pdf_path: str | Path) -> ExtractionResult:
-    """Return validated projects with both printed and cleaned values."""
-    parsed = extract_projects(pdf_path)
+    """Return page-level source text and validated projects with cleaned values."""
+    pages, projects = _read_and_parse(pdf_path)
     return ExtractionResult(
-        projects=[Project.model_validate(project) for project in parsed["projects"]]
+        projects=[Project.model_validate(project) for project in projects],
+        pages=[PDFPage.model_validate(page) for page in pages],
     )
 
 
 def write_json(pdf_path: str | Path, output_path: str | Path) -> ExtractionResult:
-    """Extract one PDF and write its validated project data as UTF-8 JSON."""
+    """Write extracted pages and layout-specific project data as UTF-8 JSON."""
     result = extract_document(pdf_path)
     Path(output_path).write_text(
-        json.dumps(result.model_dump(mode="json"), ensure_ascii=False, indent=2) + "\n",
+        json.dumps(
+            result.model_dump(mode="json", exclude_unset=True),
+            ensure_ascii=False,
+            indent=2,
+        )
+        + "\n",
         encoding="utf-8",
     )
     return result
