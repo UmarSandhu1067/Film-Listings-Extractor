@@ -5,6 +5,9 @@ labelled fields, Sheet B table, and Sheet C free-text PDFs. Each parser produces
 the same project/role structure; Pydantic validates it and adds cleaned values
 without changing the original extracted text.
 
+For the full walkthrough of setup, extraction, output fields, API endpoints,
+testing, and current limitations, see the [Project Guide](./PROJECT_GUIDE.md).
+
 ## Setup (Python 3.12)
 
 In PowerShell from the repository root:
