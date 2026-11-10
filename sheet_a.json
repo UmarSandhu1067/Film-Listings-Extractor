@@ -1,0 +1,241 @@
+{
+  "projects": [
+    {
+      "project_title": "THE LANTERN KEEPER",
+      "project_title_cleaned": "THE LANTERN KEEPER",
+      "project_type": null,
+      "project_type_cleaned": null,
+      "studio": "Northlight Pictures",
+      "studio_cleaned": "Northlight Pictures",
+      "genre": "Drama/Thriller",
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "location": "Los Angeles, CA",
+      "locations": [
+        "Los Angeles"
+      ],
+      "location_flag": null,
+      "start_date": "Spring 2026",
+      "start_date_cleaned": "2026-03-01",
+      "start_date_precision": "season",
+      "start_date_flag": null,
+      "status": "Actively Casting",
+      "status_cleaned": "Actively Casting",
+      "synopsis": "A retired lighthouse keeper discovers coded messages in the logbooks left by her late father and is pulled into a decades-old smuggling case.",
+      "synopsis_cleaned": "A retired lighthouse keeper discovers coded messages in the logbooks left by her late father and is pulled into a decades-old smuggling case.",
+      "network": null,
+      "network_cleaned": null,
+      "shoot_location": null,
+      "shoot_locations": [],
+      "shoot_location_flag": null,
+      "roles": [
+        {
+          "role_name": "MARGARET HALE",
+          "role_name_cleaned": "MARGARET HALE",
+          "role_type": "Lead",
+          "role_type_cleaned": "Lead",
+          "gender": "Female",
+          "gender_cleaned": "Female",
+          "age": "60s",
+          "age_cleaned": "60s",
+          "notes": "any ethnicity. Sharp, guarded, funny.",
+          "notes_cleaned": "any ethnicity. Sharp, guarded, funny."
+        },
+        {
+          "role_name": "DETECTIVE OWEN PRICE",
+          "role_name_cleaned": "DETECTIVE OWEN PRICE",
+          "role_type": "Supporting",
+          "role_type_cleaned": "Supporting",
+          "gender": "Male",
+          "gender_cleaned": "Male",
+          "age": "40s",
+          "age_cleaned": "40s",
+          "notes": "Patient, quietly ambitious.",
+          "notes_cleaned": "Patient, quietly ambitious."
+        },
+        {
+          "role_name": "YOUNG MARGARET",
+          "role_name_cleaned": "YOUNG MARGARET",
+          "role_type": "Small",
+          "role_type_cleaned": "Small",
+          "gender": "Female",
+          "gender_cleaned": "Female",
+          "age": "20s",
+          "age_cleaned": "20s",
+          "notes": "Flashback scenes only.",
+          "notes_cleaned": "Flashback scenes only."
+        }
+      ]
+    },
+    {
+      "project_title": "Paper Crowns",
+      "project_title_cleaned": "Paper Crowns",
+      "project_type": null,
+      "project_type_cleaned": null,
+      "studio": "Bluecastle Studios",
+      "studio_cleaned": "Bluecastle Studios",
+      "genre": "Dramedy",
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "location": "LA",
+      "locations": [
+        "Los Angeles"
+      ],
+      "location_flag": null,
+      "start_date": "2/1/2026",
+      "start_date_cleaned": "2026-02-01",
+      "start_date_precision": "day",
+      "start_date_flag": null,
+      "status": "In Development",
+      "status_cleaned": "In Development",
+      "synopsis": "Three siblings inherit a failing costume shop and one summer to save it.",
+      "synopsis_cleaned": "Three siblings inherit a failing costume shop and one summer to save it.",
+      "network": null,
+      "network_cleaned": null,
+      "shoot_location": null,
+      "shoot_locations": [],
+      "shoot_location_flag": null,
+      "roles": [
+        {
+          "role_name": "JUNE OKAFOR",
+          "role_name_cleaned": "JUNE OKAFOR",
+          "role_type": "Lead",
+          "role_type_cleaned": "Lead",
+          "gender": "Female",
+          "gender_cleaned": "Female",
+          "age": "30s",
+          "age_cleaned": "30s",
+          "notes": "open ethnicity. The responsible one.",
+          "notes_cleaned": "open ethnicity. The responsible one."
+        },
+        {
+          "role_name": "THEO OKAFOR",
+          "role_name_cleaned": "THEO OKAFOR",
+          "role_type": "Supporting Lead",
+          "role_type_cleaned": "Supporting Lead",
+          "gender": "Male",
+          "gender_cleaned": "Male",
+          "age": "late 20s",
+          "age_cleaned": "late 20s",
+          "notes": "Charming, unreliable.",
+          "notes_cleaned": "Charming, unreliable."
+        }
+      ]
+    },
+    {
+      "project_title": "SALT AND IRON",
+      "project_title_cleaned": "SALT AND IRON",
+      "project_type": null,
+      "project_type_cleaned": null,
+      "studio": "Harbor Gate Media",
+      "studio_cleaned": "Harbor Gate Media",
+      "genre": "Action-Adventure",
+      "genres": [
+        "Action",
+        "Adventure"
+      ],
+      "location": "Vancouver, Canada",
+      "locations": [
+        "Vancouver, Canada"
+      ],
+      "location_flag": null,
+      "start_date": "Q1 2027",
+      "start_date_cleaned": "2027-01-01",
+      "start_date_precision": "quarter",
+      "start_date_flag": null,
+      "status": "Casting",
+      "status_cleaned": "Casting",
+      "synopsis": "A salvage crew races a rival outfit to a sunken freighter in the North Pacific.",
+      "synopsis_cleaned": "A salvage crew races a rival outfit to a sunken freighter in the North Pacific.",
+      "network": null,
+      "network_cleaned": null,
+      "shoot_location": null,
+      "shoot_locations": [],
+      "shoot_location_flag": null,
+      "roles": [
+        {
+          "role_name": "CAPTAIN RUTH DANA",
+          "role_name_cleaned": "CAPTAIN RUTH DANA",
+          "role_type": "Lead",
+          "role_type_cleaned": "Lead",
+          "gender": "Female",
+          "gender_cleaned": "Female",
+          "age": "40s",
+          "age_cleaned": "40s",
+          "notes": "Former navy diver.",
+          "notes_cleaned": "Former navy diver."
+        },
+        {
+          "role_name": "MILO VOSS",
+          "role_name_cleaned": "MILO VOSS",
+          "role_type": "Supporting",
+          "role_type_cleaned": "Supporting",
+          "gender": "Male",
+          "gender_cleaned": "Male",
+          "age": "30s",
+          "age_cleaned": "30s",
+          "notes": "The rival crew's fixer.",
+          "notes_cleaned": "The rival crew's fixer."
+        },
+        {
+          "role_name": "TBD ROLE",
+          "role_name_cleaned": "TBD ROLE",
+          "role_type": "TBD",
+          "role_type_cleaned": "TBD",
+          "gender": null,
+          "gender_cleaned": null,
+          "age": null,
+          "age_cleaned": null,
+          "notes": "Details to come.",
+          "notes_cleaned": "Details to come."
+        }
+      ]
+    },
+    {
+      "project_title": "Quiet Hours",
+      "project_title_cleaned": "Quiet Hours",
+      "project_type": null,
+      "project_type_cleaned": null,
+      "studio": null,
+      "studio_cleaned": null,
+      "genre": null,
+      "genres": [],
+      "location": "Likely NYC",
+      "locations": [
+        "New York City"
+      ],
+      "location_flag": "Location is tentative; listed place names are retained.",
+      "start_date": "TBD",
+      "start_date_cleaned": null,
+      "start_date_precision": "unknown",
+      "start_date_flag": "Date is marked TBD.",
+      "status": "Development",
+      "status_cleaned": "Development",
+      "synopsis": "An overnight radio host takes a call from a listener who seems to know what will happen tomorrow.",
+      "synopsis_cleaned": "An overnight radio host takes a call from a listener who seems to know what will happen tomorrow.",
+      "network": null,
+      "network_cleaned": null,
+      "shoot_location": null,
+      "shoot_locations": [],
+      "shoot_location_flag": null,
+      "roles": [
+        {
+          "role_name": "SAM REYES",
+          "role_name_cleaned": "SAM REYES",
+          "role_type": "Lead",
+          "role_type_cleaned": "Lead",
+          "gender": "Any gender",
+          "gender_cleaned": "Any",
+          "age": "30s",
+          "age_cleaned": "30s",
+          "notes": "Warm voice, sleepless.",
+          "notes_cleaned": "Warm voice, sleepless."
+        }
+      ]
+    }
+  ]
+}

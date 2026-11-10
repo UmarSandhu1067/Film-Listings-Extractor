@@ -1,0 +1,316 @@
+{
+  "projects": [
+    {
+      "project_title": "MIDNIGHT ORCHARD",
+      "project_title_cleaned": "MIDNIGHT ORCHARD",
+      "project_type": "Feature",
+      "project_type_cleaned": "Feature",
+      "studio": null,
+      "studio_cleaned": null,
+      "genre": "Horror-Comedy",
+      "genres": [
+        "Horror",
+        "Comedy"
+      ],
+      "location": "NY/NJ",
+      "locations": [
+        "New York",
+        "New Jersey"
+      ],
+      "location_flag": null,
+      "start_date": null,
+      "start_date_cleaned": null,
+      "start_date_precision": "unknown",
+      "start_date_flag": null,
+      "status": null,
+      "status_cleaned": null,
+      "synopsis": null,
+      "synopsis_cleaned": null,
+      "network": null,
+      "network_cleaned": null,
+      "shoot_location": null,
+      "shoot_locations": [],
+      "shoot_location_flag": null,
+      "roles": [
+        {
+          "role_name": "ELSIE",
+          "role_name_cleaned": "ELSIE",
+          "role_type": "Lead",
+          "role_type_cleaned": "Lead",
+          "gender": "Female",
+          "gender_cleaned": "Female",
+          "age": "20s",
+          "age_cleaned": "20s",
+          "notes": null,
+          "notes_cleaned": null
+        },
+        {
+          "role_name": "GRANDPA WEBB",
+          "role_name_cleaned": "GRANDPA WEBB",
+          "role_type": "Supporting",
+          "role_type_cleaned": "Supporting",
+          "gender": "Male",
+          "gender_cleaned": "Male",
+          "age": "70s",
+          "age_cleaned": "70s",
+          "notes": null,
+          "notes_cleaned": null
+        },
+        {
+          "role_name": "DEPUTY ROSS",
+          "role_name_cleaned": "DEPUTY ROSS",
+          "role_type": "Day Player",
+          "role_type_cleaned": "Day Player",
+          "gender": "Any",
+          "gender_cleaned": "Any",
+          "age": "30s",
+          "age_cleaned": "30s",
+          "notes": null,
+          "notes_cleaned": null
+        }
+      ]
+    },
+    {
+      "project_title": "The Long Table",
+      "project_title_cleaned": "The Long Table",
+      "project_type": "Series",
+      "project_type_cleaned": "Series",
+      "studio": null,
+      "studio_cleaned": null,
+      "genre": "Comedy/Period",
+      "genres": [
+        "Comedy",
+        "Period"
+      ],
+      "location": "London / Dublin",
+      "locations": [
+        "London",
+        "Dublin"
+      ],
+      "location_flag": null,
+      "start_date": "Mid-August 2026",
+      "start_date_cleaned": "2026-08-01",
+      "start_date_precision": "month",
+      "start_date_flag": null,
+      "status": null,
+      "status_cleaned": null,
+      "synopsis": null,
+      "synopsis_cleaned": null,
+      "network": null,
+      "network_cleaned": null,
+      "shoot_location": null,
+      "shoot_locations": [],
+      "shoot_location_flag": null,
+      "roles": [
+        {
+          "role_name": "LADY ANNE CROFT",
+          "role_name_cleaned": "LADY ANNE CROFT",
+          "role_type": "Series Regular",
+          "role_type_cleaned": "Series Regular",
+          "gender": "Female",
+          "gender_cleaned": "Female",
+          "age": "50s",
+          "age_cleaned": "50s",
+          "notes": null,
+          "notes_cleaned": null
+        },
+        {
+          "role_name": "FOOTMAN #2",
+          "role_name_cleaned": "FOOTMAN #2",
+          "role_type": "Recurring",
+          "role_type_cleaned": "Recurring",
+          "gender": "Male",
+          "gender_cleaned": "Male",
+          "age": "20s",
+          "age_cleaned": "20s",
+          "notes": null,
+          "notes_cleaned": null
+        }
+      ]
+    },
+    {
+      "project_title": "Glass Harbor",
+      "project_title_cleaned": "Glass Harbor",
+      "project_type": "Series",
+      "project_type_cleaned": "Series",
+      "studio": null,
+      "studio_cleaned": null,
+      "genre": "Crime Drama",
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "location": "Toronto, ON",
+      "locations": [
+        "Toronto, ON"
+      ],
+      "location_flag": null,
+      "start_date": "Q4 2025/Q1 2026",
+      "start_date_cleaned": "2025-10-01",
+      "start_date_precision": "range",
+      "start_date_flag": null,
+      "status": null,
+      "status_cleaned": null,
+      "synopsis": null,
+      "synopsis_cleaned": null,
+      "network": null,
+      "network_cleaned": null,
+      "shoot_location": null,
+      "shoot_locations": [],
+      "shoot_location_flag": null,
+      "roles": [
+        {
+          "role_name": "DET. NORA KIM",
+          "role_name_cleaned": "DET. NORA KIM",
+          "role_type": "Series Regular",
+          "role_type_cleaned": "Series Regular",
+          "gender": "Female",
+          "gender_cleaned": "Female",
+          "age": "30s",
+          "age_cleaned": "30s",
+          "notes": null,
+          "notes_cleaned": null
+        },
+        {
+          "role_name": "JONAH BELL",
+          "role_name_cleaned": "JONAH BELL",
+          "role_type": "Guest Star",
+          "role_type_cleaned": "Guest Star",
+          "gender": "Male",
+          "gender_cleaned": "Male",
+          "age": "40s",
+          "age_cleaned": "40s",
+          "notes": null,
+          "notes_cleaned": null
+        },
+        {
+          "role_name": "RECEPTIONIST",
+          "role_name_cleaned": "RECEPTIONIST",
+          "role_type": "Co-Star",
+          "role_type_cleaned": "Co-Star",
+          "gender": "Any",
+          "gender_cleaned": "Any",
+          "age": null,
+          "age_cleaned": null,
+          "notes": null,
+          "notes_cleaned": null
+        }
+      ]
+    },
+    {
+      "project_title": "SUMMIT",
+      "project_title_cleaned": "SUMMIT",
+      "project_type": "Feature",
+      "project_type_cleaned": "Feature",
+      "studio": null,
+      "studio_cleaned": null,
+      "genre": "Sports",
+      "genres": [
+        "Sports"
+      ],
+      "location": "Calgary, Alberta, Canada",
+      "locations": [
+        "Calgary, Alberta, Canada"
+      ],
+      "location_flag": null,
+      "start_date": "July 13, 2026",
+      "start_date_cleaned": "2026-07-13",
+      "start_date_precision": "day",
+      "start_date_flag": null,
+      "status": null,
+      "status_cleaned": null,
+      "synopsis": null,
+      "synopsis_cleaned": null,
+      "network": null,
+      "network_cleaned": null,
+      "shoot_location": null,
+      "shoot_locations": [],
+      "shoot_location_flag": null,
+      "roles": [
+        {
+          "role_name": "COACH DIANE MARSH",
+          "role_name_cleaned": "COACH DIANE MARSH",
+          "role_type": "Lead",
+          "role_type_cleaned": "Lead",
+          "gender": "Female",
+          "gender_cleaned": "Female",
+          "age": "40s",
+          "age_cleaned": "40s",
+          "notes": null,
+          "notes_cleaned": null
+        },
+        {
+          "role_name": "TYLER MARSH",
+          "role_name_cleaned": "TYLER MARSH",
+          "role_type": "Supporting Lead",
+          "role_type_cleaned": "Supporting Lead",
+          "gender": "Male",
+          "gender_cleaned": "Male",
+          "age": "teens",
+          "age_cleaned": "teens",
+          "notes": null,
+          "notes_cleaned": null
+        }
+      ]
+    },
+    {
+      "project_title": "Static Bloom",
+      "project_title_cleaned": "Static Bloom",
+      "project_type": "Series",
+      "project_type_cleaned": "Series",
+      "studio": null,
+      "studio_cleaned": null,
+      "genre": "Sci-Fi / YA",
+      "genres": [
+        "Science Fiction",
+        "Young Adult"
+      ],
+      "location": "TBD (LA, NY or Vancouver)",
+      "locations": [
+        "Los Angeles",
+        "New York",
+        "Vancouver"
+      ],
+      "location_flag": "Location is tentative; listed place names are retained.",
+      "start_date": "Tent. Summer 2026",
+      "start_date_cleaned": "2026-06-01",
+      "start_date_precision": "season",
+      "start_date_flag": "Date is tentative.",
+      "status": null,
+      "status_cleaned": null,
+      "synopsis": null,
+      "synopsis_cleaned": null,
+      "network": null,
+      "network_cleaned": null,
+      "shoot_location": null,
+      "shoot_locations": [],
+      "shoot_location_flag": null,
+      "roles": [
+        {
+          "role_name": "IRIS",
+          "role_name_cleaned": "IRIS",
+          "role_type": "Series Regular",
+          "role_type_cleaned": "Series Regular",
+          "gender": "Female",
+          "gender_cleaned": "Female",
+          "age": "16-18",
+          "age_cleaned": "16-18",
+          "notes": null,
+          "notes_cleaned": null
+        },
+        {
+          "role_name": "THE VOICE",
+          "role_name_cleaned": "THE VOICE",
+          "role_type": "Recurring",
+          "role_type_cleaned": "Recurring",
+          "gender": "Any",
+          "gender_cleaned": "Any",
+          "age": null,
+          "age_cleaned": null,
+          "notes": "voice only",
+          "notes_cleaned": "voice only"
+        }
+      ]
+    }
+  ]
+}

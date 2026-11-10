@@ -1,0 +1,215 @@
+{
+  "projects": [
+    {
+      "project_title": "HOLLOW CREEK (TV)",
+      "project_title_cleaned": "HOLLOW CREEK (TV)",
+      "project_type": null,
+      "project_type_cleaned": null,
+      "studio": null,
+      "studio_cleaned": null,
+      "genre": "Psychological Thriller",
+      "genres": [
+        "Psychological Thriller"
+      ],
+      "location": "Atlanta, GA and Savannah, GA",
+      "locations": [
+        "Atlanta, GA",
+        "Savannah, GA"
+      ],
+      "location_flag": null,
+      "start_date": "Prob. Nov 2025 to Feb 2026",
+      "start_date_cleaned": "2025-11-01",
+      "start_date_precision": "range",
+      "start_date_flag": "Date is tentative.",
+      "status": null,
+      "status_cleaned": null,
+      "synopsis": "A small-town pharmacist notices the same stranger in every family photo brought in for printing.",
+      "synopsis_cleaned": "A small-town pharmacist notices the same stranger in every family photo brought in for printing.",
+      "network": "Riverline / Streamwave",
+      "network_cleaned": "Riverline / Streamwave",
+      "shoot_location": "Atlanta, GA and Savannah, GA",
+      "shoot_locations": [
+        "Atlanta, GA",
+        "Savannah, GA"
+      ],
+      "shoot_location_flag": null,
+      "roles": [
+        {
+          "role_name": "CLAIRE BOONE",
+          "role_name_cleaned": "CLAIRE BOONE",
+          "role_type": "Lead",
+          "role_type_cleaned": "Lead",
+          "gender": "female",
+          "gender_cleaned": "Female",
+          "age": "30s-40s",
+          "age_cleaned": "30s-40s",
+          "notes": "grounded, observant",
+          "notes_cleaned": "grounded, observant"
+        },
+        {
+          "role_name": "PASTOR LEVI GRANT",
+          "role_name_cleaned": "PASTOR LEVI GRANT",
+          "role_type": "Recurring",
+          "role_type_cleaned": "Recurring",
+          "gender": "male",
+          "gender_cleaned": "Male",
+          "age": "60s",
+          "age_cleaned": "60s",
+          "notes": null,
+          "notes_cleaned": null
+        },
+        {
+          "role_name": "KID AT COUNTER",
+          "role_name_cleaned": "KID AT COUNTER",
+          "role_type": "Co-Star",
+          "role_type_cleaned": "Co-Star",
+          "gender": "any",
+          "gender_cleaned": "Any",
+          "age": "10-12",
+          "age_cleaned": "10-12",
+          "notes": null,
+          "notes_cleaned": null
+        }
+      ]
+    },
+    {
+      "project_title": "the brass whistle",
+      "project_title_cleaned": "the brass whistle",
+      "project_type": null,
+      "project_type_cleaned": null,
+      "studio": "OAKMERE FILMS / TANDEM HOUSE",
+      "studio_cleaned": "OAKMERE FILMS / TANDEM HOUSE",
+      "genre": "romantic comedy",
+      "genres": [
+        "Romance",
+        "Comedy"
+      ],
+      "location": "London/Manchester",
+      "locations": [
+        "London",
+        "Manchester"
+      ],
+      "location_flag": null,
+      "start_date": "Late August 2026",
+      "start_date_cleaned": "2026-08-01",
+      "start_date_precision": "month",
+      "start_date_flag": null,
+      "status": "casting",
+      "status_cleaned": "casting",
+      "synopsis": "A train conductor and a stowaway composer trade secrets over one night.",
+      "synopsis_cleaned": "A train conductor and a stowaway composer trade secrets over one night.",
+      "network": null,
+      "network_cleaned": null,
+      "shoot_location": null,
+      "shoot_locations": [],
+      "shoot_location_flag": null,
+      "roles": [
+        {
+          "role_name": "NELL ASHWORTH",
+          "role_name_cleaned": "NELL ASHWORTH",
+          "role_type": "LEAD",
+          "role_type_cleaned": "Lead",
+          "gender": "female",
+          "gender_cleaned": "Female",
+          "age": "20s/30s",
+          "age_cleaned": "20s/30s",
+          "notes": null,
+          "notes_cleaned": null
+        },
+        {
+          "role_name": "FELIX MORROW",
+          "role_name_cleaned": "FELIX MORROW",
+          "role_type": "SUPPORTING LEAD",
+          "role_type_cleaned": "Supporting Lead",
+          "gender": "male",
+          "gender_cleaned": "Male",
+          "age": "30s",
+          "age_cleaned": "30s",
+          "notes": null,
+          "notes_cleaned": null
+        },
+        {
+          "role_name": "TICKET INSPECTOR",
+          "role_name_cleaned": "TICKET INSPECTOR",
+          "role_type": "small",
+          "role_type_cleaned": "Small",
+          "gender": "any",
+          "gender_cleaned": "Any",
+          "age": "any age",
+          "age_cleaned": "any age",
+          "notes": null,
+          "notes_cleaned": null
+        }
+      ]
+    },
+    {
+      "project_title": "IRON VALLEY",
+      "project_title_cleaned": "IRON VALLEY",
+      "project_type": null,
+      "project_type_cleaned": null,
+      "studio": "Copperfield Entertainment",
+      "studio_cleaned": "Copperfield Entertainment",
+      "genre": "War / Drama (Character Oriented)",
+      "genres": [
+        "War",
+        "Drama (Character Oriented)"
+      ],
+      "location": "Eastern Europe (Prague or Budapest)",
+      "locations": [
+        "Eastern Europe (Prague or Budapest)"
+      ],
+      "location_flag": null,
+      "start_date": "10/24/25",
+      "start_date_cleaned": null,
+      "start_date_precision": "unknown",
+      "start_date_flag": "Two-digit year is ambiguous.",
+      "status": null,
+      "status_cleaned": null,
+      "synopsis": "Two brothers on opposite sides of a border war are reunited by a field hospital.",
+      "synopsis_cleaned": "Two brothers on opposite sides of a border war are reunited by a field hospital.",
+      "network": null,
+      "network_cleaned": null,
+      "shoot_location": null,
+      "shoot_locations": [],
+      "shoot_location_flag": null,
+      "roles": [
+        {
+          "role_name": "ANDREI",
+          "role_name_cleaned": "ANDREI",
+          "role_type": "Lead",
+          "role_type_cleaned": "Lead",
+          "gender": "male",
+          "gender_cleaned": "Male",
+          "age": "30s",
+          "age_cleaned": "30s",
+          "notes": null,
+          "notes_cleaned": null
+        },
+        {
+          "role_name": "MIKHAIL",
+          "role_name_cleaned": "MIKHAIL",
+          "role_type": "Lead",
+          "role_type_cleaned": "Lead",
+          "gender": "male",
+          "gender_cleaned": "Male",
+          "age": "30s",
+          "age_cleaned": "30s",
+          "notes": null,
+          "notes_cleaned": null
+        },
+        {
+          "role_name": "NURSE VERA",
+          "role_name_cleaned": "NURSE VERA",
+          "role_type": "Supporting",
+          "role_type_cleaned": "Supporting",
+          "gender": "female",
+          "gender_cleaned": "Female",
+          "age": "40s",
+          "age_cleaned": "40s",
+          "notes": null,
+          "notes_cleaned": null
+        }
+      ]
+    }
+  ]
+}
