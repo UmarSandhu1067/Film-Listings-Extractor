@@ -90,3 +90,41 @@ ruff check .
 
 The tests cover all three supplied PDFs, layout detection, parsing, cleaning
 rules, Pydantic validation, and JSON output.
+
+## API
+
+Start the service from the repository root:
+
+```powershell
+uvicorn src.api:app --reload
+```
+
+`POST /projects` accepts up to 20 project records per request. A request with
+21 or more records returns HTTP 413. Records are validated independently:
+valid records are stored, while invalid records appear in the `rejected` list.
+An empty `projects` list returns HTTP 422. For example:
+
+```json
+{
+  "projects": [
+    {"project_title": "Quiet Hours"},
+    {"studio": "North Star"}
+  ]
+}
+```
+
+```json
+{
+  "accepted": 1,
+  "rejected": [
+    {"index": 1, "errors": ["project_title: Field required"]}
+  ]
+}
+```
+
+Use `GET /projects` to view accepted records and `GET /health` to check the
+service. To send an extractor result in batches, run:
+
+```powershell
+python scripts\send_batches.py result.json --url http://127.0.0.1:8000
+```
