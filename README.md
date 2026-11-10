@@ -1,92 +1,79 @@
 # Film Listings Extractor
 
-Week 1 project for extracting film and television project listings from three
-PDF layouts and returning a common Python data structure.
+Extract film and television project listings from the supplied Sheet A
+labelled fields, Sheet B table, and Sheet C free-text PDFs. Each parser produces
+the same project/role structure; Pydantic validates it and adds cleaned values
+without changing the original extracted text.
 
-## Project structure
+## Setup (Python 3.12)
 
-```text
-input/                 Supplied Sheet A, B, and C PDFs
-src/
-  main.py              End-to-end extraction workflow
-  pdf_reader.py        Word and coordinate extraction with pdfplumber
-  detector.py          Content-based first-page layout detection
-  parsers/             One parser per PDF layout
-tests/                 Tests using the supplied PDFs
-requirements.txt       Runtime and development dependencies
-```
-
-The three PDFs are included in `input/`. Each parser returns a list of project
-dictionaries with the same project and role keys. Unavailable fields are `None`;
-the parsers do not normalize values or invent missing information.
-
-## Python environment
-
-Create and activate a Python 3.12 environment in PowerShell:
+In PowerShell from the repository root:
 
 ```powershell
 py -3.12 -m venv .venv312
 .\.venv312\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
+python -m pip install -e .
 ```
 
-Dependencies:
+`requirements.txt` pins `pdfplumber`, `pydantic`, `pytest`, and `ruff`.
 
-- `pdfplumber`: extract PDF text and word coordinates.
-- `pydantic`: included for the project setup; Week 1 output uses dictionaries.
-- `pytest`: run automated tests.
-- `ruff`: lint Python code.
+## Extract to JSON
 
-## Run the extractor
-
-From the project root, activate the environment and run:
+After installation, run the command-line tool:
 
 ```powershell
-.\.venv312\Scripts\Activate.ps1
+extract input\sheet_a_labelled_fields.pdf --out result.json
+```
+
+The same command works without installing the package entry point:
+
+```powershell
+python -m src.main extract input\sheet_a_labelled_fields.pdf --out result.json
+```
+
+The earlier print-only invocation remains available:
+
+```powershell
 python -m src.main input\sheet_a_labelled_fields.pdf
-python -m src.main input\sheet_b_table.pdf
-python -m src.main input\sheet_c_messy_text.pdf
 ```
 
-To print every extracted word with its coordinates, call the reusable reader
-from Python:
+JSON retains printed text in fields such as `genre`, `location`, and
+`start_date`. Cleaned values are separate: `genres`, `locations`,
+`start_date_cleaned`, `start_date_precision`, and the corresponding
+`*_cleaned` text fields. Unknown genre/location terms are retained; tentative
+locations and dates are flagged, ambiguous dates are left without a normalized
+date, and `TBD` dates remain empty.
 
-```python
-from src.pdf_reader import print_pdf_words
+The fixed genre vocabulary includes Action, Adventure, Comedy, Crime, Drama,
+Horror, Romance, Science Fiction, Sports, Thriller, War, and Young Adult;
+unrecognized labels are retained as printed. Known compound labels such as
+`Dramedy`, `Sci-Fi`, and `Action-Adventure` are mapped explicitly. Month and
+season dates use the first day of their known month, with precision recorded
+separately. Seasons map to March, June, September, and December; quarter dates
+map to the first month of the quarter. For a recognized date range, the cleaned
+date is its first endpoint and its precision is `range`. Unsupported or
+ambiguous dates (including two-digit years) have no cleaned date.
 
-print_pdf_words("input/sheet_a_labelled_fields.pdf")
+## Inspect PDF word coordinates
+
+Print every extracted word and its page position with:
+
+```powershell
+python -c "from src.pdf_reader import print_pdf_words; print_pdf_words(r'input\sheet_b_table.pdf')"
 ```
 
-The `x0`/`x1` coordinates show where a word sits horizontally; `top`/`bottom`
-show its vertical position. Words with similar vertical positions form a text
-line, while repeated horizontal starts reveal table columns. These positions
-help distinguish a grid from labelled or free-form text.
+The reader reports `x0`, `x1`, `top`, and `bottom` in PDF points. Similar
+vertical positions form lines; repeated horizontal starts reveal the table
+columns used by Sheet B.
 
-## Run tests and lint
+## Tests and lint
 
 ```powershell
 pytest -v
 ruff check .
 ```
 
-Week 1 uses ordinary dictionaries and lists. Pydantic validation, value
-normalization, API endpoints, and JSON export are intentionally out of scope.
-
-## Git
-
-The project is stored in a local Git repository with small commits for setup,
-the reader, detector, each parser, and the workflow/tests. Review them with:
-
-```powershell
-git log --oneline
-git status
-```
-
-For future changes, stage only the files for that change and use a descriptive
-commit message, for example:
-
-```powershell
-git add src\pdf_reader.py
-git commit -m "Improve PDF coordinate reporting"
-```
+The tests cover all three supplied PDFs, layout detection, parsing, cleaning
+rules, Pydantic validation, and JSON output.
 ```

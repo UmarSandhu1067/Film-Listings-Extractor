@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "film-listings-extractor"
+version = "0.1.0"
+description = "Extract film project and role listings from three PDF layouts."
+requires-python = ">=3.12"
+dependencies = [
+    "pdfplumber==0.11.10",
+    "pydantic==2.14.3",
+]
+
+[project.scripts]
+extract = "src.main:cli"
+
+[tool.setuptools]
+packages = ["src", "src.parsers"]
