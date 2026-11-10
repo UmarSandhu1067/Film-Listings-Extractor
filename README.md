@@ -76,4 +76,3 @@ ruff check .
 
 The tests cover all three supplied PDFs, layout detection, parsing, cleaning
 rules, Pydantic validation, and JSON output.
-```
