@@ -29,7 +29,7 @@ _FIELD_MAP = {
     "genre": "genre",
     "location": "location",
     "status": "status",
-    "shoot": "shoot_location",
+    "shoot": "location",
     "story": "synopsis",
     "synopsis": "synopsis",
     "logline": "synopsis",

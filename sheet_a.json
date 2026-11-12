@@ -6,6 +6,9 @@
       "title_alias": "(fka Lighthouse Song)",
       "studio": "Northlight Pictures",
       "studio_cleaned": "Northlight Pictures",
+      "studios": [
+        "Northlight Pictures"
+      ],
       "genre": "Drama/Thriller",
       "genres": [
         "Drama",
@@ -27,7 +30,7 @@
       "roles": [
         {
           "role_name": "MARGARET HALE",
-          "role_name_cleaned": "MARGARET HALE",
+          "role_name_cleaned": "Margaret Hale",
           "role_type": "Lead",
           "role_type_cleaned": "Lead",
           "gender": "Female",
@@ -39,7 +42,7 @@
         },
         {
           "role_name": "DETECTIVE OWEN PRICE",
-          "role_name_cleaned": "DETECTIVE OWEN PRICE",
+          "role_name_cleaned": "Detective Owen Price",
           "role_type": "Supporting",
           "role_type_cleaned": "Supporting",
           "gender": "Male",
@@ -51,7 +54,7 @@
         },
         {
           "role_name": "YOUNG MARGARET",
-          "role_name_cleaned": "YOUNG MARGARET",
+          "role_name_cleaned": "Young Margaret",
           "role_type": "Small",
           "role_type_cleaned": "Small",
           "gender": "Female",
@@ -69,6 +72,9 @@
       "title_alias": null,
       "studio": "Bluecastle Studios",
       "studio_cleaned": "Bluecastle Studios",
+      "studios": [
+        "Bluecastle Studios"
+      ],
       "genre": "Dramedy",
       "genres": [
         "Comedy",
@@ -90,7 +96,7 @@
       "roles": [
         {
           "role_name": "JUNE OKAFOR",
-          "role_name_cleaned": "JUNE OKAFOR",
+          "role_name_cleaned": "June Okafor",
           "role_type": "Lead",
           "role_type_cleaned": "Lead",
           "gender": "Female",
@@ -102,7 +108,7 @@
         },
         {
           "role_name": "THEO OKAFOR",
-          "role_name_cleaned": "THEO OKAFOR",
+          "role_name_cleaned": "Theo Okafor",
           "role_type": "Supporting Lead",
           "role_type_cleaned": "Supporting Lead",
           "gender": "Male",
@@ -120,6 +126,9 @@
       "title_alias": null,
       "studio": "Harbor Gate Media",
       "studio_cleaned": "Harbor Gate Media",
+      "studios": [
+        "Harbor Gate Media"
+      ],
       "genre": "Action-Adventure",
       "genres": [
         "Action",
@@ -127,7 +136,7 @@
       ],
       "location": "Vancouver, Canada",
       "locations": [
-        "Vancouver, Canada"
+        "Vancouver"
       ],
       "location_flag": null,
       "start_date": "Q1 2027",
@@ -141,7 +150,7 @@
       "roles": [
         {
           "role_name": "CAPTAIN RUTH DANA",
-          "role_name_cleaned": "CAPTAIN RUTH DANA",
+          "role_name_cleaned": "Captain Ruth Dana",
           "role_type": "Lead",
           "role_type_cleaned": "Lead",
           "gender": "Female",
@@ -153,7 +162,7 @@
         },
         {
           "role_name": "MILO VOSS",
-          "role_name_cleaned": "MILO VOSS",
+          "role_name_cleaned": "Milo Voss",
           "role_type": "Supporting",
           "role_type_cleaned": "Supporting",
           "gender": "Male",
@@ -165,11 +174,12 @@
         },
         {
           "role_name": "TBD ROLE",
-          "role_name_cleaned": "TBD ROLE",
+          "role_name_cleaned": "Tbd Role",
           "role_type": "TBD",
           "role_type_cleaned": "TBD",
           "notes": "Details to come.",
-          "notes_cleaned": "Details to come."
+          "notes_cleaned": "Details to come.",
+          "role_flag": "Role is marked TBD."
         }
       ]
     },
@@ -179,7 +189,7 @@
       "title_alias": "(aka The Night Desk)",
       "location": "Likely NYC",
       "locations": [
-        "New York City"
+        "New York"
       ],
       "location_flag": "Location is tentative; listed place names are retained.",
       "start_date": "TBD",
@@ -193,7 +203,7 @@
       "roles": [
         {
           "role_name": "SAM REYES",
-          "role_name_cleaned": "SAM REYES",
+          "role_name_cleaned": "Sam Reyes",
           "role_type": "Lead",
           "role_type_cleaned": "Lead",
           "gender": "Any gender",

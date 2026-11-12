@@ -64,7 +64,7 @@ def _header_columns(line: list[dict[str, Any]]) -> tuple[float, ...] | None:
 
 
 def _columns(line: list[dict[str, Any]], column_starts: tuple[float, ...]) -> dict[str, list[dict[str, Any]]]:
-    cells = {name: [] for name in _COLUMN_NAMES}
+    cells: dict[str, list[dict[str, Any]]] = {name: [] for name in _COLUMN_NAMES}
     current_column: int | None = None
     for word in line:
         aligned_column = min(
@@ -84,19 +84,20 @@ def _cell_text(words: list[dict[str, Any]]) -> str | None:
 def parse_sheet_b(pages: list[dict[str, Any]]) -> list[dict[str, Any]]:
     """Read the fixed grid columns; rows without a title add roles to the current project."""
     projects: list[dict[str, Any]] = []
+    column_starts: tuple[float, ...] | None = None
+    current: dict[str, Any] | None = None
     for page in pages:
-        header_seen = False
-        column_starts: tuple[float, ...] | None = None
-        current: dict[str, Any] | None = None
         for line in line_groups(page["words"]):
             if _HEADER_RE.search(line_text(line)):
-                header_seen = True
                 column_starts = _header_columns(line)
                 continue
-            if not header_seen or column_starts is None:
+            if column_starts is None:
                 continue
 
-            cells = {name: _cell_text(words) for name, words in _columns(line, column_starts).items()}
+            cells: dict[str, str | None] = {
+                name: _cell_text(words)
+                for name, words in _columns(line, column_starts).items()
+            }
             if cells["project_title"]:
                 current = new_project(cells["project_title"])
                 for field in ("project_type", "genre", "location", "start_date"):

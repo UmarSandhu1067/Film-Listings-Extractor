@@ -5,26 +5,26 @@
       "project_title_cleaned": "HOLLOW CREEK (TV)",
       "genre": "Psychological Thriller",
       "genres": [
-        "Psychological Thriller"
+        "Thriller"
       ],
+      "location": "Atlanta, GA and Savannah, GA",
+      "locations": [
+        "Atlanta",
+        "Savannah"
+      ],
+      "location_flag": null,
       "start_date": "Prob. Nov 2025 to Feb 2026",
       "start_date_cleaned": "2025-11-01",
-      "start_date_precision": "range",
+      "start_date_precision": "month",
       "start_date_flag": "Date is tentative.",
       "synopsis": "A small-town pharmacist notices the same stranger in every family photo brought in for printing.",
       "synopsis_cleaned": "A small-town pharmacist notices the same stranger in every family photo brought in for printing.",
       "network": "Riverline / Streamwave",
       "network_cleaned": "Riverline / Streamwave",
-      "shoot_location": "Atlanta, GA and Savannah, GA",
-      "shoot_locations": [
-        "Atlanta, GA",
-        "Savannah, GA"
-      ],
-      "shoot_location_flag": null,
       "roles": [
         {
           "role_name": "CLAIRE BOONE",
-          "role_name_cleaned": "CLAIRE BOONE",
+          "role_name_cleaned": "Claire Boone",
           "role_type": "Lead",
           "role_type_cleaned": "Lead",
           "gender": "female",
@@ -36,7 +36,7 @@
         },
         {
           "role_name": "PASTOR LEVI GRANT",
-          "role_name_cleaned": "PASTOR LEVI GRANT",
+          "role_name_cleaned": "Pastor Levi Grant",
           "role_type": "Recurring",
           "role_type_cleaned": "Recurring",
           "gender": "male",
@@ -46,7 +46,7 @@
         },
         {
           "role_name": "KID AT COUNTER",
-          "role_name_cleaned": "KID AT COUNTER",
+          "role_name_cleaned": "Kid At Counter",
           "role_type": "Co-Star",
           "role_type_cleaned": "Co-Star",
           "gender": "any",
@@ -61,6 +61,10 @@
       "project_title_cleaned": "the brass whistle",
       "studio": "OAKMERE FILMS / TANDEM HOUSE",
       "studio_cleaned": "OAKMERE FILMS / TANDEM HOUSE",
+      "studios": [
+        "OAKMERE FILMS",
+        "TANDEM HOUSE"
+      ],
       "genre": "romantic comedy",
       "genres": [
         "Romance",
@@ -73,8 +77,8 @@
       ],
       "location_flag": null,
       "start_date": "Late August 2026",
-      "start_date_cleaned": "2026-08-01",
-      "start_date_precision": "month",
+      "start_date_cleaned": "2026-08-25",
+      "start_date_precision": "part_of_month",
       "start_date_flag": null,
       "status": "casting",
       "status_cleaned": "casting",
@@ -83,7 +87,7 @@
       "roles": [
         {
           "role_name": "NELL ASHWORTH",
-          "role_name_cleaned": "NELL ASHWORTH",
+          "role_name_cleaned": "Nell Ashworth",
           "role_type": "LEAD",
           "role_type_cleaned": "Lead",
           "gender": "female",
@@ -93,7 +97,7 @@
         },
         {
           "role_name": "FELIX MORROW",
-          "role_name_cleaned": "FELIX MORROW",
+          "role_name_cleaned": "Felix Morrow",
           "role_type": "SUPPORTING LEAD",
           "role_type_cleaned": "Supporting Lead",
           "gender": "male",
@@ -103,11 +107,9 @@
         },
         {
           "role_name": "TICKET INSPECTOR",
-          "role_name_cleaned": "TICKET INSPECTOR",
+          "role_name_cleaned": "Ticket Inspector",
           "role_type": "small",
           "role_type_cleaned": "Small",
-          "gender": "any",
-          "gender_cleaned": "Any",
           "age": "any age",
           "age_cleaned": "any age"
         }
@@ -118,26 +120,31 @@
       "project_title_cleaned": "IRON VALLEY",
       "studio": "Copperfield Entertainment",
       "studio_cleaned": "Copperfield Entertainment",
+      "studios": [
+        "Copperfield Entertainment"
+      ],
       "genre": "War / Drama (Character Oriented)",
       "genres": [
         "War",
-        "Drama (Character Oriented)"
+        "Drama"
       ],
       "location": "Eastern Europe (Prague or Budapest)",
       "locations": [
-        "Eastern Europe (Prague or Budapest)"
+        "Eastern Europe",
+        "Prague",
+        "Budapest"
       ],
       "location_flag": null,
       "start_date": "10/24/25",
-      "start_date_cleaned": null,
-      "start_date_precision": "unknown",
-      "start_date_flag": "Two-digit year is ambiguous.",
+      "start_date_cleaned": "2025-10-24",
+      "start_date_precision": "day",
+      "start_date_flag": null,
       "synopsis": "Two brothers on opposite sides of a border war are reunited by a field hospital.",
       "synopsis_cleaned": "Two brothers on opposite sides of a border war are reunited by a field hospital.",
       "roles": [
         {
           "role_name": "ANDREI",
-          "role_name_cleaned": "ANDREI",
+          "role_name_cleaned": "Andrei",
           "role_type": "Lead",
           "role_type_cleaned": "Lead",
           "gender": "male",
@@ -147,7 +154,7 @@
         },
         {
           "role_name": "MIKHAIL",
-          "role_name_cleaned": "MIKHAIL",
+          "role_name_cleaned": "Mikhail",
           "role_type": "Lead",
           "role_type_cleaned": "Lead",
           "gender": "male",
@@ -157,7 +164,7 @@
         },
         {
           "role_name": "NURSE VERA",
-          "role_name_cleaned": "NURSE VERA",
+          "role_name_cleaned": "Nurse Vera",
           "role_type": "Supporting",
           "role_type_cleaned": "Supporting",
           "gender": "female",

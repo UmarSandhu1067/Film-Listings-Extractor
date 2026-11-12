@@ -13,8 +13,10 @@ from src.normalization import (
     normalize_gender,
     normalize_genres,
     normalize_locations,
+    normalize_role_name,
     normalize_role_type,
     normalize_start_date,
+    normalize_studios,
 )
 
 
@@ -33,6 +35,7 @@ class Role(BaseModel):
     age_cleaned: str | None = None
     notes: str | None = None
     notes_cleaned: str | None = None
+    role_flag: str | None = None
 
     @model_validator(mode="before")
     @classmethod
@@ -41,14 +44,17 @@ class Role(BaseModel):
             return value
         data = dict(value)
         for field, normalize in (
-            ("role_name", clean_text),
+            ("role_name", normalize_role_name),
             ("role_type", normalize_role_type),
             ("gender", normalize_gender),
             ("age", clean_text),
             ("notes", clean_text),
         ):
-            if field in data:
+            if field in data and (data[field] is None or isinstance(data[field], str)):
                 data[f"{field}_cleaned"] = normalize(data[field])
+        role_name = data.get("role_name")
+        if isinstance(role_name, str) and role_name.strip().casefold() == "tbd role":
+            data["role_flag"] = "Role is marked TBD."
         return data
 
 
@@ -64,6 +70,7 @@ class Project(BaseModel):
     project_type_cleaned: str | None = None
     studio: str | None = None
     studio_cleaned: str | None = None
+    studios: list[str] = Field(default_factory=list)
     genre: str | None = None
     genres: list[str] = Field(default_factory=list)
     location: str | None = None
@@ -91,19 +98,25 @@ class Project(BaseModel):
             return value
         data = dict(value)
         for field in ("project_title", "project_type", "studio", "status", "synopsis", "network"):
-            if field in data:
+            if field in data and (data[field] is None or isinstance(data[field], str)):
                 data[f"{field}_cleaned"] = clean_text(data[field])
-        if "genre" in data:
+        if "studio" in data and (data["studio"] is None or isinstance(data["studio"], str)):
+            data["studios"] = normalize_studios(data["studio"])
+        if "genre" in data and (data["genre"] is None or isinstance(data["genre"], str)):
             data["genres"] = normalize_genres(data["genre"])
-        if "location" in data:
+        if "location" in data and (data["location"] is None or isinstance(data["location"], str)):
             data["locations"], data["location_flag"] = normalize_locations(data["location"])
-        if "start_date" in data:
+        if "start_date" in data and (
+            data["start_date"] is None or isinstance(data["start_date"], str)
+        ):
             (
                 data["start_date_cleaned"],
                 data["start_date_precision"],
                 data["start_date_flag"],
             ) = normalize_start_date(data["start_date"])
-        if "shoot_location" in data:
+        if "shoot_location" in data and (
+            data["shoot_location"] is None or isinstance(data["shoot_location"], str)
+        ):
             data["shoot_locations"], data["shoot_location_flag"] = normalize_locations(
                 data["shoot_location"]
             )

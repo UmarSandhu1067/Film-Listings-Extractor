@@ -7,7 +7,7 @@ import re
 from datetime import date
 from typing import Literal
 
-DatePrecision = Literal["day", "month", "season", "quarter", "range", "unknown"]
+DatePrecision = Literal["day", "part_of_month", "month", "season", "quarter", "unknown"]
 
 GENRES = (
     "Action",
@@ -41,17 +41,19 @@ _GENRE_ALIASES = {
     "dramedy": ("Comedy", "Drama"),
     "romantic comedy": ("Romance", "Comedy"),
 }
+_GENRE_QUALIFIER = re.compile(r"\s*\([^()]*\)\s*$")
 _GENRE_SEPARATOR = re.compile(r"\s*(?:/|,|;|\+|&)\s*|\s+and\s+", re.IGNORECASE)
+_STUDIO_SEPARATOR = re.compile(r"\s*(?:/|;|\+)\s*")
 
 _LOCATION_ALIASES = {
     "la": "Los Angeles",
     "l.a.": "Los Angeles",
-    "los angeles, ca": "Los Angeles",
     "ny": "New York",
-    "nyc": "New York City",
+    "nyc": "New York",
     "nj": "New Jersey",
 }
-_LOCATION_SEPARATOR = re.compile(r",|/|;|\band\b|\bor\b", re.IGNORECASE)
+_LOCATION_SEPARATOR = re.compile(r"/|;|\band\b|\bor\b", re.IGNORECASE)
+_LOCATION_ALTERNATIVE_SEPARATOR = re.compile(r",|/|;|\band\b|\bor\b", re.IGNORECASE)
 _TENTATIVE_LOCATION = re.compile(r"\b(?:likely|tbd)\b", re.IGNORECASE)
 _TENTATIVE_DATE = re.compile(r"^\s*(?:prob(?:ably)?\.?|tent(?:ative(?:ly)?)?\.?)\s*", re.IGNORECASE)
 _MONTHS = {name.casefold(): number for number, name in enumerate(calendar.month_name) if name}
@@ -69,6 +71,14 @@ def clean_text(value: str | None) -> str | None:
     return cleaned or None
 
 
+def normalize_role_name(value: str | None) -> str | None:
+    """Clean layout whitespace and title-case names printed entirely in capitals."""
+    cleaned = clean_text(value)
+    if cleaned and any(character.isalpha() for character in cleaned) and cleaned.isupper():
+        return cleaned.title()
+    return cleaned
+
+
 def _genre_values(value: str) -> tuple[str, ...]:
     folded = value.casefold()
     if folded in _GENRE_ALIASES:
@@ -76,6 +86,12 @@ def _genre_values(value: str) -> tuple[str, ...]:
     canonical = _GENRE_BY_KEY.get(folded)
     if canonical:
         return (canonical,)
+
+    without_qualifier = _GENRE_QUALIFIER.sub("", value).strip()
+    if without_qualifier != value:
+        canonical = _GENRE_BY_KEY.get(without_qualifier.casefold())
+        if canonical:
+            return (canonical,)
 
     terms = value.split()
     parsed: list[str] = []
@@ -97,6 +113,16 @@ def _genre_values(value: str) -> tuple[str, ...]:
         position += len(match.split())
     if position == len(terms) and len(parsed) > 1:
         return tuple(parsed)
+    suffix = next(
+        (
+            genre
+            for genre in sorted(GENRES, key=len, reverse=True)
+            if folded.endswith(f" {genre.casefold()}")
+        ),
+        None,
+    )
+    if suffix:
+        return (suffix,)
     return (value,)
 
 
@@ -129,14 +155,12 @@ def normalize_genres(value: str | None) -> list[str]:
 
 
 def _normalize_place(value: str) -> str:
-    cleaned = clean_text(value) or ""
+    cleaned = (clean_text(value) or "").split(",", maxsplit=1)[0].strip()
     return _LOCATION_ALIASES.get(cleaned.casefold(), cleaned)
 
 
 def _split_location_text(value: str, split_commas: bool) -> list[str]:
-    separator = _LOCATION_SEPARATOR if split_commas else re.compile(
-        r"/|;|\band\b|\bor\b", re.IGNORECASE
-    )
+    separator = _LOCATION_ALTERNATIVE_SEPARATOR if split_commas else _LOCATION_SEPARATOR
     pieces: list[str] = []
     start = 0
     depth = 0
@@ -166,10 +190,15 @@ def normalize_locations(value: str | None) -> tuple[list[str], str | None]:
     if not cleaned:
         return [], "Location is marked TBD or otherwise tentative." if tentative else None
 
-    if cleaned.casefold() == "los angeles, ca":
-        pieces = [cleaned]
+    parenthetical = re.fullmatch(r"\s*(.*?)\s*\(([^()]*)\)\s*", cleaned)
+    if parenthetical and _LOCATION_ALTERNATIVE_SEPARATOR.search(parenthetical.group(2)):
+        outer, inner = parenthetical.groups()
+        pieces = _split_location_text(outer, split_commas=False)
+        pieces.extend(_LOCATION_ALTERNATIVE_SEPARATOR.split(inner))
+    elif tentative:
+        pieces = _LOCATION_ALTERNATIVE_SEPARATOR.split(cleaned)
     else:
-        pieces = _split_location_text(cleaned, split_commas=tentative)
+        pieces = _split_location_text(cleaned, split_commas=False)
 
     locations: list[str] = []
     for piece in pieces:
@@ -179,6 +208,18 @@ def normalize_locations(value: str | None) -> tuple[list[str], str | None]:
 
     flag = "Location is tentative; listed place names are retained." if tentative else None
     return locations, flag
+
+
+def normalize_studios(value: str | None) -> list[str]:
+    """Split a printed studio field into the listed company names."""
+    cleaned = clean_text(value)
+    if cleaned is None:
+        return []
+    return [
+        studio
+        for piece in _STUDIO_SEPARATOR.split(cleaned)
+        if (studio := clean_text(piece)) is not None
+    ]
 
 
 def _parse_single_date(value: str) -> tuple[date | None, DatePrecision, str | None]:
@@ -192,10 +233,9 @@ def _parse_single_date(value: str) -> tuple[date | None, DatePrecision, str | No
     numeric_match = re.fullmatch(r"(\d{1,2})/(\d{1,2})/(\d{2}|\d{4})", value)
     if numeric_match:
         month, day, year = numeric_match.groups()
-        if len(year) != 4:
-            return None, "unknown", "Two-digit year is ambiguous."
         try:
-            return date(int(year), int(month), int(day)), "day", None
+            full_year = int(year) if len(year) == 4 else 2000 + int(year)
+            return date(full_year, int(month), int(day)), "day", None
         except ValueError:
             return None, "unknown", "Date is not a valid calendar date."
 
@@ -215,15 +255,19 @@ def _parse_single_date(value: str) -> tuple[date | None, DatePrecision, str | No
         return date(int(year), month, 1), "season", None
 
     month_match = re.fullmatch(
-        r"(?:(?:early|mid|late)[ -]+)?([A-Za-z]+)[,. ]+(\d{4})",
+        r"(?:(early|mid|late)[ -]+)?([A-Za-z]+)[,. ]+(\d{4})",
         value,
         re.IGNORECASE,
     )
     if month_match:
-        month_name, year = month_match.groups()
+        part, month_name, year = month_match.groups()
         month = _MONTHS.get(month_name.casefold().rstrip("."))
         if month:
-            return date(int(year), month, 1), "month", None
+            day = {"early": 5, "mid": 15, "late": 25}.get(
+                part.casefold() if part else "", 1
+            )
+            precision: DatePrecision = "part_of_month" if part else "month"
+            return date(int(year), month, day), precision, None
 
     day_match = re.fullmatch(
         r"([A-Za-z]+)\s+(\d{1,2}),?\s+(\d{4})",
@@ -262,7 +306,6 @@ def normalize_start_date(
         re.IGNORECASE,
     )
     range_match = re.search(r"\s+(?:to|through|until)\s+", candidate, re.IGNORECASE)
-    is_range = quarter_range is not None or range_match is not None
     if quarter_range:
         candidate = quarter_range.group(1)
     elif range_match:
@@ -274,8 +317,6 @@ def normalize_start_date(
 
     if tentative:
         flag = "Date is tentative."
-    if is_range:
-        precision = "range"
     return parsed, precision, flag
 
 
