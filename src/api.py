@@ -5,7 +5,7 @@ from __future__ import annotations
 from typing import Any
 
 from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
+from pydantic import BaseModel, ValidationError
 
 from src.models import Project
 
@@ -55,25 +55,40 @@ def post_projects(batch: ProjectsBatch) -> BatchResult:
 
     rejected: list[RejectedProject] = []
     accepted = 0
+    project_indices = {
+        project.project_title_cleaned.casefold(): index
+        for index, project in enumerate(_accepted_projects)
+    }
     for index, record in enumerate(batch.projects):
         try:
             project = Project.model_validate(record)
-        except ValueError as exc:
+        except ValidationError as exc:
             errors = [
                 f"{'.'.join(str(part) for part in error['loc']) or 'record'}: {error['msg']}"
                 for error in exc.errors()
             ]
             rejected.append(RejectedProject(index=index, errors=errors))
         else:
-            _accepted_projects.append(project)
+            identity = project.project_title_cleaned.casefold()
+            existing_index = project_indices.get(identity)
+            if existing_index is None:
+                project_indices[identity] = len(_accepted_projects)
+                _accepted_projects.append(project)
+            else:
+                _accepted_projects[existing_index] = project
             accepted += 1
 
     return BatchResult(accepted=accepted, rejected=rejected)
 
 
-@app.get("/projects", response_model=list[Project])
+@app.get(
+    "/projects",
+    response_model=list[Project],
+    response_model_exclude_none=True,
+    response_model_exclude_unset=True,
+)
 def get_projects() -> list[Project]:
-    """Return all projects accepted since the service started."""
+    """Return the latest accepted record for each project title."""
     return _accepted_projects
 
 

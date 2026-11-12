@@ -17,9 +17,13 @@ ROLE_MARKER_RE = re.compile(
     r"GUEST STAR|DAY PLAYER|SERIES REGULAR|TBD)\s*[�\u00B7|]",
     re.IGNORECASE,
 )
-GENDER_RE = re.compile(r"\b(any\s+gender|female|male|any)\b", re.IGNORECASE)
+GENDER_RE = re.compile(
+    r"\b(any\s+gender|any(?!\s+(?:ethnicity|age))|female|male)\b",
+    re.IGNORECASE,
+)
 AGE_RE = re.compile(
-    r"\b(?:late\s+)?\d{1,2}s?(?:[-/]\d{1,2}s?)?\b|\bteens\b|\bany age\b",
+    r"\b(?:late\s+)?\d{1,2}s(?:[-/]\d{1,2}s)?\b"
+    r"|\b\d{1,2}[-/]\d{1,2}\b|\bteens\b|\bany age\b",
     re.IGNORECASE,
 )
 
@@ -102,9 +106,9 @@ def role_from_line(words: Sequence[Word]) -> dict[str, Any] | None:
     if not marker:
         return None
     name_end = marker.start()
-    name_start = re.match(r"^\s*[-\u2013\u2022]\s*", text)
-    if name_start:
-        name_start = name_start.end()
+    name_start_match = re.match(r"^\s*[-\u2013\u2022]\s*", text)
+    if name_start_match:
+        name_start = name_start_match.end()
     else:
         name_start = 0
     name = text_slice(words, name_start, name_end)

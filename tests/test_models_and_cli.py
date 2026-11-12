@@ -45,6 +45,7 @@ def test_models_keep_printed_values_while_cleaning_separate_fields():
     assert role.role_type_cleaned == "Lead"
     assert role.gender == "female"
     assert role.gender_cleaned == "Female"
+    assert role.role_name_cleaned == "Nell Ashworth"
     assert role.notes == "  open   ethnicity  "
     assert role.notes_cleaned == "open ethnicity"
 
@@ -54,6 +55,22 @@ def test_models_reject_unexpected_fields():
         Role.model_validate({"role_name": "JUNE", "unexpected": "value"})
 
 
+def test_model_keeps_printed_names_and_flags_tbd_roles():
+    project = Project.model_validate(
+        {
+            "project_title": "IRON VALLEY",
+            "studio": "OAKMERE FILMS / TANDEM HOUSE",
+            "roles": [{"role_name": "TBD ROLE"}],
+        }
+    )
+
+    assert project.studio == "OAKMERE FILMS / TANDEM HOUSE"
+    assert project.studios == ["OAKMERE FILMS", "TANDEM HOUSE"]
+    assert project.roles[0].role_name == "TBD ROLE"
+    assert project.roles[0].role_name_cleaned == "Tbd Role"
+    assert project.roles[0].role_flag == "Role is marked TBD."
+
+
 @pytest.mark.parametrize(
     ("filename", "expected_genres", "expected_locations"),
     [
@@ -61,8 +78,8 @@ def test_models_reject_unexpected_fields():
         ("sheet_b_table.pdf", ("Horror", "Comedy"), ("New York", "New Jersey")),
         (
             "sheet_c_messy_text.pdf",
-            ("Psychological Thriller",),
-            ("Atlanta, GA", "Savannah, GA"),
+            ("Thriller",),
+            ("Atlanta", "Savannah"),
         ),
     ],
 )
@@ -74,7 +91,7 @@ def test_pdf_models_expose_cleaned_project_data(filename, expected_genres, expec
     assert all(page.page_number == number for number, page in enumerate(result.pages, start=1))
     first = result.projects[0]
     assert tuple(first.genres) == expected_genres
-    assert tuple(first.locations or first.shoot_locations) == expected_locations
+    assert tuple(first.locations) == expected_locations
 
 
 def test_json_cli_writes_cleaned_data_and_printed_text(tmp_path, capsys):

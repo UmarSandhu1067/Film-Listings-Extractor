@@ -51,6 +51,66 @@ def test_invalid_record_is_rejected_without_rejecting_valid_records(client):
     assert any("project_title:" in error for error in result["rejected"][0]["errors"])
 
 
+def test_non_string_text_field_rejects_only_its_record(client):
+    response = client.post(
+        "/projects",
+        json={
+            "projects": [
+                _project("Quiet Hours"),
+                {"project_title": 5},
+                _project("Northbound"),
+            ]
+        },
+    )
+
+    assert response.status_code == 200
+    result = response.json()
+    assert result["accepted"] == 2
+    assert result["rejected"][0]["index"] == 1
+    assert any("project_title:" in error for error in result["rejected"][0]["errors"])
+    assert [project["project_title"] for project in client.get("/projects").json()] == [
+        "Quiet Hours",
+        "Northbound",
+    ]
+
+
+def test_duplicate_project_title_is_not_stored_twice(client):
+    first = client.post(
+        "/projects",
+        json={
+            "projects": [
+                {
+                    "project_title": "Quiet Hours",
+                    "studio": "Old Studio",
+                    "roles": [{"role_name": "OLD ROLE"}],
+                }
+            ]
+        },
+    )
+    second = client.post(
+        "/projects",
+        json={
+            "projects": [
+                {
+                    "project_title": "  quiet hours  ",
+                    "studio": "New Studio",
+                    "roles": [{"role_name": "NELL ASHWORTH"}],
+                }
+            ]
+        },
+    )
+
+    assert first.json()["accepted"] == 1
+    assert second.json()["accepted"] == 1
+    projects = client.get("/projects").json()
+    assert len(projects) == 1
+    assert projects[0]["studio"] == "New Studio"
+    assert projects[0]["studios"] == ["New Studio"]
+    assert projects[0]["roles"][0]["role_name_cleaned"] == "Nell Ashworth"
+    assert "project_type" not in projects[0]
+    assert "role_flag" not in projects[0]["roles"][0]
+
+
 def test_exactly_twenty_records_are_accepted(client):
     response = client.post(
         "/projects",

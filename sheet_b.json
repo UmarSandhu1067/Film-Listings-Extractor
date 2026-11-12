@@ -19,7 +19,7 @@
       "roles": [
         {
           "role_name": "ELSIE",
-          "role_name_cleaned": "ELSIE",
+          "role_name_cleaned": "Elsie",
           "role_type": "Lead",
           "role_type_cleaned": "Lead",
           "gender": "Female",
@@ -29,7 +29,7 @@
         },
         {
           "role_name": "GRANDPA WEBB",
-          "role_name_cleaned": "GRANDPA WEBB",
+          "role_name_cleaned": "Grandpa Webb",
           "role_type": "Supporting",
           "role_type_cleaned": "Supporting",
           "gender": "Male",
@@ -39,7 +39,7 @@
         },
         {
           "role_name": "DEPUTY ROSS",
-          "role_name_cleaned": "DEPUTY ROSS",
+          "role_name_cleaned": "Deputy Ross",
           "role_type": "Day Player",
           "role_type_cleaned": "Day Player",
           "gender": "Any",
@@ -66,13 +66,13 @@
       ],
       "location_flag": null,
       "start_date": "Mid-August 2026",
-      "start_date_cleaned": "2026-08-01",
-      "start_date_precision": "month",
+      "start_date_cleaned": "2026-08-15",
+      "start_date_precision": "part_of_month",
       "start_date_flag": null,
       "roles": [
         {
           "role_name": "LADY ANNE CROFT",
-          "role_name_cleaned": "LADY ANNE CROFT",
+          "role_name_cleaned": "Lady Anne Croft",
           "role_type": "Series Regular",
           "role_type_cleaned": "Series Regular",
           "gender": "Female",
@@ -82,7 +82,7 @@
         },
         {
           "role_name": "FOOTMAN #2",
-          "role_name_cleaned": "FOOTMAN #2",
+          "role_name_cleaned": "Footman #2",
           "role_type": "Recurring",
           "role_type_cleaned": "Recurring",
           "gender": "Male",
@@ -104,17 +104,17 @@
       ],
       "location": "Toronto, ON",
       "locations": [
-        "Toronto, ON"
+        "Toronto"
       ],
       "location_flag": null,
       "start_date": "Q4 2025/Q1 2026",
       "start_date_cleaned": "2025-10-01",
-      "start_date_precision": "range",
+      "start_date_precision": "quarter",
       "start_date_flag": null,
       "roles": [
         {
           "role_name": "DET. NORA KIM",
-          "role_name_cleaned": "DET. NORA KIM",
+          "role_name_cleaned": "Det. Nora Kim",
           "role_type": "Series Regular",
           "role_type_cleaned": "Series Regular",
           "gender": "Female",
@@ -124,7 +124,7 @@
         },
         {
           "role_name": "JONAH BELL",
-          "role_name_cleaned": "JONAH BELL",
+          "role_name_cleaned": "Jonah Bell",
           "role_type": "Guest Star",
           "role_type_cleaned": "Guest Star",
           "gender": "Male",
@@ -134,7 +134,7 @@
         },
         {
           "role_name": "RECEPTIONIST",
-          "role_name_cleaned": "RECEPTIONIST",
+          "role_name_cleaned": "Receptionist",
           "role_type": "Co-Star",
           "role_type_cleaned": "Co-Star",
           "gender": "Any",
@@ -153,7 +153,7 @@
       ],
       "location": "Calgary, Alberta, Canada",
       "locations": [
-        "Calgary, Alberta, Canada"
+        "Calgary"
       ],
       "location_flag": null,
       "start_date": "July 13, 2026",
@@ -163,7 +163,7 @@
       "roles": [
         {
           "role_name": "COACH DIANE MARSH",
-          "role_name_cleaned": "COACH DIANE MARSH",
+          "role_name_cleaned": "Coach Diane Marsh",
           "role_type": "Lead",
           "role_type_cleaned": "Lead",
           "gender": "Female",
@@ -173,7 +173,7 @@
         },
         {
           "role_name": "TYLER MARSH",
-          "role_name_cleaned": "TYLER MARSH",
+          "role_name_cleaned": "Tyler Marsh",
           "role_type": "Supporting Lead",
           "role_type_cleaned": "Supporting Lead",
           "gender": "Male",
@@ -207,7 +207,7 @@
       "roles": [
         {
           "role_name": "IRIS",
-          "role_name_cleaned": "IRIS",
+          "role_name_cleaned": "Iris",
           "role_type": "Series Regular",
           "role_type_cleaned": "Series Regular",
           "gender": "Female",
@@ -217,7 +217,7 @@
         },
         {
           "role_name": "THE VOICE",
-          "role_name_cleaned": "THE VOICE",
+          "role_name_cleaned": "The Voice",
           "role_type": "Recurring",
           "role_type_cleaned": "Recurring",
           "gender": "Any",

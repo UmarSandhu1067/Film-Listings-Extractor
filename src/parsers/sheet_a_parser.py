@@ -38,11 +38,12 @@ def _new_sheet_a_project(title: str) -> dict[str, Any]:
 def parse_sheet_a(pages: list[dict[str, Any]]) -> list[dict[str, Any]]:
     """Extract projects and role descriptions from labelled-field pages."""
     projects: list[dict[str, Any]] = []
+    current: dict[str, Any] | None = None
+    previous_field: str | None = None
+    in_roles = False
     for page in pages:
-        current: dict[str, Any] | None = None
         previous_top: float | None = None
-        previous_field: str | None = None
-        in_roles = False
+        page_start = True
 
         for line in line_groups(page["words"]):
             text = line_text(line)
@@ -55,6 +56,7 @@ def parse_sheet_a(pages: list[dict[str, Any]]) -> list[dict[str, Any]]:
             if title_alias and current:
                 current["title_alias"] = text.strip()
                 previous_top = top
+                page_start = False
                 continue
 
             field_match = _FIELD_RE.match(text)
@@ -64,22 +66,34 @@ def parse_sheet_a(pages: list[dict[str, Any]]) -> list[dict[str, Any]]:
                 previous_field = field
                 in_roles = False
                 previous_top = top
+                page_start = False
                 continue
 
             if re.match(r"^\s*roles\s*:", folded):
                 in_roles = True
                 previous_field = None
                 previous_top = top
+                page_start = False
                 continue
 
             gap = top - previous_top if previous_top is not None else 0
             role = role_from_line(line) if in_roles else None
+            if page_start and in_roles and role is None:
+                current = _new_sheet_a_project(text.strip())
+                projects.append(current)
+                previous_field = None
+                in_roles = False
+                previous_top = top
+                page_start = False
+                continue
+
             if in_roles and current and gap >= 28 and role is None:
                 current = _new_sheet_a_project(text.strip())
                 projects.append(current)
                 previous_field = None
                 in_roles = False
                 previous_top = top
+                page_start = False
                 continue
 
             if in_roles and current:
@@ -104,11 +118,13 @@ def parse_sheet_a(pages: list[dict[str, Any]]) -> list[dict[str, Any]]:
                                 else description
                             )
                 previous_top = top
+                page_start = False
                 continue
 
             if current and previous_field == "synopsis" and gap <= 24:
                 append_value(current, "synopsis", text.strip())
                 previous_top = top
+                page_start = False
                 continue
 
             if current is None or gap >= 28:
@@ -118,6 +134,7 @@ def parse_sheet_a(pages: list[dict[str, Any]]) -> list[dict[str, Any]]:
                     projects.append(current)
                     previous_field = None
                     in_roles = False
+            page_start = False
             previous_top = top
 
     return projects
