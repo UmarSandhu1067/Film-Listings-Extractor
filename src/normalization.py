@@ -180,10 +180,12 @@ def normalize_locations(value: str | None) -> tuple[list[str], str | None]:
         return [], None
 
     tentative = bool(_TENTATIVE_LOCATION.search(cleaned))
+    tentative_alternatives = False
     if tentative:
         alternatives = re.search(r"\(([^()]*)\)\s*$", cleaned)
         if alternatives:
             cleaned = alternatives.group(1)
+            tentative_alternatives = True
         cleaned = _TENTATIVE_LOCATION.sub("", cleaned)
         cleaned = cleaned.strip(" \t,;:.-()")
 
@@ -196,7 +198,10 @@ def normalize_locations(value: str | None) -> tuple[list[str], str | None]:
         pieces = _split_location_text(outer, split_commas=False)
         pieces.extend(_LOCATION_ALTERNATIVE_SEPARATOR.split(inner))
     elif tentative:
-        pieces = _LOCATION_ALTERNATIVE_SEPARATOR.split(cleaned)
+        separator = (
+            _LOCATION_ALTERNATIVE_SEPARATOR if tentative_alternatives else _LOCATION_SEPARATOR
+        )
+        pieces = separator.split(cleaned)
     else:
         pieces = _split_location_text(cleaned, split_commas=False)
 

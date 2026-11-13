@@ -86,6 +86,11 @@ def test_gender_rules(printed, expected):
         ("Atlanta, GA", ["Atlanta"], None),
         ("Likely NYC", ["New York"], "Location is tentative; listed place names are retained."),
         (
+            "Likely Toronto, ON",
+            ["Toronto"],
+            "Location is tentative; listed place names are retained.",
+        ),
+        (
             "TBD (LA, NY or Vancouver)",
             ["Los Angeles", "New York", "Vancouver"],
             "Location is tentative; listed place names are retained.",
