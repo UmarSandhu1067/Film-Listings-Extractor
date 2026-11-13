@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "film-listings-extractor"
 version = "0.1.0"
-description = "Extract film project and role listings from three PDF layouts."
+description = "Extract film project and role listings from supplied PDF layouts."
 requires-python = ">=3.12"
 dependencies = [
     "pdfplumber==0.11.10",
@@ -17,6 +17,7 @@ dependencies = [
 
 [project.scripts]
 extract = "src.main:cli"
+extract-v2 = "src.v2.main:cli"
 
 [tool.setuptools]
-packages = ["src", "src.parsers"]
+packages = ["src", "src.parsers", "src.v2"]

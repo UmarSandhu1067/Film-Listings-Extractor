@@ -2,16 +2,27 @@
 
 from __future__ import annotations
 
+from collections.abc import AsyncIterator
+from contextlib import asynccontextmanager
 from typing import Any
 
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, ValidationError
 
 from src.models import Project
+from src.v2.api import app as v2_app
+from src.v2.api import load_default_projects
 
 BATCH_SIZE = 20
 
-app = FastAPI(title="Film Listings Extractor API")
+
+@asynccontextmanager
+async def lifespan(_: FastAPI) -> AsyncIterator[None]:
+    load_default_projects()
+    yield
+
+
+app = FastAPI(title="Film Listings Extractor API", lifespan=lifespan)
 _accepted_projects: list[Project] = []
 
 
@@ -96,3 +107,6 @@ def get_projects() -> list[Project]:
 def get_health() -> HealthResult:
     """Report that the API is ready to receive requests."""
     return HealthResult(status="ok")
+
+
+app.mount("/v2", v2_app, name="v2")

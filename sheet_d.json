@@ -1,0 +1,1063 @@
+{
+  "projects": [
+    {
+      "project_title": "EMBER STREET",
+      "project_title_cleaned": "Ember Street",
+      "title_alias": "(aka The Fire Line)",
+      "aliases": [
+        "The Fire Line"
+      ],
+      "section": "ONE-HOUR SERIES",
+      "network": "Streamwave",
+      "network_cleaned": "Streamwave",
+      "networks": [
+        "Streamwave"
+      ],
+      "studio": "Bluecastle Studios / Harbor Gate Media",
+      "studio_cleaned": "Bluecastle Studios / Harbor Gate Media",
+      "studios": [
+        "Bluecastle Studios",
+        "Harbor Gate Media"
+      ],
+      "genre": "Crime Drama",
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "location": "Atlanta, GA",
+      "locations": [
+        "Atlanta"
+      ],
+      "start_date": "Jan 2027",
+      "start_date_cleaned": "2027-01-01",
+      "start_date_precision": "month",
+      "status": "Casting",
+      "status_cleaned": "Casting",
+      "synopsis": "An arson investigator returns to the neighborhood she grew up in when a string of fires follows the route of her old school bus.",
+      "synopsis_cleaned": "An arson investigator returns to the neighborhood she grew up in when a string of fires follows the route of her old school bus.",
+      "roles": [
+        {
+          "role_name": "MAYA TORRES",
+          "role_name_cleaned": "Maya Torres",
+          "role_type": "Series Regular",
+          "role_type_cleaned": "Series Regular",
+          "description": "Female, 30s. Arson investigator, methodical, slow to trust.",
+          "description_cleaned": "Female, 30s. Arson investigator, methodical, slow to trust."
+        },
+        {
+          "role_name": "CHIEF AL BRANDT",
+          "role_name_cleaned": "Chief Al Brandt",
+          "role_type": "Series Regular",
+          "role_type_cleaned": "Series Regular",
+          "status": "Cast",
+          "cast_name": "Andre Mbeki",
+          "cast_person_key": "andre-mbeki",
+          "description": "Male, 50s. Her former mentor.",
+          "description_cleaned": "Male, 50s. Her former mentor."
+        },
+        {
+          "role_name": "ROSA TORRES",
+          "role_name_cleaned": "Rosa Torres",
+          "role_type": "Recurring",
+          "role_type_cleaned": "Recurring",
+          "description": "Female, 60s. Maya's mother, runs the corner bakery.",
+          "description_cleaned": "Female, 60s. Maya's mother, runs the corner bakery."
+        },
+        {
+          "role_name": "KID ON BIKE",
+          "role_name_cleaned": "Kid On Bike",
+          "role_type": "Co-Star",
+          "role_type_cleaned": "Co-Star",
+          "description": "Any, 10-12.",
+          "description_cleaned": "Any, 10-12."
+        }
+      ],
+      "credits": [
+        {
+          "code_printed": "EP",
+          "code": "EP",
+          "role": "Executive Producer",
+          "kind": "person",
+          "name": "Dana Whitlock",
+          "name_cleaned": "Dana Whitlock",
+          "person_key": "dana-whitlock"
+        },
+        {
+          "code_printed": "EP",
+          "code": "EP",
+          "role": "Executive Producer",
+          "kind": "person",
+          "name": "Marcus Oyelaran",
+          "name_cleaned": "Marcus Oyelaran",
+          "person_key": "marcus-oyelaran"
+        },
+        {
+          "code_printed": "EP",
+          "code": "EP",
+          "role": "Executive Producer",
+          "kind": "person",
+          "name": "Mei-Lin Zhou",
+          "name_cleaned": "Mei-Lin Zhou",
+          "person_key": "mei-lin-zhou"
+        },
+        {
+          "code_printed": "EP",
+          "code": "EP",
+          "role": "Executive Producer",
+          "kind": "person",
+          "name": "Helen Abara",
+          "name_cleaned": "Helen Abara",
+          "person_key": "helen-abara"
+        },
+        {
+          "code_printed": "EP/W",
+          "code": "EP",
+          "role": "Executive Producer",
+          "kind": "person",
+          "name": "Tomas Eklund",
+          "name_cleaned": "Tomas Eklund",
+          "person_key": "tomas-eklund"
+        },
+        {
+          "code_printed": "EP/W",
+          "code": "W",
+          "role": "Writer",
+          "kind": "person",
+          "name": "Tomas Eklund",
+          "name_cleaned": "Tomas Eklund",
+          "person_key": "tomas-eklund"
+        },
+        {
+          "code_printed": "D",
+          "code": "D",
+          "role": "Director",
+          "kind": "person",
+          "name": "Priya Raman",
+          "name_cleaned": "Priya Raman",
+          "person_key": "priya-raman",
+          "note": "pilot"
+        },
+        {
+          "code_printed": "CD",
+          "code": "CD",
+          "role": "Casting Director",
+          "kind": "company",
+          "name": "Hollis & Wren Casting",
+          "name_cleaned": "Hollis & Wren Casting",
+          "company_key": "hollis-wren-casting"
+        },
+        {
+          "code_printed": "CD",
+          "code": "CD",
+          "role": "Casting Director",
+          "kind": "person",
+          "name": "Jo Hollis",
+          "name_cleaned": "Jo Hollis",
+          "person_key": "jo-hollis",
+          "company": "Hollis & Wren Casting",
+          "phone": "(310) 555-0142",
+          "phone_cleaned": "+13105550142",
+          "email": "jo@holliswren.example"
+        },
+        {
+          "code_printed": "CD",
+          "code": "CD",
+          "role": "Casting Director",
+          "kind": "person",
+          "name": "Sam Wren",
+          "name_cleaned": "Sam Wren",
+          "person_key": "sam-wren",
+          "company": "Hollis & Wren Casting",
+          "phone": "310.555.0177",
+          "phone_cleaned": "+13105550177"
+        }
+      ]
+    },
+    {
+      "project_title": "THE GLASS MERIDIAN",
+      "project_title_cleaned": "The Glass Meridian",
+      "aliases": [],
+      "section": "ONE-HOUR SERIES",
+      "network": "Riverline",
+      "network_cleaned": "Riverline",
+      "networks": [
+        "Riverline"
+      ],
+      "studio": "Northlight Pictures",
+      "studio_cleaned": "Northlight Pictures",
+      "studios": [
+        "Northlight Pictures"
+      ],
+      "genre": "Sci-Fi / Mystery",
+      "genres": [
+        "Science Fiction",
+        "Mystery"
+      ],
+      "location": "TBD (Toronto or Montreal)",
+      "locations": [
+        "Toronto",
+        "Montreal"
+      ],
+      "location_flag": "Location is tentative; listed place names are retained.",
+      "start_date": "TBD",
+      "start_date_precision": "unknown",
+      "start_date_flag": "Date is marked TBD.",
+      "status": "Development",
+      "status_cleaned": "Development",
+      "synopsis": "A cartographer finds a town that appears on every map she draws and on none that anyone else has ever seen.",
+      "synopsis_cleaned": "A cartographer finds a town that appears on every map she draws and on none that anyone else has ever seen.",
+      "roles": [],
+      "credits": [
+        {
+          "code_printed": "CR",
+          "code": "CR",
+          "role": "Creator",
+          "kind": "person",
+          "name": "Helen Abara",
+          "name_cleaned": "Helen Abara",
+          "person_key": "helen-abara"
+        },
+        {
+          "code_printed": "EP",
+          "code": "EP",
+          "role": "Executive Producer",
+          "kind": "person",
+          "name": "HELEN ABARA",
+          "name_cleaned": "Helen Abara",
+          "person_key": "helen-abara"
+        },
+        {
+          "code_printed": "EP",
+          "code": "EP",
+          "role": "Executive Producer",
+          "kind": "person",
+          "name": "DANA WHITLOCK",
+          "name_cleaned": "Dana Whitlock",
+          "person_key": "dana-whitlock"
+        }
+      ]
+    },
+    {
+      "project_title": "LOW TIDE",
+      "project_title_cleaned": "Low Tide",
+      "title_alias": "(fka Harbor Lights)",
+      "aliases": [
+        "Harbor Lights"
+      ],
+      "section": "ONE-HOUR SERIES",
+      "network": "Streamwave / Coastline+",
+      "network_cleaned": "Streamwave / Coastline+",
+      "networks": [
+        "Streamwave",
+        "Coastline+"
+      ],
+      "studio": "Harbor Gate Media",
+      "studio_cleaned": "Harbor Gate Media",
+      "studios": [
+        "Harbor Gate Media"
+      ],
+      "genre": "Family Drama",
+      "genres": [
+        "Family",
+        "Drama"
+      ],
+      "location": "Halifax, NS & St. John's, NL",
+      "locations": [
+        "Halifax",
+        "St. John's"
+      ],
+      "start_date": "Mid-March 2027",
+      "start_date_cleaned": "2027-03-15",
+      "start_date_precision": "part_of_month",
+      "status": "Actively Casting",
+      "status_cleaned": "Actively Casting",
+      "synopsis": "Two estranged sisters inherit a ferry route and the debts that come with it.",
+      "synopsis_cleaned": "Two estranged sisters inherit a ferry route and the debts that come with it.",
+      "roles": [
+        {
+          "role_name": "CAPTAIN JO MERCER",
+          "role_name_cleaned": "Captain Jo Mercer",
+          "role_type": "Series Regular",
+          "role_type_cleaned": "Series Regular",
+          "status": "OFFER OUT",
+          "description": "Female, 40s. Runs the ferry, hides the ledger.",
+          "description_cleaned": "Female, 40s. Runs the ferry, hides the ledger."
+        },
+        {
+          "role_name": "ELLIE MERCER",
+          "role_name_cleaned": "Ellie Mercer",
+          "role_type": "Series Regular",
+          "role_type_cleaned": "Series Regular",
+          "description": "Female, 30s. The sister who left.",
+          "description_cleaned": "Female, 30s. The sister who left."
+        },
+        {
+          "role_name": "HARBORMASTER PIKE",
+          "role_name_cleaned": "Harbormaster Pike",
+          "role_type": "Recurring",
+          "role_type_cleaned": "Recurring",
+          "description": "Male, 60s.",
+          "description_cleaned": "Male, 60s."
+        },
+        {
+          "role_name": "DECKHAND #1",
+          "role_name_cleaned": "Deckhand #1",
+          "role_type": "Co-Star",
+          "role_type_cleaned": "Co-Star",
+          "description": "Any, 20s.",
+          "description_cleaned": "Any, 20s."
+        }
+      ],
+      "credits": [
+        {
+          "code_printed": "EP",
+          "code": "EP",
+          "role": "Executive Producer",
+          "kind": "person",
+          "name": "Marcus Oyelaran",
+          "name_cleaned": "Marcus Oyelaran",
+          "person_key": "marcus-oyelaran"
+        },
+        {
+          "code_printed": "P/D",
+          "code": "P",
+          "role": "Producer",
+          "kind": "person",
+          "name": "Ingrid Solberg",
+          "name_cleaned": "Ingrid Solberg",
+          "person_key": "ingrid-solberg"
+        },
+        {
+          "code_printed": "P/D",
+          "code": "D",
+          "role": "Director",
+          "kind": "person",
+          "name": "Ingrid Solberg",
+          "name_cleaned": "Ingrid Solberg",
+          "person_key": "ingrid-solberg"
+        },
+        {
+          "code_printed": "W",
+          "code": "W",
+          "role": "Writer",
+          "kind": "person",
+          "name": "Tomas Eklund",
+          "name_cleaned": "Tomas Eklund",
+          "person_key": "tomas-eklund"
+        },
+        {
+          "code_printed": "W",
+          "code": "W",
+          "role": "Writer",
+          "kind": "person",
+          "name": "Nia Brooks",
+          "name_cleaned": "Nia Brooks",
+          "person_key": "nia-brooks",
+          "note": "staff"
+        },
+        {
+          "code_printed": "LS",
+          "code": "LS",
+          "kind": "person",
+          "name": "Peter Vance",
+          "name_cleaned": "Peter Vance",
+          "person_key": "peter-vance",
+          "flag": "Unknown credit code: LS."
+        },
+        {
+          "code_printed": "CD",
+          "code": "CD",
+          "role": "Casting Director",
+          "kind": "person",
+          "name": "Marisol Vega",
+          "name_cleaned": "Marisol Vega",
+          "person_key": "marisol-vega",
+          "email": "marisol@vegacasting.example"
+        }
+      ]
+    },
+    {
+      "project_title": "NINE MILE ROAD",
+      "project_title_cleaned": "Nine Mile Road",
+      "aliases": [],
+      "section": "ONE-HOUR SERIES",
+      "network": "TBD",
+      "network_cleaned": "TBD",
+      "networks": [
+        "TBD"
+      ],
+      "studio": "Copperfield Entertainment",
+      "studio_cleaned": "Copperfield Entertainment",
+      "studios": [
+        "Copperfield Entertainment"
+      ],
+      "genre": "Western / Thriller",
+      "genres": [
+        "Western",
+        "Thriller"
+      ],
+      "location": "Albuquerque, NM",
+      "locations": [
+        "Albuquerque"
+      ],
+      "start_date": "Q2 2027",
+      "start_date_cleaned": "2027-04-01",
+      "start_date_precision": "quarter",
+      "status": "Development",
+      "status_cleaned": "Development",
+      "synopsis": "A rural mail carrier is the only witness to a disappearance on the last stop of her route.",
+      "synopsis_cleaned": "A rural mail carrier is the only witness to a disappearance on the last stop of her route.",
+      "roles": [
+        {
+          "role_name": "LUZ ARAGON",
+          "role_name_cleaned": "Luz Aragon",
+          "role_type": "Series Regular",
+          "role_type_cleaned": "Series Regular",
+          "description": "Female, 40s. Mail carrier, knows every gate code in the county.",
+          "description_cleaned": "Female, 40s. Mail carrier, knows every gate code in the county."
+        },
+        {
+          "role_name": "SHERIFF DALE HOYT",
+          "role_name_cleaned": "Sheriff Dale Hoyt",
+          "role_type": "Recurring",
+          "role_type_cleaned": "Recurring",
+          "description": "Male, 50s.",
+          "description_cleaned": "Male, 50s."
+        }
+      ],
+      "credits": []
+    },
+    {
+      "project_title": "SECOND SHIFT",
+      "project_title_cleaned": "Second Shift",
+      "aliases": [],
+      "section": "HALF-HOUR SERIES",
+      "network": "Brightside",
+      "network_cleaned": "Brightside",
+      "networks": [
+        "Brightside"
+      ],
+      "studio": "Oakmere Films",
+      "studio_cleaned": "Oakmere Films",
+      "studios": [
+        "Oakmere Films"
+      ],
+      "genre": "Comedy",
+      "genres": [
+        "Comedy"
+      ],
+      "location": "Chicago, IL",
+      "locations": [
+        "Chicago"
+      ],
+      "start_date": "2/8/27",
+      "start_date_cleaned": "2027-02-08",
+      "start_date_precision": "day",
+      "status": "Casting",
+      "status_cleaned": "Casting",
+      "synopsis": "The overnight crew of a 24-hour diner is convinced the day shift is sabotaging them.",
+      "synopsis_cleaned": "The overnight crew of a 24-hour diner is convinced the day shift is sabotaging them.",
+      "roles": [
+        {
+          "role_name": "DOT KOWALSKI",
+          "role_name_cleaned": "Dot Kowalski",
+          "role_type": "Series Regular",
+          "role_type_cleaned": "Series Regular",
+          "status": "Cast",
+          "cast_name": "Renee Castillo",
+          "cast_person_key": "renee-castillo",
+          "description": "Female, 50s. Night manager, has seen everything.",
+          "description_cleaned": "Female, 50s. Night manager, has seen everything."
+        },
+        {
+          "role_name": "MARCUS \"FRY\" BELL",
+          "role_name_cleaned": "Marcus \"Fry\" Bell",
+          "role_type": "Series Regular",
+          "role_type_cleaned": "Series Regular",
+          "description": "Male, 20s. Line cook with big plans.",
+          "description_cleaned": "Male, 20s. Line cook with big plans."
+        },
+        {
+          "role_name": "THE REGULAR",
+          "role_name_cleaned": "The Regular",
+          "role_type": "Recurring",
+          "role_type_cleaned": "Recurring",
+          "description": "Any, 70s. Never orders, never leaves.",
+          "description_cleaned": "Any, 70s. Never orders, never leaves."
+        },
+        {
+          "role_name": "HEALTH INSPECTOR",
+          "role_name_cleaned": "Health Inspector",
+          "role_type": "Guest Star",
+          "role_type_cleaned": "Guest Star",
+          "description": "Female, 40s.",
+          "description_cleaned": "Female, 40s."
+        }
+      ],
+      "credits": [
+        {
+          "code_printed": "CR",
+          "code": "CR",
+          "role": "Creator",
+          "kind": "person",
+          "name": "Nia Brooks",
+          "name_cleaned": "Nia Brooks",
+          "person_key": "nia-brooks"
+        },
+        {
+          "code_printed": "CR",
+          "code": "CR",
+          "role": "Creator",
+          "kind": "person",
+          "name": "Sam Okada",
+          "name_cleaned": "Sam Okada",
+          "person_key": "sam-okada"
+        },
+        {
+          "code_printed": "EP",
+          "code": "EP",
+          "role": "Executive Producer",
+          "kind": "person",
+          "name": "Nia Brooks",
+          "name_cleaned": "Nia Brooks",
+          "person_key": "nia-brooks"
+        },
+        {
+          "code_printed": "EP",
+          "code": "EP",
+          "role": "Executive Producer",
+          "kind": "person",
+          "name": "Sam Okada",
+          "name_cleaned": "Sam Okada",
+          "person_key": "sam-okada"
+        },
+        {
+          "code_printed": "EP",
+          "code": "EP",
+          "role": "Executive Producer",
+          "kind": "person",
+          "name": "Mei-Lin Zhou",
+          "name_cleaned": "Mei-Lin Zhou",
+          "person_key": "mei-lin-zhou"
+        },
+        {
+          "code_printed": "CD",
+          "code": "CD",
+          "role": "Casting Director",
+          "kind": "company",
+          "name": "Tessa Marlowe Casting",
+          "name_cleaned": "Tessa Marlowe Casting",
+          "company_key": "tessa-marlowe-casting",
+          "phone": "(404) 555-0119",
+          "phone_cleaned": "+14045550119"
+        }
+      ]
+    },
+    {
+      "project_title": "the understudies",
+      "project_title_cleaned": "The Understudies",
+      "title_alias": "(aka Curtain Call)",
+      "aliases": [
+        "Curtain Call"
+      ],
+      "section": "HALF-HOUR SERIES",
+      "network": "Riverline",
+      "network_cleaned": "Riverline",
+      "networks": [
+        "Riverline"
+      ],
+      "studio": "Tandem House",
+      "studio_cleaned": "Tandem House",
+      "studios": [
+        "Tandem House"
+      ],
+      "genre": "Musical Comedy",
+      "genres": [
+        "Musical",
+        "Comedy"
+      ],
+      "location": "London",
+      "locations": [
+        "London"
+      ],
+      "start_date": "Summer 2027",
+      "start_date_cleaned": "2027-06-01",
+      "start_date_precision": "season",
+      "status": "casting",
+      "status_cleaned": "casting",
+      "synopsis": "Three understudies at a West End theatre wait for the night their leads call in sick.",
+      "synopsis_cleaned": "Three understudies at a West End theatre wait for the night their leads call in sick.",
+      "roles": [
+        {
+          "role_name": "PIP DARROW",
+          "role_name_cleaned": "Pip Darrow",
+          "role_type": "Series Regular",
+          "role_type_cleaned": "Series Regular",
+          "description": "Female, 20s. Knows every part but her own.",
+          "description_cleaned": "Female, 20s. Knows every part but her own."
+        },
+        {
+          "role_name": "GIDEON FAYE",
+          "role_name_cleaned": "Gideon Faye",
+          "role_type": "Series Regular",
+          "role_type_cleaned": "Series Regular",
+          "description": "Male, 30s. Has been \"about to go on\" for six years.",
+          "description_cleaned": "Male, 30s. Has been \"about to go on\" for six years."
+        },
+        {
+          "role_name": "STAGE MANAGER",
+          "role_name_cleaned": "Stage Manager",
+          "role_type": "Recurring",
+          "role_type_cleaned": "Recurring",
+          "description": "Any, 40s-50s.",
+          "description_cleaned": "Any, 40s-50s."
+        }
+      ],
+      "credits": [
+        {
+          "code_printed": "EP/W",
+          "code": "EP",
+          "role": "Executive Producer",
+          "kind": "person",
+          "name": "Celia Hartwell",
+          "name_cleaned": "Celia Hartwell",
+          "person_key": "celia-hartwell"
+        },
+        {
+          "code_printed": "EP/W",
+          "code": "W",
+          "role": "Writer",
+          "kind": "person",
+          "name": "Celia Hartwell",
+          "name_cleaned": "Celia Hartwell",
+          "person_key": "celia-hartwell"
+        },
+        {
+          "code_printed": "P",
+          "code": "P",
+          "role": "Producer",
+          "kind": "person",
+          "name": "Ravi Kessler",
+          "name_cleaned": "Ravi Kessler",
+          "person_key": "ravi-kessler"
+        },
+        {
+          "code_printed": "CD",
+          "code": "CD",
+          "role": "Casting Director",
+          "kind": "company",
+          "name": "Hollis & Wren Casting",
+          "name_cleaned": "Hollis & Wren Casting",
+          "company_key": "hollis-wren-casting"
+        },
+        {
+          "code_printed": "CD",
+          "code": "CD",
+          "role": "Casting Director",
+          "kind": "person",
+          "name": "Jo Hollis",
+          "name_cleaned": "Jo Hollis",
+          "person_key": "jo-hollis",
+          "company": "Hollis & Wren Casting",
+          "phone": "+44 20 7946 0958",
+          "phone_cleaned": "+442079460958"
+        }
+      ]
+    },
+    {
+      "project_title": "PORCH LIGHT",
+      "project_title_cleaned": "Porch Light",
+      "aliases": [],
+      "section": "HALF-HOUR SERIES",
+      "network": "Brightside",
+      "network_cleaned": "Brightside",
+      "networks": [
+        "Brightside"
+      ],
+      "studio": "Bluecastle Studios",
+      "studio_cleaned": "Bluecastle Studios",
+      "studios": [
+        "Bluecastle Studios"
+      ],
+      "genre": "Dramedy",
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "location": "Savannah, GA",
+      "locations": [
+        "Savannah"
+      ],
+      "start_date": "Tent. May 2027",
+      "start_date_cleaned": "2027-05-01",
+      "start_date_precision": "month",
+      "start_date_flag": "Date is tentative.",
+      "status": "Pilot Order",
+      "status_cleaned": "Pilot Order",
+      "synopsis": "A retired judge starts an advice column from her front porch and the whole street has opinions.",
+      "synopsis_cleaned": "A retired judge starts an advice column from her front porch and the whole street has opinions.",
+      "roles": [
+        {
+          "role_name": "JUDGE BEA LANGSTON",
+          "role_name_cleaned": "Judge Bea Langston",
+          "role_type": "Series Regular",
+          "role_type_cleaned": "Series Regular",
+          "description": "Female, 70s. Sharp, unhurried.",
+          "description_cleaned": "Female, 70s. Sharp, unhurried."
+        },
+        {
+          "role_name": "NEIGHBOR WES",
+          "role_name_cleaned": "Neighbor Wes",
+          "role_type": "Recurring",
+          "role_type_cleaned": "Recurring",
+          "description": "Male, 30s.",
+          "description_cleaned": "Male, 30s."
+        },
+        {
+          "role_name": "MAIL CARRIER",
+          "role_name_cleaned": "Mail Carrier",
+          "role_type": "Co-Star",
+          "role_type_cleaned": "Co-Star",
+          "description": "Any.",
+          "description_cleaned": "Any."
+        }
+      ],
+      "credits": [
+        {
+          "code_printed": "EP",
+          "code": "EP",
+          "role": "Executive Producer",
+          "kind": "person",
+          "name": "Dana Whitlock",
+          "name_cleaned": "Dana Whitlock",
+          "person_key": "dana-whitlock"
+        },
+        {
+          "code_printed": "W",
+          "code": "W",
+          "role": "Writer",
+          "kind": "person",
+          "name": "Celia Hartwell",
+          "name_cleaned": "Celia Hartwell",
+          "person_key": "celia-hartwell"
+        },
+        {
+          "code_printed": "D",
+          "code": "D",
+          "role": "Director",
+          "kind": "person",
+          "name": "Ingrid Solberg",
+          "name_cleaned": "Ingrid Solberg",
+          "person_key": "ingrid-solberg",
+          "note": "eps 1-2"
+        },
+        {
+          "code_printed": "CD",
+          "code": "CD",
+          "role": "Casting Director",
+          "kind": "person",
+          "name": "Marisol Vega",
+          "name_cleaned": "Marisol Vega",
+          "person_key": "marisol-vega",
+          "phone": "(310) 555-0164",
+          "phone_cleaned": "+13105550164",
+          "email": "marisol@vegacasting.example"
+        }
+      ]
+    },
+    {
+      "project_title": "KEYS TO THE VAN",
+      "project_title_cleaned": "Keys to the Van",
+      "aliases": [],
+      "section": "HALF-HOUR SERIES",
+      "network": "Coastline+",
+      "network_cleaned": "Coastline+",
+      "networks": [
+        "Coastline+"
+      ],
+      "studio": "Harbor Gate Media / Oakmere Films",
+      "studio_cleaned": "Harbor Gate Media / Oakmere Films",
+      "studios": [
+        "Harbor Gate Media",
+        "Oakmere Films"
+      ],
+      "genre": "Rom-Com",
+      "genres": [
+        "Romance",
+        "Comedy"
+      ],
+      "location": "Likely Vancouver, BC",
+      "locations": [
+        "Vancouver"
+      ],
+      "location_flag": "Location is tentative; listed place names are retained.",
+      "start_date": "2027",
+      "start_date_cleaned": "2027-01-01",
+      "start_date_precision": "year",
+      "status": "Development",
+      "status_cleaned": "Development",
+      "synopsis": "Two exes who co-own a camper van agree to one last trip to sell it.",
+      "synopsis_cleaned": "Two exes who co-own a camper van agree to one last trip to sell it.",
+      "roles": [
+        {
+          "role_name": "NORA QUILL",
+          "role_name_cleaned": "Nora Quill",
+          "role_type": "Series Regular",
+          "role_type_cleaned": "Series Regular",
+          "description": "Female, 30s.",
+          "description_cleaned": "Female, 30s."
+        },
+        {
+          "role_name": "TBD ROLE",
+          "role_name_cleaned": "Tbd Role",
+          "role_type": "TBD",
+          "role_type_cleaned": "TBD",
+          "description": "Details to come.",
+          "description_cleaned": "Details to come.",
+          "role_flag": "Role is marked TBD."
+        }
+      ],
+      "credits": [
+        {
+          "code_printed": "CEP",
+          "code": "CEP",
+          "role": "Co-Executive Producer",
+          "kind": "person",
+          "name": "Ravi Kessler",
+          "name_cleaned": "Ravi Kessler",
+          "person_key": "ravi-kessler"
+        },
+        {
+          "code_printed": "P",
+          "code": "P",
+          "role": "Producer",
+          "kind": "person",
+          "name": "Peter Vance",
+          "name_cleaned": "Peter Vance",
+          "person_key": "peter-vance"
+        }
+      ]
+    }
+  ],
+  "people": [
+    {
+      "person_key": "dana-whitlock",
+      "name": "Dana Whitlock",
+      "phones": [],
+      "emails": [],
+      "companies": [],
+      "projects": [
+        "EMBER STREET",
+        "THE GLASS MERIDIAN",
+        "PORCH LIGHT"
+      ]
+    },
+    {
+      "person_key": "marcus-oyelaran",
+      "name": "Marcus Oyelaran",
+      "phones": [],
+      "emails": [],
+      "companies": [],
+      "projects": [
+        "EMBER STREET",
+        "LOW TIDE"
+      ]
+    },
+    {
+      "person_key": "mei-lin-zhou",
+      "name": "Mei-Lin Zhou",
+      "phones": [],
+      "emails": [],
+      "companies": [],
+      "projects": [
+        "EMBER STREET",
+        "SECOND SHIFT"
+      ]
+    },
+    {
+      "person_key": "helen-abara",
+      "name": "Helen Abara",
+      "phones": [],
+      "emails": [],
+      "companies": [],
+      "projects": [
+        "EMBER STREET",
+        "THE GLASS MERIDIAN"
+      ]
+    },
+    {
+      "person_key": "tomas-eklund",
+      "name": "Tomas Eklund",
+      "phones": [],
+      "emails": [],
+      "companies": [],
+      "projects": [
+        "EMBER STREET",
+        "LOW TIDE"
+      ]
+    },
+    {
+      "person_key": "priya-raman",
+      "name": "Priya Raman",
+      "phones": [],
+      "emails": [],
+      "companies": [],
+      "projects": [
+        "EMBER STREET"
+      ]
+    },
+    {
+      "person_key": "jo-hollis",
+      "name": "Jo Hollis",
+      "phones": [
+        "+13105550142",
+        "+442079460958"
+      ],
+      "emails": [
+        "jo@holliswren.example"
+      ],
+      "companies": [
+        "Hollis & Wren Casting"
+      ],
+      "projects": [
+        "EMBER STREET",
+        "the understudies"
+      ]
+    },
+    {
+      "person_key": "sam-wren",
+      "name": "Sam Wren",
+      "phones": [
+        "+13105550177"
+      ],
+      "emails": [],
+      "companies": [
+        "Hollis & Wren Casting"
+      ],
+      "projects": [
+        "EMBER STREET"
+      ]
+    },
+    {
+      "person_key": "andre-mbeki",
+      "name": "Andre Mbeki",
+      "phones": [],
+      "emails": [],
+      "companies": [],
+      "projects": [
+        "EMBER STREET"
+      ]
+    },
+    {
+      "person_key": "ingrid-solberg",
+      "name": "Ingrid Solberg",
+      "phones": [],
+      "emails": [],
+      "companies": [],
+      "projects": [
+        "LOW TIDE",
+        "PORCH LIGHT"
+      ]
+    },
+    {
+      "person_key": "nia-brooks",
+      "name": "Nia Brooks",
+      "phones": [],
+      "emails": [],
+      "companies": [],
+      "projects": [
+        "LOW TIDE",
+        "SECOND SHIFT"
+      ]
+    },
+    {
+      "person_key": "peter-vance",
+      "name": "Peter Vance",
+      "phones": [],
+      "emails": [],
+      "companies": [],
+      "projects": [
+        "LOW TIDE",
+        "KEYS TO THE VAN"
+      ]
+    },
+    {
+      "person_key": "marisol-vega",
+      "name": "Marisol Vega",
+      "phones": [
+        "+13105550164"
+      ],
+      "emails": [
+        "marisol@vegacasting.example"
+      ],
+      "companies": [],
+      "projects": [
+        "LOW TIDE",
+        "PORCH LIGHT"
+      ]
+    },
+    {
+      "person_key": "sam-okada",
+      "name": "Sam Okada",
+      "phones": [],
+      "emails": [],
+      "companies": [],
+      "projects": [
+        "SECOND SHIFT"
+      ]
+    },
+    {
+      "person_key": "renee-castillo",
+      "name": "Renee Castillo",
+      "phones": [],
+      "emails": [],
+      "companies": [],
+      "projects": [
+        "SECOND SHIFT"
+      ]
+    },
+    {
+      "person_key": "celia-hartwell",
+      "name": "Celia Hartwell",
+      "phones": [],
+      "emails": [],
+      "companies": [],
+      "projects": [
+        "the understudies",
+        "PORCH LIGHT"
+      ]
+    },
+    {
+      "person_key": "ravi-kessler",
+      "name": "Ravi Kessler",
+      "phones": [],
+      "emails": [],
+      "companies": [],
+      "projects": [
+        "the understudies",
+        "KEYS TO THE VAN"
+      ]
+    }
+  ],
+  "companies": [
+    {
+      "company_key": "hollis-wren-casting",
+      "name": "Hollis & Wren Casting",
+      "phones": [],
+      "projects": [
+        "EMBER STREET",
+        "the understudies"
+      ]
+    },
+    {
+      "company_key": "tessa-marlowe-casting",
+      "name": "Tessa Marlowe Casting",
+      "phones": [
+        "+14045550119"
+      ],
+      "projects": [
+        "SECOND SHIFT"
+      ]
+    }
+  ]
+}

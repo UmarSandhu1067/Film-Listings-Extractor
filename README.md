@@ -1,12 +1,50 @@
 # Film Listings Extractor
 
-Extract film and television project listings from the supplied Sheet A
-labelled fields, Sheet B table, and Sheet C free-text PDFs. Each parser produces
-the same project/role structure; Pydantic validates it and adds cleaned values
-without changing the original extracted text.
+Extract film and television project listings with V1 and V2. V1 retains its
+original parser and API behavior; V2 adds the new extraction flow and runs
+alongside V1 in the same FastAPI server.
 
 For the full walkthrough of setup, extraction, output fields, API endpoints,
 testing, and current limitations, see the [Project Guide](./PROJECT_GUIDE.md).
+For quick side-by-side manual testing steps, see the
+[V1/V2 Testing Guide](./TESTING_V1_V2.md).
+
+## V2 Extraction and API
+
+V2 is isolated under `src.v2`; V1's parser, models, CLI, and API routes are
+unchanged. Run the combined APIs on one port:
+
+```powershell
+uvicorn src.api:app --reload --port 8000
+```
+
+V1 remains available at `http://127.0.0.1:8000/projects` and `/health`.
+V2 is available under the `/v2` prefix: `/v2/projects`, `/v2/people`,
+`/v2/companies`, and `/v2/health`. The APIs keep separate in-memory data.
+V2 loads its bundled sample data when the server starts, so no POST is needed
+to see the initial V2 results. Use `/docs` for V1 and `/v2/docs` for V2.
+
+For API testing, you do not need to run the V2 CLI or supply a file path.
+The combined API extracts its bundled V2 sample data when it starts. The CLI
+is only needed when you separately want to export V2 results to a JSON file;
+it takes the original PDF as input, not a JSON file.
+
+V2 text is read top-to-bottom in the left column, then the right column,
+before advancing to the next page. The repeated page header, footer, and final
+credit key are excluded. Section bands apply to following projects; a continued
+project keeps its current state across columns and pages. Printed project,
+role, credit, contact, and alias text remains alongside its cleaned value.
+Credits with combined codes produce one record per code. Unknown codes remain
+visible and flagged. People are merged using a case-, spacing-, and
+punctuation-insensitive key; the company heuristic uses the suffixes specified
+in the task guide.
+
+Known limits: V2 reads text PDFs only, assumes two columns split at the page
+midpoint, and does not infer a missing project title or an unknown credit-code
+meaning. OCR, three-column layouts, and source bounding boxes are not included.
+With another week, I would add stored page coordinates and a configurable
+column-boundary detector, then validate those additions against more varied
+layouts.
 
 ## Setup (Python 3.12)
 
