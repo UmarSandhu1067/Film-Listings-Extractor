@@ -37,6 +37,7 @@ _GENRE_BY_KEY = {genre.casefold(): genre for genre in GENRES}
 _GENRE_ALIASES = {
     "sci-fi": ("Science Fiction",),
     "science-fiction": ("Science Fiction",),
+    "rom-com": ("Romance", "Comedy"),
     "ya": ("Young Adult",),
     "dramedy": ("Comedy", "Drama"),
     "romantic comedy": ("Romance", "Comedy"),

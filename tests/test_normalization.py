@@ -18,6 +18,7 @@ from src.normalization import (
     [
         ("Drama/Thriller", ["Drama", "Thriller"]),
         ("Dramedy", ["Comedy", "Drama"]),
+        ("Rom-Com", ["Romance", "Comedy"]),
         ("Action-Adventure", ["Action", "Adventure"]),
         ("Horror-Comedy", ["Horror", "Comedy"]),
         ("Sci-Fi / YA", ["Science Fiction", "Young Adult"]),
