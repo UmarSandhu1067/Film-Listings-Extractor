@@ -32,7 +32,7 @@ def test_models_keep_printed_values_while_cleaning_separate_fields():
     )
 
     assert project.project_title == "  the brass whistle "
-    assert project.project_title_cleaned == "the brass whistle"
+    assert project.project_title_cleaned == "The Brass Whistle"
     assert project.genre == "romantic comedy"
     assert project.genres == ["Romance", "Comedy"]
     assert project.location == "Likely LA"
@@ -48,6 +48,21 @@ def test_models_keep_printed_values_while_cleaning_separate_fields():
     assert role.role_name_cleaned == "Nell Ashworth"
     assert role.notes == "  open   ethnicity  "
     assert role.notes_cleaned == "open ethnicity"
+
+
+@pytest.mark.parametrize(
+    ("printed", "cleaned"),
+    [
+        ("THE LANTERN KEEPER", "The Lantern Keeper"),
+        ("SALT AND IRON", "Salt and Iron"),
+        ("the brass whistle", "The Brass Whistle"),
+    ],
+)
+def test_project_title_cleaning_preserves_printed_title(printed, cleaned):
+    project = Project.model_validate({"project_title": printed})
+
+    assert project.project_title == printed
+    assert project.project_title_cleaned == cleaned
 
 
 def test_models_reject_unexpected_fields():

@@ -56,6 +56,7 @@ _LOCATION_SEPARATOR = re.compile(r"/|;|\band\b|\bor\b", re.IGNORECASE)
 _LOCATION_ALTERNATIVE_SEPARATOR = re.compile(r",|/|;|\band\b|\bor\b", re.IGNORECASE)
 _TENTATIVE_LOCATION = re.compile(r"\b(?:likely|tbd)\b", re.IGNORECASE)
 _TENTATIVE_DATE = re.compile(r"^\s*(?:prob(?:ably)?\.?|tent(?:ative(?:ly)?)?\.?)\s*", re.IGNORECASE)
+_TITLE_SMALL_WORDS = {"a", "an", "and", "in", "of", "the", "to"}
 _MONTHS = {name.casefold(): number for number, name in enumerate(calendar.month_name) if name}
 _MONTHS.update(
     {name.casefold(): number for number, name in enumerate(calendar.month_abbr) if name}
@@ -69,6 +70,26 @@ def clean_text(value: str | None) -> str | None:
         return None
     cleaned = re.sub(r"\s+", " ", value).strip()
     return cleaned or None
+
+
+def normalize_project_title(value: str | None) -> str | None:
+    """Title-case cleaned project titles while lower-casing interior small words."""
+    cleaned = clean_text(value)
+    if cleaned is None:
+        return None
+
+    words = cleaned.title().split()
+    for index in range(1, len(words)):
+        words[index] = re.sub(
+            r"[A-Za-z]+",
+            lambda match: (
+                match.group().lower()
+                if match.group().casefold() in _TITLE_SMALL_WORDS
+                else match.group()
+            ),
+            words[index],
+        )
+    return re.sub(r"\bTv\b", "TV", " ".join(words))
 
 
 def normalize_role_name(value: str | None) -> str | None:

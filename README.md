@@ -85,6 +85,9 @@ separate locations. Studio names separated by `/`, `;`, or `+` are available in
 `studios`; the original `studio` text remains unchanged. All-caps role names
 are title-cased in `role_name_cleaned`, while `role_name` retains the printed
 form. A `TBD ROLE` receives a `role_flag`.
+Cleaned project titles use title case, keeping `a`, `an`, `and`, `in`, `of`,
+`the`, and `to` lower-case except at the beginning; `project_title` retains the
+printed text.
 
 ## Inspect PDF word coordinates
 

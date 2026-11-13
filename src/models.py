@@ -13,6 +13,7 @@ from src.normalization import (
     normalize_gender,
     normalize_genres,
     normalize_locations,
+    normalize_project_title,
     normalize_role_name,
     normalize_role_type,
     normalize_start_date,
@@ -99,7 +100,8 @@ class Project(BaseModel):
         data = dict(value)
         for field in ("project_title", "project_type", "studio", "status", "synopsis", "network"):
             if field in data and (data[field] is None or isinstance(data[field], str)):
-                data[f"{field}_cleaned"] = clean_text(data[field])
+                normalize = normalize_project_title if field == "project_title" else clean_text
+                data[f"{field}_cleaned"] = normalize(data[field])
         if "studio" in data and (data["studio"] is None or isinstance(data["studio"], str)):
             data["studios"] = normalize_studios(data["studio"])
         if "genre" in data and (data["genre"] is None or isinstance(data["genre"], str)):
