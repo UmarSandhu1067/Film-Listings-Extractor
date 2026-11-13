@@ -112,6 +112,7 @@ def test_location_rules(printed, expected, flag):
         ("2/1/2026", date(2026, 2, 1), "day", None),
         ("July 13, 2026", date(2026, 7, 13), "day", None),
         ("Q1 2027", date(2027, 1, 1), "quarter", None),
+        ("2026", date(2026, 1, 1), "year", None),
         ("Mid-August 2026", date(2026, 8, 15), "part_of_month", None),
         ("Late August 2026", date(2026, 8, 25), "part_of_month", None),
         ("10/24/25", date(2025, 10, 24), "day", None),

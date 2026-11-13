@@ -7,7 +7,7 @@ import re
 from datetime import date
 from typing import Literal
 
-DatePrecision = Literal["day", "part_of_month", "month", "season", "quarter", "unknown"]
+DatePrecision = Literal["day", "part_of_month", "month", "season", "quarter", "year", "unknown"]
 
 GENRES = (
     "Action",
@@ -227,6 +227,13 @@ def _parse_single_date(value: str) -> tuple[date | None, DatePrecision, str | No
     if iso_match:
         try:
             return date(*(int(part) for part in iso_match.groups())), "day", None
+        except ValueError:
+            return None, "unknown", "Date is not a valid calendar date."
+
+    year_match = re.fullmatch(r"\d{4}", value)
+    if year_match:
+        try:
+            return date(int(value), 1, 1), "year", None
         except ValueError:
             return None, "unknown", "Date is not a valid calendar date."
 
