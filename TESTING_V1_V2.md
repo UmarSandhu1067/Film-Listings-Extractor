@@ -18,55 +18,37 @@ python -m src.main extract input\sheet_b_table.pdf --out v1_sheet_b.json
 python -m src.main extract input\sheet_c_messy_text.pdf --out v1_sheet_c.json
 ```
 
-V2 supports Sheet D:
-
-```powershell
-python -m src.v2.main input\sheet_d_two_column_grid.pdf --out sheet_d_test.json
-```
-
 Expected V1 results: **A: 4 projects/9 roles, B: 5/12, C: 3/9** (12/30 total).
 Expected V2 totals: **8 projects, 22 roles, 37 credits, 17 people, and 2 companies**.
 
-Check the V2 JSON counts:
+For API testing, you do not need to run V2 extraction or enter a PDF/JSON path.
+The combined API loads V2 sample data when it starts.
 
-```powershell
-$d = Get-Content .\sheet_d_test.json -Raw | ConvertFrom-Json
-$d.projects.Count
-($d.projects | ForEach-Object { $_.roles.Count } | Measure-Object -Sum).Sum
-($d.projects | ForEach-Object { $_.credits.Count } | Measure-Object -Sum).Sum
-$d.people.Count
-$d.companies.Count
-```
+## 3. Run both APIs on one port
 
-## 3. Run both APIs at the same time
-
-Open two PowerShell terminals.
-
-Terminal 1 — V1:
+Start the combined API once:
 
 ```powershell
 python -m uvicorn src.api:app --reload --port 8000
 ```
 
-Terminal 2 — V2:
-
-```powershell
-python -m uvicorn src.v2.api:app --reload --port 8001
-```
-
-Check that both are responding:
+Both versions use port 8000. V1 routes are unchanged; V2 routes use the `/v2`
+prefix. Open `http://127.0.0.1:8000/docs` for V1 or
+`http://127.0.0.1:8000/v2/docs` for V2.
+V2 loads its sample projects, people, and companies automatically when the
+server starts; you do not need to POST the V2 JSON first.
 
 ```powershell
 Invoke-RestMethod http://127.0.0.1:8000/health
-Invoke-RestMethod http://127.0.0.1:8001/health
+Invoke-RestMethod http://127.0.0.1:8000/v2/health
 ```
 
-Both APIs use `/projects`, but they run on different ports and keep separate
-in-memory data. V2 also provides `/people` and `/companies`.
+V1 uses `/projects`; V2 uses `/v2/projects`, `/v2/people`, and
+`/v2/companies`. Their in-memory data remains separate.
 
-## 4. Load extracted projects into each API
+## 4. Load V1 projects and check V2
 
-V1 example:
+V1 example (repeat for the other V1 JSON files if desired):
 
 ```powershell
 $d = Get-Content .\v1_sheet_a.json -Raw | ConvertFrom-Json
@@ -75,17 +57,16 @@ Invoke-RestMethod http://127.0.0.1:8000/projects -Method Post -ContentType "appl
 Invoke-RestMethod http://127.0.0.1:8000/projects
 ```
 
-V2 example:
+Check the V2 data, which is already loaded:
 
 ```powershell
-$d = Get-Content .\sheet_d_test.json -Raw | ConvertFrom-Json
-$body = @{ projects = $d.projects } | ConvertTo-Json -Depth 100
-Invoke-RestMethod http://127.0.0.1:8001/projects -Method Post -ContentType "application/json" -Body $body
-Invoke-RestMethod http://127.0.0.1:8001/people
-Invoke-RestMethod http://127.0.0.1:8001/companies
+Invoke-RestMethod http://127.0.0.1:8000/v2/projects
+Invoke-RestMethod http://127.0.0.1:8000/v2/people
+Invoke-RestMethod http://127.0.0.1:8000/v2/companies
 ```
 
-The APIs store data in memory; restarting a service clears its records.
+V2 reloads its sample data each time the server starts. V1 records are
+in-memory and must be POSTed again after a restart.
 
 ## 5. Run automated checks
 

@@ -2,17 +2,27 @@
 
 from __future__ import annotations
 
+from pathlib import Path
 from typing import Any
 
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, ValidationError
 
 from src.v2.entities import merge_people_companies
+from src.v2.extractor import extract_document
 from src.v2.models import V2Company, V2Person, V2Project
 
 BATCH_SIZE = 20
+DEFAULT_INPUT_PDF = (
+    Path(__file__).resolve().parents[2] / "input" / "sheet_d_two_column_grid.pdf"
+)
 app = FastAPI(title="Film Listings Extractor API V2")
 _accepted_projects: list[V2Project] = []
+
+
+def load_default_projects() -> None:
+    document = extract_document(DEFAULT_INPUT_PDF)
+    _accepted_projects[:] = document.projects
 
 
 class ProjectsBatch(BaseModel):

@@ -1,42 +1,35 @@
 # Film Listings Extractor
 
-Extract film and television project listings from the supplied Sheet A
-labelled fields, Sheet B table, and Sheet C free-text PDFs. V1 retains its
-original parser and API behavior; V2 adds Sheet D extraction and a separate
-FastAPI service so both versions can run at the same time.
+Extract film and television project listings with V1 and V2. V1 retains its
+original parser and API behavior; V2 adds the new extraction flow and runs
+alongside V1 in the same FastAPI server.
 
 For the full walkthrough of setup, extraction, output fields, API endpoints,
 testing, and current limitations, see the [Project Guide](./PROJECT_GUIDE.md).
 For quick side-by-side manual testing steps, see the
 [V1/V2 Testing Guide](./TESTING_V1_V2.md).
 
-## V2: Sheet D
+## V2 Extraction and API
 
 V2 is isolated under `src.v2`; V1's parser, models, CLI, and API routes are
-unchanged. To run both APIs at once, use separate terminals and ports:
+unchanged. Run the combined APIs on one port:
 
 ```powershell
 uvicorn src.api:app --reload --port 8000
-uvicorn src.v2.api:app --reload --port 8001
 ```
 
 V1 remains available at `http://127.0.0.1:8000/projects` and `/health`.
-V2 exposes its own `/projects`, `/people`, `/companies`, and `/health` routes at
-`http://127.0.0.1:8001`. V2 records and in-memory state are separate from V1.
+V2 is available under the `/v2` prefix: `/v2/projects`, `/v2/people`,
+`/v2/companies`, and `/v2/health`. The APIs keep separate in-memory data.
+V2 loads its bundled sample data when the server starts, so no POST is needed
+to see the initial V2 results. Use `/docs` for V1 and `/v2/docs` for V2.
 
-Extract the new PDF with the V2-only command:
+For API testing, you do not need to run the V2 CLI or supply a file path.
+The combined API extracts its bundled V2 sample data when it starts. The CLI
+is only needed when you separately want to export V2 results to a JSON file;
+it takes the original PDF as input, not a JSON file.
 
-```powershell
-extract-v2 input\sheet_d_two_column_grid.pdf --out sheet_d.json
-```
-
-The equivalent module invocation is:
-
-```powershell
-python -m src.v2.main input\sheet_d_two_column_grid.pdf --out sheet_d.json
-```
-
-Sheet D text is read top-to-bottom in the left column, then the right column,
+V2 text is read top-to-bottom in the left column, then the right column,
 before advancing to the next page. The repeated page header, footer, and final
 credit key are excluded. Section bands apply to following projects; a continued
 project keeps its current state across columns and pages. Printed project,

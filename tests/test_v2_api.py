@@ -9,9 +9,9 @@ from src.v2.api import app as app_v2
 
 @pytest.fixture
 def clients():
-    accepted_v1.clear()
-    accepted_v2.clear()
     with TestClient(app_v1) as v1, TestClient(app_v2) as v2:
+        accepted_v1.clear()
+        accepted_v2.clear()
         yield v1, v2
     accepted_v1.clear()
     accepted_v2.clear()
@@ -43,6 +43,43 @@ def test_v1_and_v2_apps_remain_independently_available(clients):
     assert v2.get("/projects").json()[0]["credits"][0]["name"] == "Jane Sample"
     assert v1.get("/health").json() == {"status": "ok"}
     assert v2.get("/health").json() == {"status": "ok"}
+
+
+def test_v2_is_available_under_v1_app_prefix_on_one_server(clients):
+    v1, _ = clients
+
+    response = v1.post(
+        "/v2/projects",
+        json={
+            "projects": [
+                {
+                    "project_title": "Mounted V2 Project",
+                    "credits": [_person_credit("Jane Sample")],
+                }
+            ]
+        },
+    )
+
+    assert response.json() == {"accepted": 1, "rejected": []}
+    assert v1.get("/projects").json() == []
+    assert v1.get("/v2/projects").json()[0]["project_title"] == "Mounted V2 Project"
+    assert v1.get("/v2/people").json()[0]["name"] == "Jane Sample"
+    assert v1.get("/v2/companies").json() == []
+    assert v1.get("/v2/health").json() == {"status": "ok"}
+
+
+def test_combined_app_loads_v2_data_at_startup_without_populating_v1():
+    accepted_v1.clear()
+    accepted_v2.clear()
+
+    with TestClient(app_v1) as client:
+        assert len(client.get("/projects").json()) == 0
+        assert len(client.get("/v2/projects").json()) == 8
+        assert len(client.get("/v2/people").json()) == 17
+        assert len(client.get("/v2/companies").json()) == 2
+
+    accepted_v1.clear()
+    accepted_v2.clear()
 
 
 def test_v2_rejects_broken_credits_per_record_and_continues_batch(clients):
