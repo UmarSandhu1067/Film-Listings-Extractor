@@ -19,4 +19,4 @@ dependencies = [
 extract = "src.main:cli"
 
 [tool.setuptools]
-packages = ["src", "src.parsers"]
+packages = ["src", "src.parsers", "src.v2"]
