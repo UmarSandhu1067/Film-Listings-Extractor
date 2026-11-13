@@ -82,17 +82,24 @@ def cli(argv: list[str] | None = None) -> int:
             parser.error("'extract' requires a PDF path.")
         if args.out is None:
             parser.error("'extract' requires --out JSON_PATH.")
+        if not args.pdf.is_file():
+            print(f"Error: input PDF not found: {args.pdf}", file=sys.stderr)
+            return 1
         result = write_json(args.pdf, args.out)
         print(f"Wrote {len(result.projects)} project(s) to {args.out}")
         return 0
 
     if args.pdf is not None:
         parser.error("Use 'extract PDF --out JSON_PATH' for JSON output.")
+    input_path = Path(args.command_or_pdf)
+    if not input_path.is_file():
+        print(f"Error: input PDF not found: {input_path}", file=sys.stderr)
+        return 1
     if args.out is not None:
-        result = write_json(args.command_or_pdf, args.out)
+        result = write_json(input_path, args.out)
         print(f"Wrote {len(result.projects)} project(s) to {args.out}")
     else:
-        main(args.command_or_pdf)
+        main(input_path)
     return 0
 
 

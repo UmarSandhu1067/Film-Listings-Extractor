@@ -124,6 +124,19 @@ def test_json_cli_writes_cleaned_data_and_printed_text(tmp_path, capsys):
     assert "Wrote 4 project(s)" in capsys.readouterr().out
 
 
+def test_missing_input_file_prints_one_error_line_and_returns_nonzero(tmp_path, capsys):
+    missing_pdf = tmp_path / "missing.pdf"
+    output = tmp_path / "result.json"
+
+    code = cli(["extract", str(missing_pdf), "--out", str(output)])
+
+    captured = capsys.readouterr()
+    assert code == 1
+    assert captured.out == ""
+    assert captured.err == f"Error: input PDF not found: {missing_pdf}\n"
+    assert not output.exists()
+
+
 @pytest.mark.parametrize(
     ("filename", "absent_project_fields"),
     [
