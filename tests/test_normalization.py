@@ -80,6 +80,7 @@ def test_gender_rules(printed, expected):
         ("LA", ["Los Angeles"], None),
         ("Los Angeles, CA", ["Los Angeles"], None),
         ("NY/NJ", ["New York", "New Jersey"], None),
+        ("Los Angeles, CA & NYC", ["Los Angeles", "New York"], None),
         ("NY", ["New York"], None),
         ("NYC", ["New York"], None),
         ("Toronto, ON", ["Toronto"], None),

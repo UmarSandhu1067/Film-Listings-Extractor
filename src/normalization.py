@@ -52,7 +52,7 @@ _LOCATION_ALIASES = {
     "nyc": "New York",
     "nj": "New Jersey",
 }
-_LOCATION_SEPARATOR = re.compile(r"/|;|\band\b|\bor\b", re.IGNORECASE)
+_LOCATION_SEPARATOR = re.compile(r"/|;|&|\band\b|\bor\b", re.IGNORECASE)
 _LOCATION_ALTERNATIVE_SEPARATOR = re.compile(r",|/|;|\band\b|\bor\b", re.IGNORECASE)
 _TENTATIVE_LOCATION = re.compile(r"\b(?:likely|tbd)\b", re.IGNORECASE)
 _TENTATIVE_DATE = re.compile(r"^\s*(?:prob(?:ably)?\.?|tent(?:ative(?:ly)?)?\.?)\s*", re.IGNORECASE)
