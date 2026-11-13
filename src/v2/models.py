@@ -9,9 +9,13 @@ from pydantic import BaseModel, ConfigDict, Field, model_validator
 
 from src.v2.cleaning import (
     DatePrecision,
+    clean_phone,
     clean_text,
+    normalize_email,
+    normalize_entity_key,
     normalize_genres,
     normalize_locations,
+    normalize_name,
     normalize_networks,
     normalize_start_date,
     normalize_studios,
@@ -58,12 +62,53 @@ class V2Credit(BaseModel):
     name: str = Field(min_length=1)
     name_cleaned: str | None = None
     person_key: str | None = None
+    company_key: str | None = None
     company: str | None = None
     note: str | None = None
     phone: str | None = None
     phone_cleaned: str | None = None
     email: str | None = None
     flag: str | None = None
+
+    @model_validator(mode="before")
+    @classmethod
+    def populate_cleaned_values(cls, value: Any) -> Any:
+        if not isinstance(value, dict):
+            return value
+        data = dict(value)
+        name = data.get("name")
+        kind = data.get("kind")
+        if isinstance(name, str):
+            data["name_cleaned"] = normalize_name(name)
+            if kind == "person":
+                data["person_key"] = normalize_entity_key(name)
+            elif kind == "company":
+                data["company_key"] = normalize_entity_key(name)
+        if isinstance(data.get("phone"), str):
+            data["phone_cleaned"] = clean_phone(data["phone"])
+        if isinstance(data.get("email"), str):
+            data["email"] = normalize_email(data["email"])
+        return data
+
+
+class V2Person(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    person_key: str
+    name: str
+    phones: list[str] = Field(default_factory=list)
+    emails: list[str] = Field(default_factory=list)
+    companies: list[str] = Field(default_factory=list)
+    projects: list[str] = Field(default_factory=list)
+
+
+class V2Company(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    company_key: str
+    name: str
+    phones: list[str] = Field(default_factory=list)
+    projects: list[str] = Field(default_factory=list)
 
 
 class V2Project(BaseModel):

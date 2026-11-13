@@ -76,6 +76,20 @@ def normalize_name(value: str) -> str:
     return cleaned
 
 
+def normalize_entity_key(value: str) -> str:
+    cleaned = clean_text(value) or ""
+    return re.sub(r"[\W_]+", "-", cleaned.casefold()).strip("-")
+
+
+def clean_phone(value: str) -> str:
+    digits = re.sub(r"\D", "", value)
+    return f"+{digits}" if value.lstrip().startswith("+") else f"+1{digits}"
+
+
+def normalize_email(value: str) -> str:
+    return value.strip().lower()
+
+
 def _known_genre(term: str) -> tuple[str, ...] | None:
     folded = term.casefold().strip()
     if folded in _GENRE_ALIASES:

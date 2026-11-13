@@ -7,6 +7,7 @@ from collections.abc import Iterable
 from typing import Any
 
 from src.v2.layout import LayoutLine, is_section_band
+from src.v2.team import parse_team_lines
 
 _FIELD_RE = re.compile(
     r"\b(Network|Status|Studio|Start|Location|Genre|Logline)\s*:",
@@ -72,13 +73,20 @@ def parse_sheet_d(lines: Iterable[LayoutLine]) -> list[dict[str, Any]]:
     current_field: str | None = None
     in_team = False
     in_roles = False
+    team_lines: list[str] = []
     previous_top: float | None = None
+
+    def flush_team() -> None:
+        if current and team_lines:
+            current["credits"].extend(parse_team_lines(team_lines))
+            team_lines.clear()
 
     for line in lines:
         text = line.text.strip()
         gap = line.top - previous_top if previous_top is not None else 0
 
         if is_section_band(text):
+            flush_team()
             section = text.upper()
             in_team = False
             in_roles = False
@@ -103,13 +111,19 @@ def parse_sheet_d(lines: Iterable[LayoutLine]) -> list[dict[str, Any]]:
             continue
 
         if re.match(r"^TEAM\b", text, re.IGNORECASE):
+            flush_team()
             in_team = True
             in_roles = False
             current_field = None
+            team_lines = []
+            remainder = re.sub(r"^TEAM\b", "", text, flags=re.IGNORECASE).strip()
+            if remainder:
+                team_lines.append(remainder)
             previous_top = line.top
             continue
 
         if re.fullmatch(r"ROLES\s*:?", text, re.IGNORECASE):
+            flush_team()
             in_team = False
             in_roles = True
             current_field = None
@@ -127,6 +141,7 @@ def parse_sheet_d(lines: Iterable[LayoutLine]) -> list[dict[str, Any]]:
             continue
 
         if in_team:
+            team_lines.append(text)
             previous_top = line.top
             continue
 
@@ -147,6 +162,7 @@ def parse_sheet_d(lines: Iterable[LayoutLine]) -> list[dict[str, Any]]:
             previous_top = line.top
             continue
 
+        flush_team()
         current = _start_project(projects, text, section)
         current_field = None
         in_team = False
