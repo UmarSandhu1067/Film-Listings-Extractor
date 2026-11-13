@@ -60,6 +60,7 @@ _MONTHS = {name.casefold(): number for number, name in enumerate(calendar.month_
 _MONTHS.update(
     {name.casefold(): number for number, name in enumerate(calendar.month_abbr) if name}
 )
+_MONTHS["sept"] = 9
 _SEASONS = {"spring": 3, "summer": 6, "fall": 9, "autumn": 9, "winter": 12}
 
 
