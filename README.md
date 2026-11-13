@@ -1,12 +1,55 @@
 # Film Listings Extractor
 
 Extract film and television project listings from the supplied Sheet A
-labelled fields, Sheet B table, and Sheet C free-text PDFs. Each parser produces
-the same project/role structure; Pydantic validates it and adds cleaned values
-without changing the original extracted text.
+labelled fields, Sheet B table, and Sheet C free-text PDFs. V1 retains its
+original parser and API behavior; V2 adds Sheet D extraction and a separate
+FastAPI service so both versions can run at the same time.
 
 For the full walkthrough of setup, extraction, output fields, API endpoints,
 testing, and current limitations, see the [Project Guide](./PROJECT_GUIDE.md).
+
+## V2: Sheet D
+
+V2 is isolated under `src.v2`; V1's parser, models, CLI, and API routes are
+unchanged. To run both APIs at once, use separate terminals and ports:
+
+```powershell
+uvicorn src.api:app --reload --port 8000
+uvicorn src.v2.api:app --reload --port 8001
+```
+
+V1 remains available at `http://127.0.0.1:8000/projects` and `/health`.
+V2 exposes its own `/projects`, `/people`, `/companies`, and `/health` routes at
+`http://127.0.0.1:8001`. V2 records and in-memory state are separate from V1.
+
+Extract the new PDF with the V2-only command:
+
+```powershell
+extract-v2 input\sheet_d_two_column_grid.pdf --out sheet_d.json
+```
+
+The equivalent module invocation is:
+
+```powershell
+python -m src.v2.main input\sheet_d_two_column_grid.pdf --out sheet_d.json
+```
+
+Sheet D text is read top-to-bottom in the left column, then the right column,
+before advancing to the next page. The repeated page header, footer, and final
+credit key are excluded. Section bands apply to following projects; a continued
+project keeps its current state across columns and pages. Printed project,
+role, credit, contact, and alias text remains alongside its cleaned value.
+Credits with combined codes produce one record per code. Unknown codes remain
+visible and flagged. People are merged using a case-, spacing-, and
+punctuation-insensitive key; the company heuristic uses the suffixes specified
+in the task guide.
+
+Known limits: V2 reads text PDFs only, assumes two columns split at the page
+midpoint, and does not infer a missing project title or an unknown credit-code
+meaning. OCR, three-column layouts, and source bounding boxes are not included.
+With another week, I would add stored page coordinates and a configurable
+column-boundary detector, then validate those additions against more varied
+layouts.
 
 ## Setup (Python 3.12)
 

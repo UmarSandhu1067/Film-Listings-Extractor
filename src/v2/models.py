@@ -49,6 +49,11 @@ class V2Role(BaseModel):
         for field in ("role_type", "description"):
             if field in data and isinstance(data[field], str):
                 data[f"{field}_cleaned"] = clean_text(data[field])
+        cast_name = data.get("cast_name")
+        if isinstance(cast_name, str):
+            data["cast_person_key"] = normalize_entity_key(cast_name)
+        if isinstance(name, str) and name.casefold() == "tbd role":
+            data["role_flag"] = "Role is marked TBD."
         return data
 
 
@@ -89,6 +94,12 @@ class V2Credit(BaseModel):
         if isinstance(data.get("email"), str):
             data["email"] = normalize_email(data["email"])
         return data
+
+    @model_validator(mode="after")
+    def reject_blank_name(self) -> V2Credit:
+        if not self.name.strip():
+            raise ValueError("name must not be blank")
+        return self
 
 
 class V2Person(BaseModel):
@@ -168,3 +179,11 @@ class V2Project(BaseModel):
                 data["start_date_flag"],
             ) = normalize_start_date(data["start_date"])
         return data
+
+
+class V2Document(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    projects: list[V2Project]
+    people: list[V2Person] = Field(default_factory=list)
+    companies: list[V2Company] = Field(default_factory=list)

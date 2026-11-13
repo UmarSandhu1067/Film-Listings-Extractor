@@ -7,7 +7,15 @@ import re
 from datetime import date
 from typing import Literal
 
-DatePrecision = Literal["day", "month", "quarter", "season", "year", "unknown"]
+DatePrecision = Literal[
+    "day",
+    "month",
+    "part_of_month",
+    "quarter",
+    "season",
+    "year",
+    "unknown",
+]
 
 _SMALL_TITLE_WORDS = {"a", "an", "and", "in", "of", "the", "to"}
 _GENRES = (
@@ -203,7 +211,7 @@ def normalize_start_date(
     else:
         quarter = re.fullmatch(r"Q([1-4])\s+(\d{4})", candidate, re.IGNORECASE)
         month = re.fullmatch(
-            r"(?:(?:early|mid|late)\s+)?([A-Za-z]+)[,. ]+(\d{4})",
+            r"(?:(early|mid|late)[ -]+)?([A-Za-z]+)[,. ]+(\d{4})",
             candidate,
             re.IGNORECASE,
         )
@@ -221,9 +229,14 @@ def normalize_start_date(
                 )
             except ValueError:
                 return None, "unknown", "Date is not a valid calendar date."
-        elif month and (month_value := _MONTHS.get(month.group(1).casefold().rstrip("."))):
+        elif month and (month_value := _MONTHS.get(month.group(2).casefold().rstrip("."))):
+            part = month.group(1)
             try:
-                parsed, precision = date(int(month.group(2)), month_value, 1), "month"
+                day = {"early": 5, "mid": 15, "late": 25}.get(part.casefold() if part else "", 1)
+                parsed, precision = (
+                    date(int(month.group(3)), month_value, day),
+                    "part_of_month" if part else "month",
+                )
             except ValueError:
                 return None, "unknown", "Date is not a valid calendar date."
         elif season:
@@ -241,10 +254,13 @@ def normalize_start_date(
         else:
             numeric = re.fullmatch(r"(\d{1,2})/(\d{1,2})/(\d{2}|\d{4})", candidate)
             if numeric:
-                numeric_month, day, year_value = numeric.groups()
+                numeric_month, numeric_day, year_value = numeric.groups()
                 full_year = int(year_value) if len(year_value) == 4 else 2000 + int(year_value)
                 try:
-                    parsed, precision = date(full_year, int(numeric_month), int(day)), "day"
+                    parsed, precision = (
+                        date(full_year, int(numeric_month), int(numeric_day)),
+                        "day",
+                    )
                 except ValueError:
                     return None, "unknown", "Date is not a valid calendar date."
             else:

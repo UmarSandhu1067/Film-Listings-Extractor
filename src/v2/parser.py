@@ -6,6 +6,7 @@ import re
 from collections.abc import Iterable
 from typing import Any
 
+from src.v2.cleaning import normalize_entity_key
 from src.v2.layout import LayoutLine, is_section_band
 from src.v2.team import parse_team_lines
 
@@ -23,7 +24,9 @@ _FIELD_NAMES = {
     "logline": "synopsis",
 }
 _ALIAS_RE = re.compile(r"^\s*\((?:fka|aka)\s+([^)]*)\)\s*$", re.IGNORECASE)
-_ROLE_RE = re.compile(r".+\s+\[[^]]+\]")
+_ROLE_LINE_RE = re.compile(
+    r"^(?P<name>.+?)\s+\[(?P<type>[^\]]+)\](?:\s+\[(?P<status>[^\]]+)\])?$"
+)
 _ROLE_DETAIL_RE = re.compile(r"^(?:Female|Male|Any|Details to come)\b", re.IGNORECASE)
 _CONTINUED_RE = re.compile(r"^(.+?)\s+\(continued\)$", re.IGNORECASE)
 
@@ -74,6 +77,7 @@ def parse_sheet_d(lines: Iterable[LayoutLine]) -> list[dict[str, Any]]:
     in_team = False
     in_roles = False
     team_lines: list[str] = []
+    current_role: dict[str, Any] | None = None
     previous_top: float | None = None
 
     def flush_team() -> None:
@@ -91,6 +95,7 @@ def parse_sheet_d(lines: Iterable[LayoutLine]) -> list[dict[str, Any]]:
             in_team = False
             in_roles = False
             current_field = None
+            current_role = None
             previous_top = line.top
             continue
 
@@ -115,6 +120,7 @@ def parse_sheet_d(lines: Iterable[LayoutLine]) -> list[dict[str, Any]]:
             in_team = True
             in_roles = False
             current_field = None
+            current_role = None
             team_lines = []
             remainder = re.sub(r"^TEAM\b", "", text, flags=re.IGNORECASE).strip()
             if remainder:
@@ -127,6 +133,7 @@ def parse_sheet_d(lines: Iterable[LayoutLine]) -> list[dict[str, Any]]:
             in_team = False
             in_roles = True
             current_field = None
+            current_role = None
             previous_top = line.top
             continue
 
@@ -134,6 +141,7 @@ def parse_sheet_d(lines: Iterable[LayoutLine]) -> list[dict[str, Any]]:
         if fields and current:
             in_team = False
             in_roles = False
+            current_role = None
             for field, value in fields:
                 _append_field(current, field, value)
                 current_field = field
@@ -149,13 +157,37 @@ def parse_sheet_d(lines: Iterable[LayoutLine]) -> list[dict[str, Any]]:
             if text.casefold() == "no roles released.":
                 previous_top = line.top
                 continue
-            if _ROLE_RE.fullmatch(text) or _ROLE_DETAIL_RE.match(text):
+            role_match = _ROLE_LINE_RE.fullmatch(text)
+            if role_match and current:
+                role: dict[str, Any] = {
+                    "role_name": role_match.group("name").strip(),
+                    "role_type": role_match.group("type").strip(),
+                }
+                status = role_match.group("status")
+                if status:
+                    cast_match = re.fullmatch(r"CAST\s*:\s*(.+)", status, re.IGNORECASE)
+                    if cast_match:
+                        cast_name = cast_match.group(1).strip()
+                        role["status"] = "Cast"
+                        role["cast_name"] = cast_name
+                        role["cast_person_key"] = normalize_entity_key(cast_name)
+                    else:
+                        role["status"] = status.strip()
+                if role["role_name"].casefold() == "tbd role":
+                    role["role_flag"] = "Role is marked TBD."
+                current["roles"].append(role)
+                current_role = role
+                previous_top = line.top
+                continue
+            if current_role and (0 <= gap < 25 or _ROLE_DETAIL_RE.match(text)):
+                _append_field(current_role, "description", text)
                 previous_top = line.top
                 continue
             if current and 0 <= gap < 25:
                 previous_top = line.top
                 continue
             in_roles = False
+            current_role = None
 
         if current and current_field == "synopsis" and gap <= 25:
             _append_field(current, "synopsis", text)
@@ -167,6 +199,7 @@ def parse_sheet_d(lines: Iterable[LayoutLine]) -> list[dict[str, Any]]:
         current_field = None
         in_team = False
         in_roles = False
+        current_role = None
         previous_top = line.top
 
     return projects

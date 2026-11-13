@@ -70,7 +70,7 @@ def test_sheet_d_team_counts_and_merged_people_companies():
 
     assert len(projects) == 8
     assert sum(len(project.credits) for project in projects) == 37
-    assert len(people) == 15
+    assert len(people) == 17
     assert len(companies) == 2
     jo = next(person for person in people if person["person_key"] == "jo-hollis")
     assert jo["phones"] == ["+13105550142", "+442079460958"]
@@ -79,3 +79,5 @@ def test_sheet_d_team_counts_and_merged_people_companies():
     marisol = next(person for person in people if person["person_key"] == "marisol-vega")
     assert marisol["phones"] == ["+13105550164"]
     assert marisol["emails"] == ["marisol@vegacasting.example"]
+    andre = next(person for person in people if person["person_key"] == "andre-mbeki")
+    assert andre["projects"] == ["EMBER STREET"]
