@@ -7,6 +7,8 @@ FastAPI service so both versions can run at the same time.
 
 For the full walkthrough of setup, extraction, output fields, API endpoints,
 testing, and current limitations, see the [Project Guide](./PROJECT_GUIDE.md).
+For quick side-by-side manual testing steps, see the
+[V1/V2 Testing Guide](./TESTING_V1_V2.md).
 
 ## V2: Sheet D
 
